@@ -1370,11 +1370,11 @@ class OfficialTextResponse(BaseModel):
 
 @app.get("/official_texts/{text_id}")
 async def get_official_text(text_id: str):
-    # Mock data for demonstration
+    # Mock data for demonstration - FULLY EXPANDED
     if text_id == "math_v1":
         return {
             "id": "math_v1",
-            "title": "中学数学 Vol.1",
+            "title": "中学数学 Vol.1 (基礎編)",
             "subject": "数学",
             "chapters": [
                 {
@@ -1386,21 +1386,40 @@ async def get_official_text(text_id: str):
 0より大きい数を**正の数**、0より小さい数を**負の数**といいます。
 負の数は、マイナス記号（-）をつけて表します。
 
-- 正の数: +5, 3, 1.5
-- 負の数: -5, -3, -1.5
+- **0** は正の数でも負の数でもありません。
+- **自然数** とは、正の整数のことです（1, 2, 3...）。
 
-## 2. 絶対値
-数直線上で、0からその数までの距離を**絶対値**といいます。
-- `+3` の絶対値は 3
-- `-3` の絶対値は 3
+### 反対の性質を持つ量
+- 「東へ3km進む」を $+3km$ とすると、「西へ3km進む」は $-3km$ と表せます。
+- 「500円の利益」を $+500$ 円とすると、「500円の損失」は $-500$ 円です。
 
-## 3. 加法と減法
-- 同符号の和: 絶対値の和に共通の符号をつける
-  - (+2) + (+3) = +5
-  - (-2) + (-3) = -5
-- 異符号の和: 絶対値の差に、絶対値の大きい方の符号をつける
-  - (+2) + (-5) = -3
-                    """
+---
+
+## 2. 絶対値と数直線
+**絶対値** とは、数直線上で **0（原点）からの距離** のことです。
+記号 $|a|$ で表します。
+
+- $|+3| = 3$
+- $|-5| = 5$
+- $|0| = 0$
+
+数直線上で、右へ行くほど数は大きくなり、左へ行くほど数は小さくなります。
+$-5 < -3 < 0 < +2$
+
+---
+
+## 3. 正負の数の計算（加法・減法）
+
+### 同符号の計算（同じマーク）
+絶対値の和に、共通の符号をつけます。
+- $(+2) + (+3) = +(2+3) = +5$
+- $(-2) + (-3) = -(2+3) = -5$
+
+### 異符号の計算（違うマーク）
+絶対値の大きい方から小さい方を引き、絶対値の大きい方の符号をつけます。
+- $(-5) + (+3) = -(5-3) = -2$
+- $(+5) + (-3) = +(5-3) = +2$
+"""
                 },
                 {
                     "title": "第2章: 文字と式",
@@ -1408,119 +1427,215 @@ async def get_official_text(text_id: str):
 # 文字と式
 
 ## 1. 文字式の表し方
-- 乗法の記号 `×` は省く
-  - `a × b` → `ab`
-- 数は文字の前に書く
-  - `x × 5` → `5x`
-- 1や-1の1は省く
-  - `1 × a` → `a`
-  - `-1 × a` → `-a`
+数学では、数量の関係を一般的に表すために $x$ や $a$ などの文字を使います。
+
+### 基本ルール
+1. **かけ算の記号（×）は省く**
+   - $a \\times b = ab$
+2. **数字は文字の前に書く**
+   - $x \\times 5 = 5x$
+3. **1は省略する**
+   - $x \\times 1 = x$
+   - $y \\times (-1) = -y$
+4. **同じ文字の積は累乗を使う**
+   - $a \\times a = a^2$
+
+---
 
 ## 2. 式の値
-式の中の文字を数に置き換えることを**代入**といいます。
-代入して計算した結果を**式の値**といいます。
-                    """
+文字に数字を**代入**して計算した結果を**式の値**といいます。
+- 例: $x = -3$ のとき、$2x + 5$ の値は？
+  - $2 \\times (-3) + 5 = -6 + 5 = -1$
+
+---
+
+## 3. 数量の表し方
+- **速さ・時間・道のり**: (道のり) = (速さ) $\\times$ (時間)
+- **割合**: $a$ 円の $x$ % は $\\frac{x}{100}a$ 円
+"""
+                },
+                {
+                    "title": "第3章: 方程式",
+                    "content": """
+# 一次方程式
+
+## 1. 方程式とは
+文字の値によって成り立ったり成り立たなかったりする等式。
+成り立たせる文字の値を**解**といいます。
+
+## 2. 等式の性質
+天秤のように、両辺に同じ操作をしても等号は成り立ちます。
+1. **両辺に同じ数を足しても等しい**
+2. **両辺から同じ数を引いても等しい**
+3. **両辺に同じ数をかけても等しい**
+4. **両辺を同じ数（0以外）で割っても等しい**
+
+### 移項（いこう）
+項を符号を変えて他方の辺に移すこと。
+$$ 3x + 5 = 14 $$
+$$ 3x = 14 - 5 $$
+$$ 3x = 9 $$
+$$ x = 3 $$
+"""
                 }
             ]
         }
-    elif text_id == "eng_vocab":
+    
+    if text_id == "english_v1":
         return {
-            "id": "eng_vocab",
-            "title": "英単語ターゲット1000",
+            "id": "english_v1",
+            "title": "中学英語 Vol.1 (基礎編)",
             "subject": "英語",
             "chapters": [
                 {
-                    "title": "Section 1: 基本動詞",
+                    "title": "Unit 1: be動詞 (am, are, is)",
                     "content": """
-# 基本動詞 1-10
+# be動詞
 
-1. **follow** (〜に従う、〜について行く)
-   - Follow me, please. (私についてきてください)
-2. **consider** (〜を考慮する)
-   - I will consider your offer. (あなたの申し出を検討します)
-3. **increase** (増える、〜を増やす)
-   - The population is increasing. (人口が増えている)
-4. **expect** (〜を予期する)
-   - We expect rain tomorrow. (明日は雨が降ると思う)
-5. **decide** (〜を決意する)
-   - He decided to go abroad. (彼は海外に行くと決めた)
-                    """
-                }
-            ]
-        }
-    elif text_id == "math_v2":
-        return {
-            "id": "math_v2",
-            "title": "中学数学 Vol.2",
-            "subject": "数学",
-            "chapters": [
-                {
-                    "title": "第1章: 平面図形",
-                    "content": """
-# 平面図形
+## 1. be動詞の基本
+主語によって使い分けます。「〜です」「〜にいる」という意味です。
 
-## 1. 直線と角
-- **直線AB**: 2点A, Bを通るまっすぐな線（限りなく伸びる）
-- **線分AB**: 直線ABのうち、AからBまでの部分
-- **半直線AB**: 点Aから点Bの方向に限りなく伸びる線
+| 主語 | be動詞 | 短縮形 |
+| :--- | :--- | :--- |
+| I | am | I'm |
+| You | are | You're |
+| He / She / It | is | He's / She's / It's |
+| We / They | are | We're / They're |
 
-## 2. 移動
-- **平行移動**: 図形を一定の方向に、一定の距離だけずらす移動
-- **回転移動**: 図形をある点を中心として、一定の角度だけ回転させる移動
-- **対称移動**: 図形をある直線を折り目として折り返す移動
-                    """
+## 2. 否定文
+be動詞の後ろに **not** を置きます。
+- I am **not** tired. (私は疲れていません。)
+- She is **not** a doctor. (彼女は医者ではありません。)
+
+## 3. 疑問文
+be動詞を主語の前に出します。
+- **Are you** a student?
+  - Yes, I am. / No, I am not.
+- **Is this** a pen?
+  - Yes, it is. / No, it isn't.
+"""
                 },
                 {
-                    "title": "第2章: 空間図形",
+                    "title": "Unit 2: 一般動詞",
                     "content": """
-# 空間図形
+# 一般動詞
 
-## 1. いろいろな立体
-- **角柱**: 底面が多角形で、側面が長方形の立体
-- **円柱**: 底面が円で、側面が曲面の立体
-- **角錐**: 底面が多角形で、側面が三角形の立体
-- **円錐**: 底面が円で、側面が曲面の立体
+## 1. 一般動詞とは
+be動詞以外の、動作や状態を表す動詞です。
+(play, like, study, run, have, want etc.)
 
-## 2. 立体の体積
-- 角柱・円柱の体積 $V = Sh$ ($S$: 底面積, $h$: 高さ)
-- 角錐・円錐の体積 $V = \\frac{1}{3}Sh$
-                    """
+- I **play** baseball.
+- They **study** English.
+
+## 2. 三人称単数現在形 (三単現のs)
+主語が「I, You以外」で「単数」のとき、動詞に **s** または **es** をつけます。
+
+- He **plays** soccer.
+- She **watches** TV. (chで終わる語はes)
+- Tom **studies** hard. (子音字+yはiに変えてes)
+
+## 3. 否定文と疑問文 (do/does)
+助動詞 **do** または **does** を使います。
+
+- I **don't** know him.
+- He **doesn't** like carrots. (動詞は原形に戻る！)
+- **Do** you like sports?
+- **Does** Ken live in Tokyo?
+"""
+                },
+                {
+                    "title": "Unit 3: 代名詞",
+                    "content": """
+# 代名詞の変化
+
+## 人称代名詞の格変化
+「誰が」「誰の」「誰を」「誰のもの」によって形が変わります。
+
+| 主格 (〜は) | 所有格 (〜の) | 目的格 (〜を/に) | 所有代名詞 (〜のもの) |
+| :--- | :--- | :--- | :--- |
+| **I** | **my** | **me** | **mine** |
+| **you** | **your** | **you** | **yours** |
+| **he** | **his** | **him** | **his** |
+| **she** | **her** | **her** | **hers** |
+| **we** | **our** | **us** | **ours** |
+| **they** | **their** | **them** | **theirs** |
+
+- This is **my** pen. (所有格)
+- Please help **me**. (目的格)
+"""
                 }
             ]
         }
-    elif text_id == "eng_grammar":
+
+    # ---------------------------------------------------------
+    # NEWLY EXPANDED TEXTBOOKS
+    # ---------------------------------------------------------
+
+    if text_id == "eng_grammar":
         return {
             "id": "eng_grammar",
             "title": "中学英語 重要文法まとめ",
             "subject": "英語",
             "chapters": [
                 {
-                    "title": "第1章: be動詞と一般動詞",
+                    "title": "第1章: 助動詞 (can, must, will)",
                     "content": """
-# be動詞と一般動詞
+# 助動詞 (Auxiliary Verbs)
 
-## 1. be動詞 (am, are, is)
-- I **am** a student. (私は学生です)
-- You **are** kind. (あなたは親切です)
-- He **is** my teacher. (彼は私の先生です)
+## 1. 助動詞のルール
+- 動詞の前に置く。
+- **直後の動詞は必ず原形**にする。
+- 主語が三人称単数でもsはつけない。
 
-## 2. 一般動詞
-- I **play** soccer. (私はサッカーをします)
-- He **plays** soccer. (彼はサッカーをします) ※三人称単数現在形(三単現)のs
-                    """
+## 2. 主要な助動詞
+### can (〜できる)
+- I **can** swim fast.
+- I **cannot** (can't) speak French.
+- **Can** you help me?
+
+### will (〜するつもり・でしょう)
+未来を表します。be going to と書き換え可能な場合があります。
+- I **will** call you later.
+- It **will** rain tomorrow.
+
+### must (〜しなければならない)
+義務・必要性を表します。have to と書き換え可能です。
+- You **must** study hard.
+- You **must not** run here. (禁止: 〜してはいけない)
+
+### should (〜すべきだ)
+提案やアドバイスを表します。
+- You **should** go to the hospital.
+"""
                 },
                 {
-                    "title": "第2章: 進行形",
+                    "title": "第2章: 接続詞 (and, but, because)",
                     "content": """
-# 進行形 (be動詞 + ~ing)
+# 接続詞
 
-## 1. 現在進行形
-- I **am studying** English now. (私は今、英語を勉強しています)
-- He **is running** in the park. (彼は公園を走っています)
+## 1. 等位接続詞 (and, but, or)
+語と語、文と文を対等に結びます。
+- bread **and** butter
+- I like math, **but** I don't like history.
+- Which do you like, tea **or** coffee?
 
-## 2. 過去進行形
-- I **was watching** TV then. (私はその時、テレビを見ていました)
-                    """
+## 2. 従位接続詞 (when, if, because, that)
+主節（メインの文）に説明を加えます。
+
+### when (〜するとき)
+- **When** I came home, my mother was cooking.
+- (My mother was cooking **when** I came home.)
+
+### if (もし〜なら)
+- **If** it is sunny, let's go picnic.
+- (Let's go picnic **if** it is sunny.)
+
+### because (〜なので)
+- I was late **because** the bus didn't come.
+
+### that (〜ということ)
+- I think **that** he is kind. (thatは省略可能)
+"""
                 }
             ]
         }
