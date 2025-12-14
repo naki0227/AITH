@@ -1368,10 +1368,45 @@ class OfficialTextResponse(BaseModel):
     subject: str
     chapters: List[dict] # [{"title": "Chapter 1", "content": "Markdown content..."}]
 
+from utils.textbook_loader import load_textbook
+
+# Metadata mapping for the new system
+TEXTBOOK_META = {
+    "math_v1": {"title": "中学数学 Vol.1 (基礎編)", "subject": "数学"},
+    "math_v2": {"title": "中学数学 Vol.2 (図形)", "subject": "数学"},
+    "math_v3": {"title": "中学数学 Vol.3 (方程式・関数)", "subject": "数学"},
+    "english_v1": {"title": "中学英語 Vol.1 (基礎編)", "subject": "英語"},
+    # Add other subjects as migration proceeds
+}
+
 @app.get("/official_texts/{text_id}")
 async def get_official_text(text_id: str):
-    # Mock data for demonstration - FULLY EXPANDED
+    """
+    Get official textbook content.
+    Prioritizes loading from JSON files via TextbookLoader.
+    Falls back to hardcoded data if JSON is not found (during migration).
+    """
+    
+    # 1. Try loading from new JSON system
+    loaded_chapters = load_textbook(text_id)
+    if loaded_chapters:
+        # If we have JSON data, use it
+        meta = TEXTBOOK_META.get(text_id, {"title": "Unknown Textbook", "subject": "Unknown"})
+        return {
+            "id": text_id,
+            "title": meta["title"],
+            "subject": meta["subject"],
+            "chapters": loaded_chapters
+        }
+
+    # 2. Legacy Hardcoded Data (Migration Fallback)
+    # ---------------------------------------------------------
     if text_id == "math_v1":
+         # Fallback if JSON fails (though we just created it)
+         pass 
+
+    if text_id == "math_v1":
+
         return {
             "id": "math_v1",
             "title": "中学数学 Vol.1 (基礎編)",
