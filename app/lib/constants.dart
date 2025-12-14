@@ -1,7 +1,16 @@
 // Backend URL Configuration
-const String backendUrl = 'http://172.20.10.7:8000'; // Physical Device (Local IP)
-// const String backendUrl = 'http://10.0.2.2:8000'; // Android Emulator
-// const String backendUrl = 'http://127.0.0.1:8000'; // iOS Simulator / Web
+// Build command for production:
+// flutter build apk --dart-define=BACKEND_URL=https://aith-backend.onrender.com
+// flutter build ios --dart-define=BACKEND_URL=https://aith-backend.onrender.com
+const String backendUrl = String.fromEnvironment(
+  'BACKEND_URL',
+  defaultValue: 'http://localhost:8000', // Development default
+);
+
+// For development convenience, you can also use these:
+// Android Emulator: http://10.0.2.2:8000
+// iOS Simulator: http://127.0.0.1:8000
+// Physical Device: http://<YOUR_LOCAL_IP>:8000
 
 // Global Persona (used in ChatScreen)
 String globalPersona = 'gentle';

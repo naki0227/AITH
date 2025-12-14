@@ -41,9 +41,15 @@ import 'screens/learning_screens.dart';
 import 'screens/practice_screens.dart';
 import 'screens/communication_screens.dart';
 import 'screens/placeholder_screens.dart';
+import 'screens/login_screen.dart';
+import 'services/auth_service.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
   runApp(const AithApp());
 }
 
@@ -94,7 +100,42 @@ class AithApp extends StatelessWidget {
           contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
         ),
       ),
-      home: const HomeScreen(),
+      home: const AuthWrapper(),
+    );
+  }
+}
+
+/// Wrapper widget that handles authentication state
+class AuthWrapper extends StatelessWidget {
+  const AuthWrapper({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return StreamBuilder<User?>(
+      stream: authService.authStateChanges,
+      builder: (context, snapshot) {
+        // Show loading while checking auth state
+        if (snapshot.connectionState == ConnectionState.waiting) {
+          return const Scaffold(
+            backgroundColor: Color(0xFF1A1A2E),
+            body: Center(
+              child: CircularProgressIndicator(color: Color(0xFF6C63FF)),
+            ),
+          );
+        }
+
+        // User is logged in
+        if (snapshot.hasData) {
+          return const HomeScreen();
+        }
+
+        // User is not logged in
+        return LoginScreen(
+          onLoginSuccess: () {
+            // Force rebuild by navigating
+          },
+        );
+      },
     );
   }
 }

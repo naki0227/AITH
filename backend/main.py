@@ -17,10 +17,12 @@ load_dotenv(dotenv_path="../.env")
 
 app = FastAPI()
 
-# CORS setup
+# CORS setup - Allow all origins for mobile app compatibility
+# In production, you may want to restrict to specific domains
+allowed_origins = os.getenv("ALLOWED_ORIGINS", "*").split(",")
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=allowed_origins if allowed_origins != ["*"] else ["*"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -31,8 +33,16 @@ os.makedirs("uploads", exist_ok=True)
 app.mount("/uploads", StaticFiles(directory="uploads"), name="uploads")
 
 # Firebase Setup
-# Assuming the json file is in the same directory
-cred = credentials.Certificate("aith-ai-tutor-firebase-adminsdk-fbsvc-de5e0f9c69.json")
+# Priority: 1. FIREBASE_CREDENTIALS env var (JSON string) 2. Local file
+firebase_creds_json = os.getenv("FIREBASE_CREDENTIALS")
+if firebase_creds_json:
+    # Production: Load from environment variable (JSON string)
+    cred_dict = json.loads(firebase_creds_json)
+    cred = credentials.Certificate(cred_dict)
+else:
+    # Development: Load from local file
+    cred = credentials.Certificate("aith-ai-tutor-firebase-adminsdk-fbsvc-de5e0f9c69.json")
+
 try:
     firebase_admin.get_app()
 except ValueError:

@@ -1,0 +1,13 @@
+# Render.com Configuration for AITH Backend
+services:
+  - type: web
+    name: aith-backend
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: FIREBASE_CREDENTIALS
+        sync: false
+    rootDir: backend

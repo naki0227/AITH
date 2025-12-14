@@ -1,7 +1,8 @@
 fastapi
-uvicorn
+uvicorn[standard]
 python-multipart
 google-generativeai
 firebase-admin
 python-dotenv
 pypdf
+gunicorn
