@@ -9,10 +9,59 @@ TEXTBOOK_MAPPING = {
     "math_v2": "math/jhs2",
     "math_v3": "math/jhs3",
     
-    # Placeholder mappings for future expansion
+    # Math High School (Mapping V4-V6 to HS curriculum)
+    "math_v4": "math/hs_math1", # Math I
+    "math_v5": "math/hs_mathA", # Math A
+    "math_v6": "math/hs_math2", # Math II
+    "math_hs_mathB": "math/hs_mathB", # Math B
+    "math_hs_math3": "math/hs_math3", # Math III (Calculus)
+    
+    # English
     "english_v1": "english/jhs1",
-    "science_bio": "science/biology",
+    "english_v2": "english/jhs2",
+    "english_v3": "english/jhs3",
+    # Science HS
+    "science_hs_physics": "science/high_school/hs_physics",
+    "science_hs_chemistry": "science/high_school/hs_chemistry",
+    "science_hs_biology": "science/high_school/hs_biology",
+    
+    # Social Studies
     "social_history": "social/history",
+    "social_geography": "social/geography",
+    "social_civics": "social/civics",
+    
+    # Vocab
+    "eng_vocab": "english/vocab",
+    
+    # Advanced / Uni
+    "adv_calculus": "advanced/adv_calculus",
+    "adv_linear_algebra": "advanced/adv_linear_algebra",
+    "adv_statistics": "advanced/adv_statistics",
+    
+    # Teaching
+    "edu_principles": "teaching/edu_principles",
+    
+    # Liberal Arts
+    "law_constitution": "liberal_arts/law_constitution",
+    "economics_macro_micro": "liberal_arts/economics_macro_micro",
+    
+    # Practical
+    "it_passport": "practical/it/it_passport",
+    "python_basic": "practical/it/python_basic",
+    "bookkeeping_3": "practical/business/bookkeeping_3",
+    # Arts
+    "art_history_west": "arts/art_history_west",
+    "music_theory": "arts/music_theory",
+    
+    # Languages
+    "chinese_basic": "languages/chinese_basic",
+    # Life
+    "home_economics": "life/home_economics",
+    
+    # Professional
+    "anatomy_basic": "professional/medical/anatomy_basic",
+    "mechanical_entry": "professional/engineering/mechanical_entry",
+    "civil_law": "professional/law/civil_law",
     # Add mapping for all planned subjects here...
 }
 

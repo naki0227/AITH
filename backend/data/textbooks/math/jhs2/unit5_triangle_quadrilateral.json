@@ -1,0 +1,87 @@
+{
+    "unit_id": "unit5_triangle_quadrilateral",
+    "unit_title": "第5章 三角形と四角形",
+    "order": 5,
+    "chapters": [
+        {
+            "title": "1. 三角形",
+            "sections": [
+                {
+                    "title": "二等辺三角形と正三角形",
+                    "content_blocks": [
+                        {
+                            "type": "definition",
+                            "term": "二等辺三角形",
+                            "definition": "2つの辺が等しい三角形。"
+                        },
+                        {
+                            "type": "point",
+                            "title": "二等辺三角形の性質",
+                            "content": "1. 2つの底角は等しい。\n2. 頂角の二等分線は、底辺を垂直に2等分する。"
+                        },
+                        {
+                            "type": "definition",
+                            "term": "正三角形",
+                            "definition": "3つの辺が等しい三角形。3つの角はすべて等しく $60^\\circ$ である。"
+                        }
+                    ]
+                },
+                {
+                    "title": "直角三角形の合同",
+                    "content_blocks": [
+                        {
+                            "type": "point",
+                            "title": "直角三角形の合同条件",
+                            "content": "1. **斜辺と1つの鋭角**がそれぞれ等しい。\n2. **斜辺と他の1辺**がそれぞれ等しい。"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "2. 平行四辺形",
+            "sections": [
+                {
+                    "title": "平行四辺形の性質",
+                    "content_blocks": [
+                        {
+                            "type": "definition",
+                            "term": "平行四辺形",
+                            "definition": "2組の対辺がそれぞれ平行な四角形。"
+                        },
+                        {
+                            "type": "point",
+                            "title": "平行四辺形の性質",
+                            "content": "1. 2組の対辺はそれぞれ等しい。\n2. 2組の対角はそれぞれ等しい。\n3. 対角線はそれぞれの中点で交わる。"
+                        },
+                        {
+                            "type": "point",
+                            "title": "平行四辺形になるための条件",
+                            "content": "上の3つの性質の逆＋「1組の対辺が平行でその長さが等しい」とき、四角形は平行四辺形になる。"
+                        }
+                    ]
+                },
+                {
+                    "title": "特別な平行四辺形",
+                    "content_blocks": [
+                        {
+                            "type": "definition",
+                            "term": "長方形",
+                            "definition": "4つの角が等しい四角形（すべて $90^\\circ$）。対角線の長さが等しい。"
+                        },
+                        {
+                            "type": "definition",
+                            "term": "ひし形",
+                            "definition": "4つの辺が等しい四角形。対角線が垂直に交わる。"
+                        },
+                        {
+                            "type": "definition",
+                            "term": "正方形",
+                            "definition": "4つの辺が等しく、4つの角が等しい四角形。"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

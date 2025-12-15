@@ -1,0 +1,22 @@
+{
+    "unit_id": "civil_law",
+    "unit_title": "民法総則",
+    "order": 1,
+    "chapters": [
+        {
+            "title": "1. 権利の主体",
+            "sections": [
+                {
+                    "title": "権利能力",
+                    "content_blocks": [
+                        {
+                            "type": "point",
+                            "title": "始期と終期",
+                            "content": "私権の享有は出生に始まる。（民法3条1項）"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

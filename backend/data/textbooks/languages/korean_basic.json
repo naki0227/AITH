@@ -1,0 +1,37 @@
+{
+    "unit_id": "korean_basic",
+    "unit_title": "韓国語入門",
+    "order": 2,
+    "chapters": [
+        {
+            "title": "1. 文字",
+            "sections": [
+                {
+                    "title": "ハングル",
+                    "content_blocks": [
+                        {
+                            "type": "point",
+                            "title": "構成",
+                            "content": "子音字と母音字の組み合わせで作られる表音文字。"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "2. 基本挨拶",
+            "sections": [
+                {
+                    "title": "挨拶",
+                    "content_blocks": [
+                        {
+                            "type": "point",
+                            "title": "アニョハセヨ",
+                            "content": "안녕하세요 (こんにちは、おはようございます、こんばんは)。"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

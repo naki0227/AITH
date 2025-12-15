@@ -1,0 +1,42 @@
+{
+    "unit_id": "unit7_pythagorean",
+    "unit_title": "第7章 三平方の定理",
+    "order": 7,
+    "chapters": [
+        {
+            "title": "1. 三平方の定理",
+            "sections": [
+                {
+                    "title": "定理の意味",
+                    "content_blocks": [
+                        {
+                            "type": "point",
+                            "title": "三平方の定理（ピタゴラスの定理）",
+                            "content": "直角三角形の直角をはさむ2辺の長さを $a, b$、斜辺の長さを $c$ とすると、\n$$ a^2 + b^2 = c^2 $$\nが成り立つ。"
+                        },
+                        {
+                            "type": "example_problem",
+                            "title": "例題: 斜辺の長さを求める",
+                            "problem": "直角をはさむ2辺の長さが $3$cm, $4$cm の直角三角形の斜辺の長さを求めなさい。",
+                            "solution_steps": [
+                                "斜辺を $x$ とすると、$3^2 + 4^2 = x^2$。",
+                                "$9 + 16 = x^2 \\rightarrow x^2 = 25$。",
+                                "$x > 0$ なので $x = 5$。\n答え: 5cm"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "特別な直角三角形",
+                    "content_blocks": [
+                        {
+                            "type": "point",
+                            "title": "辺の比",
+                            "content": "1. **45°-45°-90°** の直角二等辺三角形\n   $$ 1 : 1 : \\sqrt{2} $$\n2. **30°-60°-90°** の直角三角形\n   $$ 1 : 2 : \\sqrt{3} $$ （斜辺が2, 60°の隣が1）"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

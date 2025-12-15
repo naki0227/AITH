@@ -1,0 +1,57 @@
+{
+    "unit_id": "unit2_integers",
+    "unit_title": "第2章 整数の性質",
+    "order": 2,
+    "chapters": [
+        {
+            "title": "1. 約数と倍数",
+            "sections": [
+                {
+                    "title": "最大公約数・最小公倍数",
+                    "content_blocks": [
+                        {
+                            "type": "introduction",
+                            "text": "整数論は数学の女王とも呼ばれます。素数や約数の性質は、現代の暗号技術の基礎にもなっています。"
+                        },
+                        {
+                            "type": "point",
+                            "title": "性質",
+                            "content": "2つの自然数 a, b の最大公約数を g, 最小公倍数を l とすると、\n$$ ab = gl $$"
+                        },
+                        {
+                            "type": "example_problem",
+                            "title": "例題1: 互除法の利用 (Level 2)",
+                            "problem": "ユークリッドの互除法を用いて、861 と 231 の最大公約数を求めよ。",
+                            "solution_steps": [
+                                "$861 \\div 231 = 3$ 余り $168$",
+                                "$231 \\div 168 = 1$ 余り $63$",
+                                "$168 \\div 63 = 2$ 余り $42$",
+                                "$63 \\div 42 = 1$ 余り $21$",
+                                "$42 \\div 21 = 2$ 余り $0$",
+                                "最後の余りが 0 になったときの割る数が最大公約数。",
+                                "答え: 21"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "不定方程式",
+                    "content_blocks": [
+                        {
+                            "type": "example_problem",
+                            "title": "例題2: 一次不定方程式 (Level 3)",
+                            "problem": "方程式 $3x + 4y = 1$ の整数解を1組見つけよ。",
+                            "solution_steps": [
+                                "係数が小さいので代入して探す。",
+                                "$x=1$ のとき $3+4y=1 \\rightarrow 4y=-2$ (不適)",
+                                "$x=-1$ のとき $-3+4y=1 \\rightarrow 4y=4 \\rightarrow y=1$",
+                                "よって、$x=-1, y=1$ は解の1つ。",
+                                "答え: $x=-1, y=1$"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

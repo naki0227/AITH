@@ -1,0 +1,85 @@
+{
+    "unit_id": "unit2_letters_formulas",
+    "unit_title": "第2章 文字と式",
+    "order": 2,
+    "chapters": [
+        {
+            "title": "1. 文字の使用と表し方",
+            "sections": [
+                {
+                    "title": "文字式の表し方",
+                    "content_blocks": [
+                        {
+                            "type": "introduction",
+                            "text": "数学では、数量の関係を一般的に表すために $x$ や $a$ などの文字を使います。"
+                        },
+                        {
+                            "type": "point",
+                            "title": "文字式のルール",
+                            "content": "1. **乗法の記号 $\\times$ は省く**\n   - $a \\times b = ab$\n2. **数字は文字の前に書く**\n   - $x \\times 5 = 5x$ (Not $x5$)\n3. **1 は省略する**\n   - $a \\times 1 = a$\n   - $y \\times (-1) = -y$\n4. **同じ文字の積は累乗を使う**\n   - $x \\times x = x^2$"
+                        },
+                        {
+                            "type": "example_problem",
+                            "title": "例題: 文字式の書き方",
+                            "problem": "次の式を、文字式の表し方の決まりに従って書きなさい。\n(1) $x \\times (-3)$\n(2) $a \\times a \\times a$\n(3) $y \\times 4 \\times x$",
+                            "solution_steps": [
+                                "(1) 数字は文字の前なので $-3x$。",
+                                "(2) 同じ文字の積は累乗なので $a^3$。",
+                                "(3) アルファベット順に並べるのが一般的です。$4xy$。"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "式の値",
+                    "content_blocks": [
+                        {
+                            "type": "definition",
+                            "term": "代入・式の値",
+                            "definition": "式の中の文字を数に置き換えることを**代入**、計算した結果を**式の値**という。"
+                        },
+                        {
+                            "type": "example_problem",
+                            "title": "例題: 式の値を求める",
+                            "problem": "$x = -3$ のとき、$2x + 5$ の値を求めなさい。",
+                            "solution_steps": [
+                                "$x$ に $-3$ を代入します。$2x$ は $2 \\times x$ のことなので、",
+                                "$$ 2 \\times (-3) + 5 $$",
+                                "$$ = -6 + 5 $$",
+                                "$$ = -1 $$",
+                                "答え: $-1$"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "2. 文字式の計算",
+            "sections": [
+                {
+                    "title": "一次式の計算",
+                    "content_blocks": [
+                        {
+                            "type": "point",
+                            "title": "同類項をまとめる",
+                            "content": "文字の部分が同じ項を**同類項**といいます。同類項は係数の計算でまとめることができます。\n- $3x + 2x = (3+2)x = 5x$"
+                        },
+                        {
+                            "type": "example_problem",
+                            "title": "例題: 文字式の加法・減法",
+                            "problem": "次の計算をしなさい。\n$$ (3a + 2) + (2a - 5) $$",
+                            "solution_steps": [
+                                "かっこを外します。",
+                                "$$ 3a + 2 + 2a - 5 $$",
+                                "同類項（$a$がついている項どうし、数字だけの項どうし）をまとめます。",
+                                "$$ (3a + 2a) + (2 - 5) $$",
+                                "$$ = 5a - 3 $$"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

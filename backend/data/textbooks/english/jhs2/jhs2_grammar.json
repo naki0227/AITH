@@ -1,0 +1,61 @@
+{
+    "unit_id": "english_v2",
+    "unit_title": "中学英語 Vol.2 (応用編)",
+    "order": 2,
+    "chapters": [
+        {
+            "title": "1. 未来形と助動詞",
+            "sections": [
+                {
+                    "title": "未来を表す表現",
+                    "content_blocks": [
+                        {
+                            "type": "introduction",
+                            "text": "「〜するつもり」「〜でしょう」という未来のことを話すときは、will か be going to を使います。"
+                        },
+                        {
+                            "type": "point",
+                            "title": "will と be going to",
+                            "content": "- will: その場で決めた意思、単純未来。「〜するよ」\n- be going to: 前から決めていた予定。「〜するつもりだ」"
+                        },
+                        {
+                            "type": "example_problem",
+                            "title": "例題1: 書き換え (Level 2)",
+                            "problem": "I visit Kyoto tomorrow. を未来の文に（予定として）。\nI ( ) ( ) ( ) visit Kyoto tomorrow.",
+                            "solution_steps": [
+                                "予定なので be going to を使う。",
+                                "I am going to ...",
+                                "答え: am going to"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "2. 不定詞と動名詞",
+            "sections": [
+                {
+                    "title": "不定詞 (to + 動詞の原形)",
+                    "content_blocks": [
+                        {
+                            "type": "point",
+                            "title": "3つの用法",
+                            "content": "1. 名詞的用法: 〜すること (I like to swim.)\n2. 形容詞的用法: 〜するための (books to read)\n3. 副詞的用法: 〜するために (I went there to study.)"
+                        },
+                        {
+                            "type": "example_problem",
+                            "title": "例題2: 並べ替え (Level 2)",
+                            "problem": "私は英語を勉強するためにここに来ました。\n( came / here / I / English / study / to ).",
+                            "solution_steps": [
+                                "主語＋動詞: I came here",
+                                "目的: to study English",
+                                "答え: I came here to study English."
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

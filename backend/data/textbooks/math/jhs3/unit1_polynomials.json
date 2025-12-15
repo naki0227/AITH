@@ -1,0 +1,79 @@
+{
+    "unit_id": "unit1_polynomials",
+    "unit_title": "第1章 多項式",
+    "order": 1,
+    "chapters": [
+        {
+            "title": "1. 多項式の計算",
+            "sections": [
+                {
+                    "title": "多項式の乗法",
+                    "content_blocks": [
+                        {
+                            "type": "point",
+                            "title": "展開",
+                            "content": "単項式 $\\times$ 多項式や、多項式 $\\times$ 多項式の積を、単項式の和の形に表すこと。\n$$ (a+b)(c+d) = ac + ad + bc + bd $$"
+                        }
+                    ]
+                },
+                {
+                    "title": "乗法公式",
+                    "content_blocks": [
+                        {
+                            "type": "point",
+                            "title": "重要な乗法公式",
+                            "content": "1. $(x+a)(x+b) = x^2 + (a+b)x + ab$\n2. $(x+a)^2 = x^2 + 2ax + a^2$\n3. $(x-a)^2 = x^2 - 2ax + a^2$\n4. $(x+a)(x-a) = x^2 - a^2$"
+                        },
+                        {
+                            "type": "example_problem",
+                            "title": "例題: 公式を使った展開",
+                            "problem": "次の式を展開しなさい。\n(1) $(x+3)(x-2)$\n(2) $(x+4)(x-4)$",
+                            "solution_steps": [
+                                "(1) 公式1を使います。和が $+1$、積が $-6$。\n$$ x^2 + (3-2)x + (3 \\times (-2)) = x^2 + x - 6 $$",
+                                "(2) 公式4（和と差の積）を使います。\n$$ x^2 - 4^2 = x^2 - 16 $$"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "2. 因数分解",
+            "sections": [
+                {
+                    "title": "因数分解の基礎",
+                    "content_blocks": [
+                        {
+                            "type": "definition",
+                            "term": "因数分解",
+                            "definition": "多項式を、いくつかの因数（単項式や多項式）の積として表すこと。"
+                        },
+                        {
+                            "type": "point",
+                            "title": "共通因数をくくりだす",
+                            "content": "各項に共通な因数があれば、それをかっこの外にくくりだします。\n$$ ma + mb = m(a+b) $$"
+                        }
+                    ]
+                },
+                {
+                    "title": "公式を使った因数分解",
+                    "content_blocks": [
+                        {
+                            "type": "explanation",
+                            "markdown": "乗法公式の逆を使って因数分解します。\n1. $x^2 + (a+b)x + ab = (x+a)(x+b)$\n2. $x^2 + 2ax + a^2 = (x+a)^2$\n3. $x^2 - a^2 = (x+a)(x-a)$"
+                        },
+                        {
+                            "type": "example_problem",
+                            "title": "例題: 因数分解",
+                            "problem": "$x^2 - 6x + 9$ を因数分解しなさい。",
+                            "solution_steps": [
+                                "$9$ は $3^2$、$-6x$ は $-2 \\times 3 \\times x$ なので、公式2が使えます。",
+                                "$$ (x-3)^2 $$"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

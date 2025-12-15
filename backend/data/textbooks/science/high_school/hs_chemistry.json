@@ -1,0 +1,65 @@
+{
+    "unit_id": "science_hs_chemistry",
+    "unit_title": "高校化学",
+    "order": 2,
+    "chapters": [
+        {
+            "title": "1. 物質の構成",
+            "sections": [
+                {
+                    "title": "原子とモル",
+                    "content_blocks": [
+                        {
+                            "type": "introduction",
+                            "text": "目に見えない原子を数えるための単位、それが「モル (mol)」です。鉛筆をダースで数えるように、原子も $6.02 \\times 10^{23}$ 個を1セットとして扱います。"
+                        },
+                        {
+                            "type": "definition",
+                            "term": "アボガドロ定数",
+                            "definition": "$6.02 \\times 10^{23} /\\text{mol}$"
+                        },
+                        {
+                            "type": "example_problem",
+                            "title": "例題1: モル計算 (Level 1)",
+                            "problem": "炭素原子 $12\\text{g}$ は $1\\text{mol}$ である。炭素原子 $3.0 \\times 10^{23}$ 個は何モルか。",
+                            "solution_steps": [
+                                "個数をアボガドロ定数で割る。",
+                                "$\\frac{3.0 \\times 10^{23}}{6.0 \\times 10^{23}} = 0.5$",
+                                "答え: $0.5 \\text{mol}$"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "2. 理論化学",
+            "sections": [
+                {
+                    "title": "熱化学方程式",
+                    "content_blocks": [
+                        {
+                            "type": "point",
+                            "title": "反応熱",
+                            "content": "化学反応において出入りする熱量。発熱反応なら右辺に $+ Q \\text{kJ}$、吸熱なら $- Q \\text{kJ}$ と書く。"
+                        },
+                        {
+                            "type": "example_problem",
+                            "title": "例題2: ヘスの法則 (Level 3)",
+                            "problem": "C(黒鉛)の燃焼熱は394kJ, COの燃焼熱は283kJである。C(黒鉛)がCOになる生成熱を求めよ。",
+                            "solution_steps": [
+                                "1. $\\text{C} + \\text{O}_2 = \\text{CO}_2 + 394\\text{kJ}$ (1)",
+                                "2. $\\text{CO} + \\frac{1}{2}\\text{O}_2 = \\text{CO}_2 + 283\\text{kJ}$ (2)",
+                                "求めたい式は $\\text{C} + \\frac{1}{2}\\text{O}_2 = \\text{CO} + Q\\text{kJ}$。",
+                                "(1)から(2)を引くと、",
+                                "$\\text{C} + \\frac{1}{2}\\text{O}_2 - \\text{CO} = 394 - 283 = 111\\text{kJ}$",
+                                "移項して $\\text{C} + \\frac{1}{2}\\text{O}_2 = \\text{CO} + 111\\text{kJ}$",
+                                "答え: $111 \\text{kJ/mol}$"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

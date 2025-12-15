@@ -1,0 +1,37 @@
+{
+    "unit_id": "unit8_sampling",
+    "unit_title": "第8章 標本調査",
+    "order": 8,
+    "chapters": [
+        {
+            "title": "1. 標本調査",
+            "sections": [
+                {
+                    "title": "全数調査と標本調査",
+                    "content_blocks": [
+                        {
+                            "type": "definition",
+                            "term": "全数調査",
+                            "definition": "対象となる集団すべてを調べること（例: 国勢調査）。"
+                        },
+                        {
+                            "type": "definition",
+                            "term": "標本調査",
+                            "definition": "集団の一部を取り出して調べ、全体を推測すること（例: テレビ視聴率）。"
+                        },
+                        {
+                            "type": "definition",
+                            "term": "母集団と標本",
+                            "definition": "- **母集団**: 調査対象の全体。\n- **標本**: 母集団から取り出された一部。"
+                        },
+                        {
+                            "type": "definition",
+                            "term": "無作為抽出",
+                            "definition": "偏りがないように、くじ引きや乱数を使って標本を取り出すこと。"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,72 @@
+{
+    "unit_id": "adv_calculus",
+    "unit_title": "大学教養 微分積分",
+    "order": 1,
+    "chapters": [
+        {
+            "title": "1. 偏微分",
+            "sections": [
+                {
+                    "title": "偏導関数",
+                    "content_blocks": [
+                        {
+                            "type": "introduction",
+                            "text": "1変数の微分では「曲線の傾き」を求めましたが、2変数の偏微分では「曲面上の、ある方向への傾き」を求めます。山登りで「北向きの傾斜」と「東向きの傾斜」が違うのと同じです。"
+                        },
+                        {
+                            "type": "definition",
+                            "term": "偏微分 (Partial Derivative)",
+                            "definition": "$z = f(x, y)$ において、$y$ を定数とみなして $x$ で微分したものを $x$ に関する偏導関数といい、$\\frac{\\partial z}{\\partial x}$ や $f_x$ と書く。"
+                        },
+                        {
+                            "type": "example_problem",
+                            "title": "例題1: 偏微分の計算 (Level 2)",
+                            "problem": "$f(x, y) = x^2 y + y^3$ の偏導関数 $f_x, f_y$ を求めよ。",
+                            "solution_steps": [
+                                "1. $f_x$ ($x$で偏微分): $y$ は定数扱い。",
+                                "$(x^2 y)' = 2xy$",
+                                "$(y^3)' = 0$ （定数なので消える）",
+                                "よって $f_x = 2xy$",
+                                "2. $f_y$ ($y$で偏微分): $x$ は定数扱い。",
+                                "$(x^2 y)' = x^2 \\cdot 1 = x^2$",
+                                "$(y^3)' = 3y^2$",
+                                "よって $f_y = x^2 + 3y^2$"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "2. 重積分",
+            "sections": [
+                {
+                    "title": "二重積分",
+                    "content_blocks": [
+                        {
+                            "type": "introduction",
+                            "text": "1変数の積分は「曲線の下の面積」でしたが、2変数の重積分は「曲面の下の体積」を求める操作です。"
+                        },
+                        {
+                            "type": "point",
+                            "title": "累次積分",
+                            "content": "$$ \\iint_D f(x, y) dx dy = \\int_a^b \\left( \\int_{g_1(x)}^{g_2(x)} f(x, y) dy \\right) dx $$"
+                        },
+                        {
+                            "type": "example_problem",
+                            "title": "例題2: 長方形領域の積分 (Level 2)",
+                            "problem": "領域 $D: 0 \\le x \\le 1, 0 \\le y \\le 2$ において、$\\iint_D xy dx dy$ を求めよ。",
+                            "solution_steps": [
+                                "変数分離できる形なので、個別に積分して掛ける。",
+                                "$\\int_0^1 x dx = [\\frac{x^2}{2}]_0^1 = \\frac{1}{2}$",
+                                "$\\int_0^2 y dy = [\\frac{y^2}{2}]_0^2 = \\frac{4}{2} = 2$",
+                                "全体: $\\frac{1}{2} \\times 2 = 1$",
+                                "答え: 1"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,85 @@
+{
+    "unit_id": "unit2_square_roots",
+    "unit_title": "第2章 平方根",
+    "order": 2,
+    "chapters": [
+        {
+            "title": "1. 平方根の意味",
+            "sections": [
+                {
+                    "title": "平方根",
+                    "content_blocks": [
+                        {
+                            "type": "definition",
+                            "term": "平方根",
+                            "definition": "2乗すると $a$ になる数。正の数 $a$ の平方根は、正と負の2つある。"
+                        },
+                        {
+                            "type": "definition",
+                            "term": "根号（ルート）",
+                            "definition": "記号 $\\sqrt{\\quad}$ 。正のほうを $\\sqrt{a}$、負のほうを $-\\sqrt{a}$ と書く。"
+                        },
+                        {
+                            "type": "example_problem",
+                            "title": "例題: 平方根を求める",
+                            "problem": "36の平方根をいいなさい。",
+                            "solution_steps": [
+                                "2乗して36になる数は、$6$ と $-6$ です。",
+                                "答え: $\\pm 6$"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "無理数",
+                    "content_blocks": [
+                        {
+                            "type": "definition",
+                            "term": "有理数・無理数",
+                            "definition": "- **有理数**: 分数 $\\frac{m}{n}$ ($m, n$は整数) の形で表せる数。\n- **無理数**: 分数で表せない数。循環しない無限小数になる（例: $\\pi, \\sqrt{2}$）。"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "2. 根号をふくむ式の計算",
+            "sections": [
+                {
+                    "title": "乗法・除法",
+                    "content_blocks": [
+                        {
+                            "type": "point",
+                            "title": "計算ルール",
+                            "content": "1. $\\sqrt{a} \\times \\sqrt{b} = \\sqrt{ab}$\n2. $\\frac{\\sqrt{a}}{\\sqrt{b}} = \\sqrt{\\frac{a}{b}}$"
+                        },
+                        {
+                            "type": "point",
+                            "title": "変形",
+                            "content": "$\\sqrt{a^2 b} = a\\sqrt{b}$ のように、根号の中をできるだけ小さい整数にします。\n例: $\\sqrt{12} = \\sqrt{2^2 \\times 3} = 2\\sqrt{3}$"
+                        }
+                    ]
+                },
+                {
+                    "title": "有理化",
+                    "content_blocks": [
+                        {
+                            "type": "definition",
+                            "term": "分母の有理化",
+                            "definition": "分母に根号がない形に変形すること。"
+                        },
+                        {
+                            "type": "example_problem",
+                            "title": "例題: 有理化",
+                            "problem": "$\\frac{1}{\\sqrt{2}}$ を有理化しなさい。",
+                            "solution_steps": [
+                                "分母と分子に同じ $\\sqrt{2}$ をかけます。",
+                                "$$ \\frac{1 \\times \\sqrt{2}}{\\sqrt{2} \\times \\sqrt{2}} = \\frac{\\sqrt{2}}{2} $$"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

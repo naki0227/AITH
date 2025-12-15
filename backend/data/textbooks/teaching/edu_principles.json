@@ -1,0 +1,31 @@
+{
+    "unit_id": "teaching_edu_principles",
+    "unit_title": "教育原理",
+    "order": 1,
+    "chapters": [
+        {
+            "title": "1. 教育の歴史と思想",
+            "sections": [
+                {
+                    "title": "西洋教育史",
+                    "content_blocks": [
+                        {
+                            "type": "point",
+                            "title": "主要な教育思想家",
+                            "content": "- コメニウス: 『大教授学』。直観教授法。\n- ルソー: 『エミール』。「自然に帰れ」。子どもの発見。\n- ペスタロッチ: 「民衆教育の父」。"
+                        },
+                        {
+                            "type": "exercise",
+                            "problems": [
+                                {
+                                    "q": "「万人は万人にあらゆることを教授せねばならない」と説いたのは？",
+                                    "a": "コメニウス"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

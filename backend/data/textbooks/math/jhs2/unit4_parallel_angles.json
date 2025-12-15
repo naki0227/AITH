@@ -1,0 +1,71 @@
+{
+    "unit_id": "unit4_parallel_angles",
+    "unit_title": "第4章 平行と合同",
+    "order": 4,
+    "chapters": [
+        {
+            "title": "1. 角と平行線",
+            "sections": [
+                {
+                    "title": "平行線と角",
+                    "content_blocks": [
+                        {
+                            "type": "definition",
+                            "term": "対頂角",
+                            "definition": "2直線が交わるとき、向かい合う角。対頂角は等しい。"
+                        },
+                        {
+                            "type": "definition",
+                            "term": "同位角・錯角",
+                            "definition": "- **同位角**: 同じ位置にある角。\n- **錯角**: Zの文字のように内側で食い違う位置にある角。"
+                        },
+                        {
+                            "type": "point",
+                            "title": "平行線の性質",
+                            "content": "2直線が平行ならば、\n1. 同位角は等しい。\n2. 錯角は等しい。"
+                        }
+                    ]
+                },
+                {
+                    "title": "多角形の角",
+                    "content_blocks": [
+                        {
+                            "type": "point",
+                            "title": "内角の和",
+                            "content": "$n$ 角形の内角の和は $180^\\circ \\times (n-2)$ である。"
+                        },
+                        {
+                            "type": "point",
+                            "title": "外角の和",
+                            "content": "多角形の外角の和は、何角形であっても常に **360°** である。"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "2. 合同",
+            "sections": [
+                {
+                    "title": "三角形の合同条件",
+                    "content_blocks": [
+                        {
+                            "type": "definition",
+                            "term": "合同",
+                            "definition": "ぴったり重ね合わせることができる2つの図形。"
+                        },
+                        {
+                            "type": "point",
+                            "title": "三角形の合同条件",
+                            "content": "次のいずれかが成り立つとき、2つの三角形は合同である。\n1. **3組の辺**がそれぞれ等しい。\n2. **2組の辺とその間の角**がそれぞれ等しい。\n3. **1組の辺とその両端の角**がそれぞれ等しい。"
+                        },
+                        {
+                            "type": "explanation",
+                            "markdown": "合同の証明では、仮定（問題文で与えられたこと）と、図形の性質（対頂角、平行線の錯角など）を使って、合同条件のどれかに当てはまることを示します。"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

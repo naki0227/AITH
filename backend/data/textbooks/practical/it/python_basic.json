@@ -1,0 +1,48 @@
+{
+    "unit_id": "practical_python_basic",
+    "unit_title": "Pythonプログラミング基礎",
+    "order": 2,
+    "chapters": [
+        {
+            "title": "1. 基本文法",
+            "sections": [
+                {
+                    "title": "変数とデータ型",
+                    "content_blocks": [
+                        {
+                            "type": "introduction",
+                            "text": "プログラミングは「データ」を加工する作業です。Pythonは読みやすく書きやすい、世界で最も人気のある言語の一つです。"
+                        },
+                        {
+                            "type": "example_problem",
+                            "title": "例題1: 出力 (Level 1)",
+                            "problem": "画面に「Hello, Python」と表示するコードを書け。",
+                            "solution_steps": [
+                                "print(\"Hello, Python\")"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "制御構文",
+                    "content_blocks": [
+                        {
+                            "type": "point",
+                            "title": "if文（条件分岐）",
+                            "content": "```python\nif score >= 60:\n    print(\"Pass\")\nelse:\n    print(\"Fail\")\n```"
+                        },
+                        {
+                            "type": "example_problem",
+                            "title": "例題2: fizzbuzz (Level 3)",
+                            "problem": "変数iが3の倍数ならFizz、5の倍数ならBuzzと表示するコード断片を書け。",
+                            "solution_steps": [
+                                "if i % 3 == 0: print(\"Fizz\")",
+                                "elif i % 5 == 0: print(\"Buzz\")"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

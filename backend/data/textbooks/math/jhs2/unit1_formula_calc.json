@@ -1,0 +1,76 @@
+{
+    "unit_id": "unit1_formula_calc",
+    "unit_title": "第1章 式の計算",
+    "order": 1,
+    "chapters": [
+        {
+            "title": "1. 式の加法と減法",
+            "sections": [
+                {
+                    "title": "単項式と多項式",
+                    "content_blocks": [
+                        {
+                            "type": "definition",
+                            "term": "単項式",
+                            "definition": "$3a$ や $-5x^2y$ のように、数や文字の乗法だけでつくられた式。"
+                        },
+                        {
+                            "type": "definition",
+                            "term": "多項式",
+                            "definition": "$3x + 2y$ や $x^2 - 4x + 1$ のように、単項式の和の形で表された式。"
+                        },
+                        {
+                            "type": "definition",
+                            "term": "次数",
+                            "definition": "単項式で、かけあわされている文字の個数。多項式では、各項の次数のうち最も大きいもの。"
+                        },
+                        {
+                            "type": "example_problem",
+                            "title": "例題: 次数を答える",
+                            "problem": "次の式の次数をいいなさい。\n(1) $3x^2y$\n(2) $x^3 - 2x + 1$",
+                            "solution_steps": [
+                                "(1) 文字は $x, x, y$ の3つなので、次数は **3**。",
+                                "(2) 各項の次数は $x^3$(3次), $-2x$(1次), $1$(0次) なので、最も大きい **3** が次数。"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "多項式の計算",
+                    "content_blocks": [
+                        {
+                            "type": "point",
+                            "title": "同類項の整理",
+                            "content": "文字の部分が同じ項（同類項）をまとめます。\n$$ (3x^2 - 2x) + (x^2 + 5x) $$\n$$ = (3+1)x^2 + (-2+5)x $$\n$$ = 4x^2 + 3x $$"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "2. 文字式の利用",
+            "sections": [
+                {
+                    "title": "等式の変形",
+                    "content_blocks": [
+                        {
+                            "type": "explanation",
+                            "markdown": "ある文字について解くとは、その文字を左辺に、それ以外を右辺に移して $x = ...$ の形にすることです。"
+                        },
+                        {
+                            "type": "example_problem",
+                            "title": "例題: 等式の変形",
+                            "problem": "次の等式を $[ ]$ 内の文字について解きなさい。\n$$ 2x + y = 6 \\quad [y] $$",
+                            "solution_steps": [
+                                "$y$ について解くので、左辺を $y$ だけにします。",
+                                "$2x$ を右辺に移項します。",
+                                "$$ y = 6 - 2x $$",
+                                "（または $y = -2x + 6$）"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

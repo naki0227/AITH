@@ -48,9 +48,49 @@ import 'package:firebase_auth/firebase_auth.dart';
 
 
 void main() async {
-  WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp();
-  runApp(const AithApp());
+  try {
+    WidgetsFlutterBinding.ensureInitialized();
+    await Firebase.initializeApp();
+    runApp(const AithApp());
+  } catch (e, stack) {
+    runApp(ErrorApp(error: e.toString(), stack: stack.toString()));
+  }
+}
+
+class ErrorApp extends StatelessWidget {
+  final String error;
+  final String stack;
+  const ErrorApp({super.key, required this.error, required this.stack});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        backgroundColor: Colors.red.shade50,
+        body: SingleChildScrollView(
+          padding: const EdgeInsets.all(24),
+          child: SafeArea(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                const Icon(Icons.error_outline, color: Colors.red, size: 60),
+                const SizedBox(height: 16),
+                const Text(
+                  'Initialization Error',
+                  style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold, color: Colors.red),
+                ),
+                const SizedBox(height: 16),
+                Text(error, style: const TextStyle(color: Colors.black87)),
+                const SizedBox(height: 16),
+                const Text('Stack Trace:', style: TextStyle(fontWeight: FontWeight.bold)),
+                Text(stack, style: const TextStyle(fontSize: 10, fontFamily: 'monospace')),
+              ],
+            ),
+          ),
+        ),
+      ),
+    );
+  }
 }
 
 class AithApp extends StatelessWidget {

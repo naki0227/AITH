@@ -1,0 +1,47 @@
+{
+    "unit_id": "unit3_trig_functions",
+    "unit_title": "第3章 三角関数",
+    "order": 3,
+    "chapters": [
+        {
+            "title": "1. 一般角と弧度法",
+            "sections": [
+                {
+                    "title": "弧度法 (ラジアン)",
+                    "content_blocks": [
+                        {
+                            "type": "introduction",
+                            "text": "数学II以降では、角度を「度（°）」ではなく「ラジアン（$\\pi$）」で表します。これにより微分積分の計算が美しくなります。"
+                        },
+                        {
+                            "type": "definition",
+                            "term": "ラジアン",
+                            "definition": "$180^\\circ = \\pi$ ラジアン。\n- $360^\\circ = 2\\pi$\n- $90^\\circ = \\frac{\\pi}{2}$\n- $60^\\circ = \\frac{\\pi}{3}$"
+                        }
+                    ]
+                },
+                {
+                    "title": "加法定理",
+                    "content_blocks": [
+                        {
+                            "type": "point",
+                            "title": "加法定理の公式",
+                            "content": "1. $\\sin(\\alpha + \\beta) = \\sin\\alpha\\cos\\beta + \\cos\\alpha\\sin\\beta$ (咲いたコスモス コスモス咲いた)\n2. $\\cos(\\alpha + \\beta) = \\cos\\alpha\\cos\\beta - \\sin\\alpha\\sin\\beta$ (コスモスコスモス 咲いた咲いた)"
+                        },
+                        {
+                            "type": "example_problem",
+                            "title": "例題: 加法定理 (Level 2)",
+                            "problem": "$\\sin 75^\\circ$ の値を求めよ。",
+                            "solution_steps": [
+                                "$75^\\circ = 45^\\circ + 30^\\circ$ と分解する。",
+                                "$\\sin(45^\\circ + 30^\\circ) = \\sin 45^\\circ \\cos 30^\\circ + \\cos 45^\\circ \\sin 30^\\circ$",
+                                "$= \\frac{\\sqrt{2}}{2} \\cdot \\frac{\\sqrt{3}}{2} + \\frac{\\sqrt{2}}{2} \\cdot \\frac{1}{2}$",
+                                "$= \\frac{\\sqrt{6}}{4} + \\frac{\\sqrt{2}}{4} = \\frac{\\sqrt{6} + \\sqrt{2}}{4}$"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

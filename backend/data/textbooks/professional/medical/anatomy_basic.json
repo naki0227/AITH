@@ -1,0 +1,22 @@
+{
+    "unit_id": "anatomy_basic",
+    "unit_title": "解剖生理学入門",
+    "order": 1,
+    "chapters": [
+        {
+            "title": "1. 人体の構成",
+            "sections": [
+                {
+                    "title": "骨格系",
+                    "content_blocks": [
+                        {
+                            "type": "point",
+                            "title": "骨の役割",
+                            "content": "支持、保護、運動、造血、貯蔵。"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

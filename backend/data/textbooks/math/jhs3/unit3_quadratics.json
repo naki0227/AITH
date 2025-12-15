@@ -1,0 +1,54 @@
+{
+    "unit_id": "unit3_quadratics",
+    "unit_title": "第3章 二次方程式",
+    "order": 3,
+    "chapters": [
+        {
+            "title": "1. 二次方程式の解き方",
+            "sections": [
+                {
+                    "title": "因数分解による解き方",
+                    "content_blocks": [
+                        {
+                            "type": "point",
+                            "title": "基本的な考え方",
+                            "content": "方程式を $(x-a)(x-b) = 0$ の形に変形できれば、$x-a=0$ または $x-b=0$ なので、解は $x = a, b$ となる。"
+                        },
+                        {
+                            "type": "example_problem",
+                            "title": "例題: 因数分解で解く",
+                            "problem": "次の方程式を解きなさい。\n$$ x^2 - 5x + 6 = 0 $$",
+                            "solution_steps": [
+                                "左辺を因数分解します。和が $-5$、積が $6$ になる2数は $-2$ と $-3$。",
+                                "$$ (x-2)(x-3) = 0 $$",
+                                "$x-2=0$ または $x-3=0$ なので、",
+                                "答え: $x = 2, 3$"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "解の公式",
+                    "content_blocks": [
+                        {
+                            "type": "point",
+                            "title": "二次方程式の解の公式",
+                            "content": "二次方程式 $ax^2 + bx + c = 0$ の解は\n$$ x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a} $$"
+                        },
+                        {
+                            "type": "example_problem",
+                            "title": "例題: 解の公式で解く",
+                            "problem": "$$ 2x^2 + 5x + 1 = 0 $$",
+                            "solution_steps": [
+                                "$a=2, b=5, c=1$ を公式に代入します。",
+                                "$$ x = \\frac{-5 \\pm \\sqrt{5^2 - 4 \\times 2 \\times 1}}{2 \\times 2} $$",
+                                "$$ x = \\frac{-5 \\pm \\sqrt{25 - 8}}{4} $$",
+                                "$$ x = \\frac{-5 \\pm \\sqrt{17}}{4} $$"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

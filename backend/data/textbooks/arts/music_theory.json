@@ -1,0 +1,36 @@
+{
+    "unit_id": "arts_music_theory",
+    "unit_title": "音楽理論",
+    "order": 2,
+    "chapters": [
+        {
+            "title": "1. 楽典基礎",
+            "sections": [
+                {
+                    "title": "音名と階名",
+                    "content_blocks": [
+                        {
+                            "type": "definition",
+                            "term": "音名",
+                            "definition": "固定された音の高さ。C, D, E... (ハ, ニ, ホ...)"
+                        },
+                        {
+                            "type": "definition",
+                            "term": "階名",
+                            "definition": "調によって変わる役割。ド, レ, ミ... (移動ド)"
+                        },
+                        {
+                            "type": "example_problem",
+                            "title": "例題1: 音階 (Level 1)",
+                            "problem": "ト長調 (G Major) の「ド」の音は、実音（音名）で言うと何か。",
+                            "solution_steps": [
+                                "ト長調は「ト(G)」を主音（ド）とする調。",
+                                "答え: G (ソ)"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

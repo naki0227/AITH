@@ -1,0 +1,44 @@
+{
+    "unit_id": "eng_vocab",
+    "unit_title": "中学英単語1200",
+    "order": 4,
+    "chapters": [
+        {
+            "title": "1. 基本動詞",
+            "sections": [
+                {
+                    "title": "最重要動詞10選",
+                    "content_blocks": [
+                        {
+                            "type": "introduction",
+                            "text": "英語の核心は動詞にあります。まずは最も頻繁に使われる10個の動詞のイメージを掴みましょう。"
+                        },
+                        {
+                            "type": "definition",
+                            "term": "have",
+                            "definition": "【コアイメージ】自分の領域に持っている。\n- I have a pen. (持っている)\n- I have a cat. (飼っている)\n- I have lunch. (食べる)"
+                        },
+                        {
+                            "type": "definition",
+                            "term": "take",
+                            "definition": "【コアイメージ】自分のところに取り込む。\n- take a bus (バスに乗る)\n- take a picture (写真を撮る/切り取る)"
+                        },
+                        {
+                            "type": "exercise",
+                            "problems": [
+                                {
+                                    "q": "「電車に乗る」を英語で？ (t...)",
+                                    "a": "take a train"
+                                },
+                                {
+                                    "q": "「風邪をひいている」を英語で？ (I ... a cold)",
+                                    "a": "have"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

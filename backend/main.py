@@ -1372,11 +1372,55 @@ from utils.textbook_loader import load_textbook
 
 # Metadata mapping for the new system
 TEXTBOOK_META = {
+    # Math JHS
     "math_v1": {"title": "中学数学 Vol.1 (基礎編)", "subject": "数学"},
     "math_v2": {"title": "中学数学 Vol.2 (図形)", "subject": "数学"},
     "math_v3": {"title": "中学数学 Vol.3 (方程式・関数)", "subject": "数学"},
+    
+    # Math HS
+    "math_v4": {"title": "高校数学 I (数と式・データ)", "subject": "数学"}, # HS Math I
+    "math_v5": {"title": "高校数学 A (確率・整数・図形)", "subject": "数学"}, # HS Math A
+    "math_v6": {"title": "高校数学 II (関数・微積)", "subject": "数学"}, # HS Math II
+    "math_hs_mathB": {"title": "高校数学 B (数列・ベクトル・統計)", "subject": "数学"},
+    "math_hs_math3": {"title": "高校数学 III (極限・微積)", "subject": "数学"},
+    
+    # Advanced Math
+    "adv_calculus": {"title": "大学教養 微分積分", "subject": "数学 (専門)"},
+    "adv_linear_algebra": {"title": "大学教養 線形代数", "subject": "数学 (専門)"},
+    "adv_statistics": {"title": "統計学入門", "subject": "数学 (専門)"},
+
+    # English
     "english_v1": {"title": "中学英語 Vol.1 (基礎編)", "subject": "英語"},
-    # Add other subjects as migration proceeds
+    "english_v2": {"title": "中学英語 Vol.2 (応用編)", "subject": "英語"},
+    "english_v3": {"title": "中学英語 Vol.3 (発展編)", "subject": "英語"},
+    "eng_vocab": {"title": "中学英単語1200", "subject": "英語"},
+    
+    # Science HS
+    "science_hs_physics": {"title": "高校物理", "subject": "理科"},
+    "science_hs_chemistry": {"title": "高校化学", "subject": "理科"},
+    "science_hs_biology": {"title": "高校生物", "subject": "理科"},
+    
+    # Social Studies
+    "social_history": {"title": "日本史・世界史", "subject": "社会"},
+    "social_geography": {"title": "地理総合", "subject": "社会"},
+    "social_civics": {"title": "公民 (政治・経済)", "subject": "社会"},
+    "law_constitution": {"title": "法学・憲法", "subject": "社会 (教養)"},
+    "economics_macro_micro": {"title": "経済学 (ミクロ・マクロ)", "subject": "社会 (教養)"},
+    
+    # Practical / Professional
+    "it_passport": {"title": "ITパスポート", "subject": "資格・スキル"},
+    "python_basic": {"title": "Python入門", "subject": "資格・スキル"},
+    "bookkeeping_3": {"title": "日商簿記3級", "subject": "資格・スキル"},
+    "fp_3": {"title": "FP3級", "subject": "資格・スキル"},
+    "art_history_west": {"title": "西洋美術史", "subject": "芸術"},
+    "music_theory": {"title": "音楽理論 (楽典)", "subject": "芸術"},
+    "chinese_basic": {"title": "中国語入門", "subject": "第二外国語"},
+    "korean_basic": {"title": "韓国語入門", "subject": "第二外国語"},
+    "home_economics": {"title": "家庭科総合", "subject": "生活"},
+    "anatomy_basic": {"title": "解剖生理学入門", "subject": "専門 (医療)"},
+    "mechanical_entry": {"title": "機械工学入門", "subject": "専門 (工学)"},
+    "civil_law": {"title": "民法総則", "subject": "専門 (法律)"},
+    "edu_principles": {"title": "教育原理", "subject": "教職教養"},
 }
 
 @app.get("/official_texts/{text_id}")

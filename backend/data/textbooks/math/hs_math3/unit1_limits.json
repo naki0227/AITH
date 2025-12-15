@@ -1,0 +1,37 @@
+{
+    "unit_id": "unit1_limits",
+    "unit_title": "第1章 極限",
+    "order": 1,
+    "chapters": [
+        {
+            "title": "1. 数列の極限",
+            "sections": [
+                {
+                    "title": "収束と発散",
+                    "content_blocks": [
+                        {
+                            "type": "introduction",
+                            "text": "無限のかなたで数はどうなるのか？「限りなく近づく」という概念（極限）は、微分積分の土台です。"
+                        },
+                        {
+                            "type": "point",
+                            "title": "極限値",
+                            "content": "$n \\to \\infty$ のとき $a_n$ が一定の値 $\\alpha$ に近づくなら、$\\lim_{n \\to \\infty} a_n = \\alpha$ と書く。"
+                        },
+                        {
+                            "type": "example_problem",
+                            "title": "例題1: 基本的な極限 (Level 1)",
+                            "problem": "$\\lim_{n \\to \\infty} \\frac{2n^2 + 3}{n^2 - 1}$ を求めよ。",
+                            "solution_steps": [
+                                "分母・分子を $n^2$ で割る。",
+                                "$$ \\frac{2 + 3/n^2}{1 - 1/n^2} $$",
+                                "$n \\to \\infty$ のとき、$1/n^2 \\to 0$。",
+                                "よって極限値は $\\frac{2+0}{1-0} = 2$。"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

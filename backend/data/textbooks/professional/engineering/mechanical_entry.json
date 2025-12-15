@@ -1,0 +1,27 @@
+{
+    "unit_id": "mechanical_entry",
+    "unit_title": "機械工学入門",
+    "order": 1,
+    "chapters": [
+        {
+            "title": "1. 材料力学",
+            "sections": [
+                {
+                    "title": "応力とひずみ",
+                    "content_blocks": [
+                        {
+                            "type": "definition",
+                            "term": "応力 (Stress)",
+                            "definition": "単位面積あたりの内力。$\\sigma = P/A$。"
+                        },
+                        {
+                            "type": "point",
+                            "title": "フックの法則",
+                            "content": "$$ \\sigma = E \\epsilon $$\n$E$: ヤング率。"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

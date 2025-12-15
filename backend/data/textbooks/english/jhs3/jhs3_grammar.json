@@ -1,0 +1,76 @@
+{
+    "unit_id": "english_v3",
+    "unit_title": "中学英語 Vol.3 (発展編)",
+    "order": 3,
+    "chapters": [
+        {
+            "title": "1. 受動態と現在完了",
+            "sections": [
+                {
+                    "title": "受動態 (受け身)",
+                    "content_blocks": [
+                        {
+                            "type": "definition",
+                            "term": "受動態",
+                            "definition": "be動詞 + 過去分詞 (+ by ~)\n「〜される」「〜された」という意味。"
+                        },
+                        {
+                            "type": "example_problem",
+                            "title": "例題1: 受動態への書き換え (Level 2)",
+                            "problem": "Ken uses this pen.\nThis pen ( ) ( ) by Ken.",
+                            "solution_steps": [
+                                "「このペンはケンによって使われる」にする。",
+                                "be動詞は is （単数現在）。",
+                                "use の過去分詞は used。",
+                                "答え: is used"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "現在完了形",
+                    "content_blocks": [
+                        {
+                            "type": "definition",
+                            "term": "現在完了",
+                            "definition": "have/has + 過去分詞\n「過去から現在までつながっている」ことを表す。\n1. 継続（ずっと〜している）\n2. 経験（〜したことがある）\n3. 完了（〜してしまった）"
+                        },
+                        {
+                            "type": "example_problem",
+                            "title": "例題2: 経験 (Level 2)",
+                            "problem": "私は2回、京都へ行ったことがあります。\nI ( ) ( ) to Kyoto twice.",
+                            "solution_steps": [
+                                "「行ったことがある」は have been to。",
+                                "答え: have been"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "2. 関係代名詞",
+            "sections": [
+                {
+                    "title": "主格と目的格",
+                    "content_blocks": [
+                        {
+                            "type": "introduction",
+                            "text": "2つの文を1つにくっつけて、名詞を詳しく説明する接着剤、それが関係代名詞です。"
+                        },
+                        {
+                            "type": "example_problem",
+                            "title": "例題3: 関係代名詞 (Level 3)",
+                            "problem": "This is the book. I bought it yesterday.\nThis is the book ( ) I bought yesterday.",
+                            "solution_steps": [
+                                "the book = it (モノ)。",
+                                "it は bought の目的語なので、目的格の which (または that) を使う。",
+                                "答え: which / that"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,32 @@
+{
+    "unit_id": "unit6_circle",
+    "unit_title": "第6章 円",
+    "order": 6,
+    "chapters": [
+        {
+            "title": "1. 円周角の定理",
+            "sections": [
+                {
+                    "title": "円周角と中心角",
+                    "content_blocks": [
+                        {
+                            "type": "definition",
+                            "term": "円周角",
+                            "definition": "円周上の点から、円周上の2点へ引いた線分がつくる角。"
+                        },
+                        {
+                            "type": "definition",
+                            "term": "中心角",
+                            "definition": "円の中心から、円周上の2点へ引いた半径がつくる角。"
+                        },
+                        {
+                            "type": "point",
+                            "title": "円周角の定理",
+                            "content": "1. 1つの弧に対する円周角の大きさは一定であり、その弧に対する中心角の半分である。\n   $$ \\angle APB = \\frac{1}{2} \\angle AOB $$\n2. 半円の弧に対する円周角は **90°** である。"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,48 @@
+{
+    "unit_id": "unit6_calculus_integ",
+    "unit_title": "第6章 積分法",
+    "order": 6,
+    "chapters": [
+        {
+            "title": "1. 不定積分と定積分",
+            "sections": [
+                {
+                    "title": "積分の計算",
+                    "content_blocks": [
+                        {
+                            "type": "introduction",
+                            "text": "積分は微分の逆演算で、「面積」を求めるための道具です。"
+                        },
+                        {
+                            "type": "point",
+                            "title": "積分の公式",
+                            "content": "$\\int x^n dx = \\frac{1}{n+1}x^{n+1} + C$ （Cは積分定数）"
+                        },
+                        {
+                            "type": "example_problem",
+                            "title": "例題1: 不定積分 (Level 1)",
+                            "problem": "$\\int 3x^2 dx$ を求めよ。",
+                            "solution_steps": [
+                                "$x^2$ を積分すると $\\frac{x^3}{3}$。",
+                                "$3 \\cdot \\frac{x^3}{3} = x^3$",
+                                "積分定数Cをつける。",
+                                "答え: $x^3 + C$"
+                            ]
+                        },
+                        {
+                            "type": "example_problem",
+                            "title": "例題2: 定積分と面積 (Level 2)",
+                            "problem": "曲線 $y=x^2$ とx軸、および $x=1$ で囲まれた部分の面積を求めよ。",
+                            "solution_steps": [
+                                "定積分 $\\int_0^1 x^2 dx$ を計算する。",
+                                "$= [\\frac{x^3}{3}]_0^1$",
+                                "$= \\frac{1^3}{3} - \\frac{0^3}{3} = \\frac{1}{3}$",
+                                "答え: $\\frac{1}{3}$"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

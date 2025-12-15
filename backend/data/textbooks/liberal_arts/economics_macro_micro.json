@@ -1,0 +1,27 @@
+{
+    "unit_id": "liberal_arts_econ",
+    "unit_title": "経済学（マクロ・ミクロ）",
+    "order": 2,
+    "chapters": [
+        {
+            "title": "1. マクロ経済学",
+            "sections": [
+                {
+                    "title": "GDP (国内総生産)",
+                    "content_blocks": [
+                        {
+                            "type": "definition",
+                            "term": "GDP",
+                            "definition": "一定期間内に国内で生み出された「付加価値」の合計。"
+                        },
+                        {
+                            "type": "point",
+                            "title": "三面等価の原則",
+                            "content": "生産面、分配面、支出面のGDPは、事後的に必ず等しくなる。\n生産（作る）＝分配（給料）＝支出（買う）"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

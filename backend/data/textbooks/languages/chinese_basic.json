@@ -1,0 +1,37 @@
+{
+    "unit_id": "chinese_basic",
+    "unit_title": "中国語入門",
+    "order": 1,
+    "chapters": [
+        {
+            "title": "1. 発音",
+            "sections": [
+                {
+                    "title": "ピンインと四声",
+                    "content_blocks": [
+                        {
+                            "type": "point",
+                            "title": "四声（声調）",
+                            "content": "1. 第一声: 高く平ら (mā)\n2. 第二声: 急激に上がる (má)\n3. 第三声: 低く抑える (mǎ)\n4. 第四声: 急激に下がる (mà)"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "2. 基本文法",
+            "sections": [
+                {
+                    "title": "語順",
+                    "content_blocks": [
+                        {
+                            "type": "point",
+                            "title": "SVO",
+                            "content": "英語と同じく、主語＋動詞＋目的語の順。\n- 我愛你 (Wǒ ài nǐ) = I love you."
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

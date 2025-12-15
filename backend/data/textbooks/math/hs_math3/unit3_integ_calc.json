@@ -1,0 +1,39 @@
+{
+    "unit_id": "unit3_integ_calc",
+    "unit_title": "第3章 積分法（数III）",
+    "order": 3,
+    "chapters": [
+        {
+            "title": "1. 積分法とその応用",
+            "sections": [
+                {
+                    "title": "置換積分・部分積分",
+                    "content_blocks": [
+                        {
+                            "type": "introduction",
+                            "text": "複雑な関数の積分を解くための強力なテクニック、それが置換積分と部分積分です。"
+                        },
+                        {
+                            "type": "point",
+                            "title": "部分積分法",
+                            "content": "$$ \\int f(x)g'(x) dx = f(x)g(x) - \\int f'(x)g(x) dx $$"
+                        },
+                        {
+                            "type": "example_problem",
+                            "title": "例題1: 部分積分 (Level 3)",
+                            "problem": "$\\int x e^x dx$ を求めよ。",
+                            "solution_steps": [
+                                "$f(x)=x, g'(x)=e^x$ とおく。",
+                                "$f'(x)=1, g(x)=e^x$。",
+                                "公式に代入。",
+                                "$= x e^x - \\int 1 \\cdot e^x dx$",
+                                "$= x e^x - e^x + C$",
+                                "$= e^x(x-1) + C$"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

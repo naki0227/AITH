@@ -1,0 +1,59 @@
+{
+    "unit_id": "english_v1",
+    "unit_title": "中学英語 Vol.1 (基礎編)",
+    "order": 1,
+    "chapters": [
+        {
+            "title": "1. be動詞と一般動詞",
+            "sections": [
+                {
+                    "title": "be動詞",
+                    "content_blocks": [
+                        {
+                            "type": "introduction",
+                            "text": "英語の「＝（イコール）」の役割をするのがbe動詞です。主語によって形が変わりますが、基本の意味は「〜です」「〜にいる」の2つだけです。"
+                        },
+                        {
+                            "type": "point",
+                            "title": "be動詞の使い分け",
+                            "content": "- I am ~.\n- You are ~.\n- He/She/It is ~."
+                        },
+                        {
+                            "type": "example_problem",
+                            "title": "例題1: 穴埋め (Level 1)",
+                            "problem": "私はケンです。\nI ( ) Ken.",
+                            "solution_steps": [
+                                "主語が I なので、be動詞は am。",
+                                "答え: am"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "一般動詞",
+                    "content_blocks": [
+                        {
+                            "type": "introduction",
+                            "text": "「食べる」「走る」「好き」など、動作や状態を表すのが一般動詞です。be動詞と一緒に使ってはいけません（ing形などは除く）。"
+                        },
+                        {
+                            "type": "point",
+                            "title": "三単現のS",
+                            "content": "主語が「I, You以外」で「1人・1つ（単数）」のとき、動詞に s をつける。\n- He plays soccer."
+                        },
+                        {
+                            "type": "example_problem",
+                            "title": "例題2: 三単現 (Level 2)",
+                            "problem": "彼はテニスをします。\nHe ( ) tennis.",
+                            "solution_steps": [
+                                "「する（スポーツを）」は play。",
+                                "主語が He（三人称単数）なので、s をつける。",
+                                "答え: plays"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

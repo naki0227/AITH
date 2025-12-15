@@ -1,0 +1,58 @@
+{
+    "unit_id": "unit2_diff_calc",
+    "unit_title": "第2章 微分法（数III）",
+    "order": 2,
+    "chapters": [
+        {
+            "title": "1. さまざまな関数の微分",
+            "sections": [
+                {
+                    "title": "積・商の微分",
+                    "content_blocks": [
+                        {
+                            "type": "introduction",
+                            "text": "数IIでは整式の微分だけでしたが、数IIIでは分数関数、無理関数、三角関数などあらゆる関数を微分します。"
+                        },
+                        {
+                            "type": "point",
+                            "title": "積の微分公式",
+                            "content": "$(fg)' = f'g + fg'$"
+                        },
+                        {
+                            "type": "example_problem",
+                            "title": "例題1: 積の微分 (Level 2)",
+                            "problem": "$y = x^2 \\sin x$ を微分せよ。",
+                            "solution_steps": [
+                                "積の微分公式を使う。",
+                                "$y' = (x^2)' \\sin x + x^2 (\\sin x)'$",
+                                "$= 2x \\sin x + x^2 \\cos x$",
+                                "$= x(2\\sin x + x\\cos x)$"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "合成関数の微分",
+                    "content_blocks": [
+                        {
+                            "type": "point",
+                            "title": "合成関数の微分",
+                            "content": "$y = f(g(x))$ のとき $y' = f'(g(x)) \\cdot g'(x)$"
+                        },
+                        {
+                            "type": "example_problem",
+                            "title": "例題2: 合成関数の微分 (Level 3)",
+                            "problem": "$y = (3x+1)^4$ を微分せよ。",
+                            "solution_steps": [
+                                "まず全体を微分し、中身の微分を掛ける。",
+                                "$y' = 4(3x+1)^3 \\cdot (3x+1)'$",
+                                "$= 4(3x+1)^3 \\cdot 3$",
+                                "$= 12(3x+1)^3$"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

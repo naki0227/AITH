@@ -1,0 +1,61 @@
+{
+    "unit_id": "unit2_sequences",
+    "unit_title": "第2章 数列",
+    "order": 2,
+    "chapters": [
+        {
+            "title": "1. 等差・等比数列",
+            "sections": [
+                {
+                    "title": "等差数列",
+                    "content_blocks": [
+                        {
+                            "type": "introduction",
+                            "text": "規則的に並んだ数の列を「数列」といいます。一定の数を足していくのが「等差数列」、掛けていくのが「等比数列」です。"
+                        },
+                        {
+                            "type": "point",
+                            "title": "一般項の公式",
+                            "content": "初項 $a$、公差 $d$ の等差数列の第 $n$ 項は\n$$ a_n = a + (n-1)d $$"
+                        },
+                        {
+                            "type": "example_problem",
+                            "title": "例題1: 等差数列の一般項 (Level 1)",
+                            "problem": "初項3、公差4の等差数列の一般項を求め、第10項を計算せよ。",
+                            "solution_steps": [
+                                "公式に $a=3, d=4$ を代入。",
+                                "$a_n = 3 + (n-1)4 = 4n - 1$",
+                                "第10項は $n=10$ を代入。",
+                                "$a_{10} = 4(10) - 1 = 39$"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "漸化式",
+                    "content_blocks": [
+                        {
+                            "type": "definition",
+                            "term": "漸化式",
+                            "definition": "前の項から次の項を決めるルール。\n例: $a_{n+1} = a_n + 2$ （等差数列を表す漸化式）"
+                        },
+                        {
+                            "type": "example_problem",
+                            "title": "例題2: 基本的な漸化式 (Level 2)",
+                            "problem": "$a_1 = 2, a_{n+1} = 3a_n - 2$ で定められる数列の一般項を求めよ。",
+                            "solution_steps": [
+                                "特性方程式 $\\alpha = 3\\alpha - 2$ を解く。",
+                                "$-2\\alpha = -2 \\rightarrow \\alpha = 1$",
+                                "辺々から 1 を引いて変形。",
+                                "$a_{n+1} - 1 = 3(a_n - 1)$",
+                                "数列 $\\{a_n - 1\\}$ は、初項 $a_1 - 1 = 1$、公比 3 の等比数列。",
+                                "$a_n - 1 = 1 \\cdot 3^{n-1}$",
+                                "よって $a_n = 3^{n-1} + 1$"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

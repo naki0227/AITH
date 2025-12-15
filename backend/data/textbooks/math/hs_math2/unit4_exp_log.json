@@ -1,0 +1,61 @@
+{
+    "unit_id": "unit4_exp_log",
+    "unit_title": "第4章 指数・対数関数",
+    "order": 4,
+    "chapters": [
+        {
+            "title": "1. 指数関数",
+            "sections": [
+                {
+                    "title": "指数の拡張",
+                    "content_blocks": [
+                        {
+                            "type": "introduction",
+                            "text": "指数（右上の数）はこれまで整数でしたが、これを分数やマイナスに拡張します。"
+                        },
+                        {
+                            "type": "point",
+                            "title": "拡張ルール",
+                            "content": "- $a^0 = 1$\n- $a^{-n} = \\frac{1}{a^n}$\n- $a^{\\frac{1}{n}} = \\sqrt[n]{a}$"
+                        },
+                        {
+                            "type": "example_problem",
+                            "title": "例題1: 指数計算 (Level 2)",
+                            "problem": "$8^{-\\frac{2}{3}}$ を計算せよ。",
+                            "solution_steps": [
+                                "$8 = 2^3$ なので、",
+                                "$(2^3)^{-\\frac{2}{3}} = 2^{3 \\times (-\\frac{2}{3})} = 2^{-2}$",
+                                "$2^{-2} = \\frac{1}{2^2} = \\frac{1}{4}$",
+                                "答え: $\\frac{1}{4}$"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "2. 対数関数",
+            "sections": [
+                {
+                    "title": "対数の定義",
+                    "content_blocks": [
+                        {
+                            "type": "definition",
+                            "term": "対数 (log)",
+                            "definition": "$a^p = M$ のとき、$p = \\log_a M$ と書く。\n$a$ を底、$M$ を真数という。"
+                        },
+                        {
+                            "type": "example_problem",
+                            "title": "例題2: 対数の計算 (Level 1)",
+                            "problem": "$\\log_2 8$ の値を求めよ。",
+                            "solution_steps": [
+                                "$2$ を何乗したら $8$ になるか？",
+                                "$2^3 = 8$ なので、答えは 3。"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,75 @@
+{
+    "unit_id": "unit4_proportional",
+    "unit_title": "第4章 比例と反比例",
+    "order": 4,
+    "chapters": [
+        {
+            "title": "1. 比例",
+            "sections": [
+                {
+                    "title": "比例の意味と式",
+                    "content_blocks": [
+                        {
+                            "type": "definition",
+                            "term": "比例",
+                            "definition": "$y$ が $x$ の関数で、$y = ax$ （$a$は定数）という式で表されるとき、$y$ は $x$ に比例するという。"
+                        },
+                        {
+                            "type": "definition",
+                            "term": "比例定数",
+                            "definition": "比例の式 $y = ax$ における定数 $a$ のこと。"
+                        },
+                        {
+                            "type": "explanation",
+                            "markdown": "比例の特徴:\n- $x$ が2倍, 3倍...になると、$y$ も2倍, 3倍...になる。\n- $x$ の値が0でないとき、$\\frac{y}{x}$ の値は一定で $a$ に等しい。"
+                        }
+                    ]
+                },
+                {
+                    "title": "比例のグラフ",
+                    "content_blocks": [
+                        {
+                            "type": "point",
+                            "title": "比例のグラフの特徴",
+                            "content": "比例 $y = ax$ のグラフは、**原点を通る直線**になります。\n- $a > 0$ のとき: 右上がりの直線\n- $a < 0$ のとき: 右下がりの直線"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "2. 反比例",
+            "sections": [
+                {
+                    "title": "反比例の意味と式",
+                    "content_blocks": [
+                        {
+                            "type": "definition",
+                            "term": "反比例",
+                            "definition": "$y$ が $x$ の関数で、$y = \\frac{a}{x}$ ($xy = a$) という式で表されるとき、$y$ は $x$ に反比例するという。"
+                        },
+                        {
+                            "type": "explanation",
+                            "markdown": "反比例の特徴:\n- $x$ が2倍, 3倍...になると、$y$ は $\\frac{1}{2}$倍, $\\frac{1}{3}$倍...になる。\n- 積 $xy$ の値は一定で $a$ に等しい。"
+                        }
+                    ]
+                },
+                {
+                    "title": "反比例のグラフ",
+                    "content_blocks": [
+                        {
+                            "type": "definition",
+                            "term": "双曲線",
+                            "definition": "反比例のグラフのような、2本のなめらかな曲線。"
+                        },
+                        {
+                            "type": "point",
+                            "title": "反比例のグラフ",
+                            "content": "- 座標軸（x軸、y軸）とは決して交わらない。\n- $a > 0$ のとき: 第1象限と第3象限にある。\n- $a < 0$ のとき: 第2象限と第4象限にある。"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

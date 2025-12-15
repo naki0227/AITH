@@ -1,0 +1,57 @@
+{
+    "unit_id": "unit2_figures_equations",
+    "unit_title": "第2章 図形と方程式",
+    "order": 2,
+    "chapters": [
+        {
+            "title": "1. 点と直線",
+            "sections": [
+                {
+                    "title": "2点間の距離・内分点",
+                    "content_blocks": [
+                        {
+                            "type": "introduction",
+                            "text": "座標平面上で2つの点の距離を測ったり、その間を特定の比で分ける点の座標を求める公式です。これらは図形問題の基礎ツールになります。"
+                        },
+                        {
+                            "type": "point",
+                            "title": "内分点の公式",
+                            "content": "2点 $A(x_1, y_1), B(x_2, y_2)$ を $m:n$ に内分する点の座標は、\n$$ (\\frac{nx_1 + mx_2}{m+n}, \\frac{ny_1 + my_2}{m+n}) $$"
+                        },
+                        {
+                            "type": "example_problem",
+                            "title": "例題1: 内分点の計算 (Level 2)",
+                            "problem": "2点 A(1, 1), B(7, 4) を 2:1 に内分する点 P の座標を求めよ。",
+                            "solution_steps": [
+                                "公式に $m=2, n=1$ を代入する。",
+                                "x座標: $\\frac{1 \\cdot 1 + 2 \\cdot 7}{2+1} = \\frac{15}{3} = 5$",
+                                "y座標: $\\frac{1 \\cdot 1 + 2 \\cdot 4}{2+1} = \\frac{9}{3} = 3$",
+                                "答え: P(5, 3)"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "円の方程式",
+                    "content_blocks": [
+                        {
+                            "type": "point",
+                            "title": "基本形",
+                            "content": "中心 $(a, b)$、半径 $r$ の円の方程式は\n$$ (x-a)^2 + (y-b)^2 = r^2 $$"
+                        },
+                        {
+                            "type": "example_problem",
+                            "title": "例題2: 円の方程式 (Level 1)",
+                            "problem": "中心が $(-2, 3)$ で半径が 5 の円の方程式を求めよ。",
+                            "solution_steps": [
+                                "公式に $a=-2, b=3, r=5$ を代入する。",
+                                "$$ (x - (-2))^2 + (y - 3)^2 = 5^2 $$",
+                                "$$ (x+2)^2 + (y-3)^2 = 25 $$"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

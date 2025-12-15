@@ -1,0 +1,64 @@
+{
+    "unit_id": "practical_it_passport",
+    "unit_title": "ITパスポート",
+    "order": 1,
+    "chapters": [
+        {
+            "title": "1. 企業と法務",
+            "sections": [
+                {
+                    "title": "企業活動",
+                    "content_blocks": [
+                        {
+                            "type": "introduction",
+                            "text": "会社は「ヒト・モノ・カネ・ホウボウ（情報）」を使って活動しています。企業の社会的責任(CSR)や経営資源の管理手法を学びます。"
+                        },
+                        {
+                            "type": "definition",
+                            "term": "CSR (Corporate Social Responsibility)",
+                            "definition": "企業の社会的責任。利益追求だけでなく、環境保護や社会貢献活動を行う責任。"
+                        },
+                        {
+                            "type": "exercise",
+                            "problems": [
+                                {
+                                    "q": "PDCAサイクルの4つの要素は？",
+                                    "a": "Plan, Do, Check, Act"
+                                },
+                                {
+                                    "q": "BCPとは何の略？",
+                                    "a": "Business Continuity Plan (事業継続計画)"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "法務",
+                    "content_blocks": [
+                        {
+                            "type": "point",
+                            "title": "知的財産権",
+                            "content": "- 著作権: 創作した時点で発生。70年保護。\n- 特許権: 発明を保護。出願が必要。20年。\n- 商標権: ブランド名やロゴ。10年（更新可）。"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "2. ストラテジ系",
+            "sections": [
+                {
+                    "title": "マーケティング",
+                    "content_blocks": [
+                        {
+                            "type": "definition",
+                            "term": "SWOT分析",
+                            "definition": "自社の現状を、強み(Strength)、弱み(Weakness)、機会(Opportunity)、脅威(Threat)の4つに分けて分析する手法。"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

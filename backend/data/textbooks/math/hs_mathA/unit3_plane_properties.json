@@ -1,0 +1,42 @@
+{
+    "unit_id": "unit3_plane_properties",
+    "unit_title": "第3章 図形の性質",
+    "order": 3,
+    "chapters": [
+        {
+            "title": "1. 三角形の性質",
+            "sections": [
+                {
+                    "title": "チェバ・メネラウスの定理",
+                    "content_blocks": [
+                        {
+                            "type": "introduction",
+                            "text": "幾何学の問題で、比を求めるときに圧倒的な威力を発揮するのがチェバ・メネラウスの定理です。形をしっかり覚えましょう。"
+                        },
+                        {
+                            "type": "point",
+                            "title": "メネラウスの定理",
+                            "content": "三角形と直線が交わるとき、頂点→分点→頂点...と一周して掛け合わせると1になる。\n$$ \\frac{AP}{PB} \\cdot \\frac{BC}{CQ} \\cdot \\frac{QR}{RA} = 1 $$"
+                        },
+                        {
+                            "type": "example_problem",
+                            "title": "例題1: メネラウスの定理 (Level 2)",
+                            "problem": "$\\triangle ABC$ において、辺ABを2:1に内分する点をR、辺ACを1:2に内分する点をQとする。BQとCRの交点をO、直線AOと辺BCの交点をPとする。BP:PCを求めよ。",
+                            "solution_steps": [
+                                "チェバの定理を使う。",
+                                "頂点Aからスタートして、反時計回りに比を拾う。",
+                                "$$ \\frac{AR}{RB} \\cdot \\frac{BP}{PC} \\cdot \\frac{CQ}{QA} = 1 $$",
+                                "条件より、$\\frac{AR}{RB} = \\frac{2}{1}$、$\\frac{CQ}{QA} = \\frac{2}{1} ...$ 注意！ QA:AC=1:2ならCQ:QA=2:1。",
+                                "式に代入：",
+                                "$$ \\frac{2}{1} \\cdot \\frac{BP}{PC} \\cdot \\frac{2}{1} = 1 $$",
+                                "$$ 4 \\cdot \\frac{BP}{PC} = 1 $$",
+                                "$$ \\frac{BP}{PC} = \\frac{1}{4} $$",
+                                "答え: $BP:PC = 1:4$"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

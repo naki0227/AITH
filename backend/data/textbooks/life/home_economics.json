@@ -1,0 +1,22 @@
+{
+    "unit_id": "home_economics",
+    "unit_title": "家庭科総合",
+    "order": 1,
+    "chapters": [
+        {
+            "title": "1. 食生活",
+            "sections": [
+                {
+                    "title": "栄養素",
+                    "content_blocks": [
+                        {
+                            "type": "point",
+                            "title": "五大栄養素",
+                            "content": "炭水化物、脂質、タンパク質、無機質、ビタミン。"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

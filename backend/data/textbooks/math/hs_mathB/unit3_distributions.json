@@ -1,0 +1,46 @@
+{
+    "unit_id": "unit3_distributions",
+    "unit_title": "第3章 確率分布と統計的な推測",
+    "order": 3,
+    "chapters": [
+        {
+            "title": "1. 確率分布",
+            "sections": [
+                {
+                    "title": "期待値と分散",
+                    "content_blocks": [
+                        {
+                            "type": "introduction",
+                            "text": "宝くじで「平均いくら当たるか」が期待値です。データ分析の基礎となる統計量を学びます。"
+                        },
+                        {
+                            "type": "definition",
+                            "term": "期待値 (E)",
+                            "definition": "$$ E(X) = \\sum x_k p_k $$"
+                        },
+                        {
+                            "type": "example_problem",
+                            "title": "例題1: 期待値の計算 (Level 1)",
+                            "problem": "100円玉が表なら100点、裏なら0点のゲームを行う。期待値は？",
+                            "solution_steps": [
+                                "確率はそれぞれ $1/2$。",
+                                "$$ E = 100 \\times \\frac{1}{2} + 0 \\times \\frac{1}{2} = 50 $$",
+                                "答え: 50点"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "正規分布",
+                    "content_blocks": [
+                        {
+                            "type": "point",
+                            "title": "正規分布の性質",
+                            "content": "平均 $\\mu$、標準偏差 $\\sigma$ の正規分布 $N(\\mu, \\sigma^2)$ において、\n平均から $\\pm \\sigma$ の範囲に約 68% のデータが含まれる。"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

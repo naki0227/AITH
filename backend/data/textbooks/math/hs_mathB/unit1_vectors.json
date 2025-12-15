@@ -1,0 +1,58 @@
+{
+    "unit_id": "unit1_vectors",
+    "unit_title": "第1章 ベクトル",
+    "order": 1,
+    "chapters": [
+        {
+            "title": "1. 平面ベクトル",
+            "sections": [
+                {
+                    "title": "ベクトルの演算",
+                    "content_blocks": [
+                        {
+                            "type": "introduction",
+                            "text": "「向き」と「大きさ」を持つ量、それがベクトルです。風速、力、速度など、物理現象を理解するのに不可欠な概念です。"
+                        },
+                        {
+                            "type": "definition",
+                            "term": "ベクトルの和・差",
+                            "definition": "- $\\vec{a} + \\vec{b}$: 継ぎ足す（平行四辺形の対角線）。\n- $\\vec{a} - \\vec{b}$: 終点同士を結ぶ（$\\vec{b}$の先から$\\vec{a}$の先へ）。"
+                        },
+                        {
+                            "type": "example_problem",
+                            "title": "例題1: ベクトルの基本的性質 (Level 1)",
+                            "problem": "正六角形ABCDEFにおいて、$\\vec{AB}=\\vec{a}, \\vec{AF}=\\vec{b}$ とするとき、$\\vec{AD}$ を $\\vec{a}, \\vec{b}$ で表せ。",
+                            "solution_steps": [
+                                "図を描くと、$\\vec{AD}$ は中心を通る対角線。",
+                                "$\\vec{AD} = \\vec{AO} + \\vec{OD}$ と分解できる。",
+                                "ここで $\\vec{AO} = \\vec{AB} + \\vec{BO} = \\vec{a} + \\vec{b}$。",
+                                "$\\vec{OD}$ も同じ向きと大きさなので $\\vec{a} + \\vec{b}$。",
+                                "よって $\\vec{AD} = 2(\\vec{a} + \\vec{b})$"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "ベクトルの内積",
+                    "content_blocks": [
+                        {
+                            "type": "definition",
+                            "term": "内積 (Dot Product)",
+                            "definition": "$$\\vec{a} \\cdot \\vec{b} = |\\vec{a}||\\vec{b}| \\cos \\theta$$\n成分表示なら $x_1x_2 + y_1y_2$。仕事（物理）の計算などで使われる。"
+                        },
+                        {
+                            "type": "example_problem",
+                            "title": "例題2: 内積の計算 (Level 2)",
+                            "problem": "$|\\vec{a}|=2, |\\vec{b}|=3$、なす角が $60^\\circ$ のとき、内積 $\\vec{a} \\cdot \\vec{b}$ を求めよ。",
+                            "solution_steps": [
+                                "公式に代入する。",
+                                "$$ \\vec{a} \\cdot \\vec{b} = 2 \\times 3 \\times \\cos 60^\\circ $$",
+                                "$= 6 \\times \\frac{1}{2} = 3$"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

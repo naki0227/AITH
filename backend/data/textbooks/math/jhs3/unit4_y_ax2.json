@@ -1,0 +1,47 @@
+{
+    "unit_id": "unit4_y_ax2",
+    "unit_title": "第4章 関数y=ax²",
+    "order": 4,
+    "chapters": [
+        {
+            "title": "1. 関数 y=ax²",
+            "sections": [
+                {
+                    "title": "定義とグラフ",
+                    "content_blocks": [
+                        {
+                            "type": "definition",
+                            "term": "関数 y=ax²",
+                            "definition": "$y$ が $x$ の2乗に比例する関数。$a$ は比例定数。"
+                        },
+                        {
+                            "type": "point",
+                            "title": "放物線（ほうぶつせん）",
+                            "content": "$y=ax^2$ のグラフは、原点を通り、y軸について対称な曲線になる。\n- $a > 0$: 上に開いた形\n- $a < 0$: 下に開いた形"
+                        }
+                    ]
+                },
+                {
+                    "title": "変化の割合",
+                    "content_blocks": [
+                        {
+                            "type": "point",
+                            "title": "変化の割合の特徴",
+                            "content": "$y=ax^2$ では、変化の割合は一定ではない（$x$ の値によって変わる）。\n$x$ が $p$ から $q$ まで増加するときの変化の割合は $a(p+q)$ で求められる。"
+                        },
+                        {
+                            "type": "example_problem",
+                            "title": "例題: 変化の割合",
+                            "problem": "$y = 2x^2$ について、$x$ が 1 から 3 まで増加するときの変化の割合を求めなさい。",
+                            "solution_steps": [
+                                "公式を使うと: $2(1+3) = 2 \\times 4 = 8$。",
+                                "定義通り計算すると:\n$x=1$ のとき $y=2$\n$x=3$ のとき $y=18$\n変化の割合 = $\\frac{18-2}{3-1} = \\frac{16}{2} = 8$。",
+                                "答え: 8"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

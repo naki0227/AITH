@@ -1,0 +1,93 @@
+{
+    "unit_id": "science_hs_physics",
+    "unit_title": "高校物理",
+    "order": 1,
+    "chapters": [
+        {
+            "title": "1. 力学",
+            "sections": [
+                {
+                    "title": "運動の法則",
+                    "content_blocks": [
+                        {
+                            "type": "introduction",
+                            "text": "「なぜ物は動くのか？」この根源的な問いに答えるのがニュートンの運動の法則です。これを理解すれば、ロケットの軌道からボールの動きまで全て計算できます。"
+                        },
+                        {
+                            "type": "definition",
+                            "term": "運動方程式",
+                            "definition": "$$ ma = F $$\n$m$: 質量 (kg), $a$: 加速度 ($m/s^2$), $F$: 力 (N)\n「力は質量と加速度の積に等しい」"
+                        },
+                        {
+                            "type": "example_problem",
+                            "title": "例題1: 運動方程式 (Level 1)",
+                            "problem": "質量 $2.0\\text{kg}$ の物体に $10\\text{N}$ の力を加えたとき、生じる加速度の大きさはいくらか。",
+                            "solution_steps": [
+                                "運動方程式 $ma = F$ に代入する。",
+                                "$2.0 \\times a = 10$",
+                                "$a = 5.0$",
+                                "答え: $5.0 \\text{m/s}^2$"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "エネルギー保存則",
+                    "content_blocks": [
+                        {
+                            "type": "point",
+                            "title": "力学的エネルギー保存則",
+                            "content": "摩擦や空気抵抗がない場合、運動エネルギー $K$ と位置エネルギー $U$ の和は一定に保たれる。\n$$ \\frac{1}{2}mv^2 + mgh = \\text{一定} $$"
+                        },
+                        {
+                            "type": "example_problem",
+                            "title": "例題2: 自由落下とエネルギー (Level 2)",
+                            "problem": "高さ $10\\text{m}$ から物体を自由落下させた。地面に到達する直前の速さを求めよ。重力加速度は $9.8\\text{m/s}^2$ とする。",
+                            "solution_steps": [
+                                "最高点でのエネルギーは位置エネルギーのみ: $mgh = m \\times 9.8 \\times 10$",
+                                "地面でのエネルギーは運動エネルギーのみ: $\\frac{1}{2}mv^2$",
+                                "これらが等しいので、",
+                                "$m \\times 9.8 \\times 10 = \\frac{1}{2}mv^2$",
+                                "両辺を $m$ で割る。",
+                                "$98 = \\frac{1}{2}v^2$",
+                                "$v^2 = 196$",
+                                "$v = \\sqrt{196} = 14$",
+                                "答え: $14 \\text{m/s}$"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "2. 電磁気",
+            "sections": [
+                {
+                    "title": "クーロンの法則",
+                    "content_blocks": [
+                        {
+                            "type": "introduction",
+                            "text": "電気のプラスとプラスは反発し、プラスとマイナスは引き合います。その力の大きさは距離の2乗に反比例します。"
+                        },
+                        {
+                            "type": "definition",
+                            "term": "クーロンの法則",
+                            "definition": "$$ F = k \\frac{q_1 q_2}{r^2} $$\n$k$: 比例定数、$q$: 電気量、$r$: 距離"
+                        },
+                        {
+                            "type": "example_problem",
+                            "title": "例題3: 静電気力 (Level 2)",
+                            "problem": "電気量 $2\\text{C}$ と $3\\text{C}$ の点電荷が $2\\text{m}$ 離れているときに働く力の大きさは、比例定数を $k$ としてどのように表されるか。",
+                            "solution_steps": [
+                                "公式に代入する。",
+                                "$F = k \\frac{2 \\times 3}{2^2}$",
+                                "$= k \\frac{6}{4} = \\frac{3}{2}k$",
+                                "答え: $\\frac{3}{2}k \\text{[N]}$"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

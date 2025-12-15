@@ -1,0 +1,67 @@
+{
+    "unit_id": "unit7_data_analysis",
+    "unit_title": "第7章 データの活用",
+    "order": 7,
+    "chapters": [
+        {
+            "title": "1. データの分布",
+            "sections": [
+                {
+                    "title": "度数分布表とヒストグラム",
+                    "content_blocks": [
+                        {
+                            "type": "definition",
+                            "term": "階級",
+                            "definition": "データを区切った区間。"
+                        },
+                        {
+                            "type": "definition",
+                            "term": "度数",
+                            "definition": "各階級に入っているデータの個数。"
+                        },
+                        {
+                            "type": "definition",
+                            "term": "ヒストグラム",
+                            "definition": "度数分布表を柱状グラフで表したもの。"
+                        }
+                    ]
+                },
+                {
+                    "title": "代表値",
+                    "content_blocks": [
+                        {
+                            "type": "point",
+                            "title": "3つの代表値",
+                            "content": "1. **平均値 (Mean)**: データの合計 $\\div$ 個数\n2. **中央値 (Median)**: 大きさ順に並べたときの中央の値\n3. **最頻値 (Mode)**: 最も多く現れる値（度数が最大の階級の階級値）"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "2. 近似値と有効数字",
+            "sections": [
+                {
+                    "title": "近似値",
+                    "content_blocks": [
+                        {
+                            "type": "definition",
+                            "term": "近似値",
+                            "definition": "真の値に近い値（測定値など）。"
+                        },
+                        {
+                            "type": "definition",
+                            "term": "誤差",
+                            "definition": "$(\\text{誤差}) = (\\text{近似値}) - (\\text{真の値})$"
+                        },
+                        {
+                            "type": "point",
+                            "title": "有効数字",
+                            "content": "信頼できる桁数のこと。\n例: $12.3$km の有効数字は3桁。\n$1.23 \\times 10^4$ のように、$(\\text{整数部分が1桁の数}) \\times 10^n$ の形で表す。"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

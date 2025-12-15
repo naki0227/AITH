@@ -1,0 +1,26 @@
+{
+    "unit_id": "liberal_arts_law",
+    "unit_title": "法学・憲法",
+    "order": 1,
+    "chapters": [
+        {
+            "title": "1. 統治機構",
+            "sections": [
+                {
+                    "title": "三権分立",
+                    "content_blocks": [
+                        {
+                            "type": "introduction",
+                            "text": "権力の集中による暴走を防ぐため、立法・行政・司法の3つに権力を分け、相互に抑制し合う仕組みです。"
+                        },
+                        {
+                            "type": "point",
+                            "title": "チェック・アンド・バランス",
+                            "content": "- 内閣→国会: 衆議院の解散\n- 国会→内閣: 内閣不信任決議\n- 裁判所→国会・内閣: 違憲立法審査権"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

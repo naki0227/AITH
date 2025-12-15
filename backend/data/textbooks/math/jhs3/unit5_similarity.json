@@ -1,0 +1,62 @@
+{
+    "unit_id": "unit5_similarity",
+    "unit_title": "第5章 相似な図形",
+    "order": 5,
+    "chapters": [
+        {
+            "title": "1. 相似な図形",
+            "sections": [
+                {
+                    "title": "相似の意味",
+                    "content_blocks": [
+                        {
+                            "type": "definition",
+                            "term": "相似（そうじ）",
+                            "definition": "1つの図形を拡大または縮小した関係。記号 $\\sim$ で表す。"
+                        },
+                        {
+                            "type": "point",
+                            "title": "相似な図形の性質",
+                            "content": "1. 対応する角の大きさはそれぞれ等しい。\n2. 対応する辺の長さの比は全て等しい（この比を**相似比**という）。"
+                        }
+                    ]
+                },
+                {
+                    "title": "三角形の相似条件",
+                    "content_blocks": [
+                        {
+                            "type": "point",
+                            "title": "3つの相似条件",
+                            "content": "1. **3組の辺の比**がすべて等しい。\n2. **2組の辺の比とその間の角**がそれぞれ等しい。\n3. **2組の角**がそれぞれ等しい。（これが最もよく使われる）"
+                        }
+                    ]
+                },
+                {
+                    "title": "平行線と線分の比",
+                    "content_blocks": [
+                        {
+                            "type": "point",
+                            "title": "中点連結定理",
+                            "content": "三角形の2辺の中点を結ぶ線分は、底辺に平行で、長さは底辺の半分になる。\n$$ MN // BC, MN = \\frac{1}{2}BC $$"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "2. 相似の利用",
+            "sections": [
+                {
+                    "title": "面積比と体積比",
+                    "content_blocks": [
+                        {
+                            "type": "point",
+                            "title": "相似比と計量",
+                            "content": "相似比が $m:n$ ならば、\n- **面積比**は $m^2 : n^2$\n- **体積比**は $m^3 : n^3$"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

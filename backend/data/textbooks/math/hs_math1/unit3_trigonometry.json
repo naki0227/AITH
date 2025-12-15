@@ -1,0 +1,118 @@
+{
+    "unit_id": "unit3_trigonometry",
+    "unit_title": "第3章 図形と計量（三角比）",
+    "order": 3,
+    "chapters": [
+        {
+            "title": "1. 三角比の定義",
+            "sections": [
+                {
+                    "title": "サイン・コサイン・タンジェント",
+                    "content_blocks": [
+                        {
+                            "type": "introduction",
+                            "text": "ピラミッドの高さや、川の向こう岸までの距離など、直接測れない長さを計算するために生まれたのが「三角比」です。直角三角形の「角度」と「辺の比」の関係を使います。"
+                        },
+                        {
+                            "type": "definition",
+                            "term": "三角比 (sin, cos, tan)",
+                            "definition": "直角三角形の鋭角 $\\theta$ に対して\n- **sin (正弦)** $\\theta = \\frac{\\text{対辺}}{\\text{斜辺}}$\n- **cos (余弦)** $\\theta = \\frac{\\text{底辺}}{\\text{斜辺}}$\n- **tan (正接)** $\\theta = \\frac{\\text{対辺}}{\\text{底辺}}$"
+                        },
+                        {
+                            "type": "point",
+                            "title": "覚え方（筆記体）",
+                            "content": "- $s$ の筆記体は斜辺から対辺へ (sin)\n- $c$ の筆記体は斜辺から底辺へ (cos)\n- $t$ の筆記体は底辺から対辺へ (tan)"
+                        },
+                        {
+                            "type": "example_problem",
+                            "title": "例題1: 三角比の値を求める (Level 1)",
+                            "problem": "直角三角形ABCにおいて、$C=90^\\circ, AB=5, BC=4, AC=3$ のとき、$\\sin A, \\cos A, \\tan A$ の値を求めよ。",
+                            "solution_steps": [
+                                "角Aに注目する。",
+                                "斜辺 = AB = 5",
+                                "対辺（Aの向かい）= BC = 4",
+                                "底辺（Aの隣）= AC = 3",
+                                "$$ \\sin A = \\frac{4}{5} $$",
+                                "$$ \\cos A = \\frac{3}{5} $$",
+                                "$$ \\tan A = \\frac{4}{3} $$"
+                            ]
+                        },
+                        {
+                            "type": "example_problem",
+                            "title": "例題2: 三角比から辺を求める (Level 2)",
+                            "problem": "傾斜角 $30^\\circ$ の坂道を $100m$ 歩いたとき、垂直方向に何m登ったことになるか。",
+                            "solution_steps": [
+                                "図を描くと、斜辺が100、角度が30°の直角三角形の「対辺」を求める問題。",
+                                "対辺/斜辺 = sin なので、",
+                                "$$ \\text{高さ} = 100 \\times \\sin 30^\\circ $$",
+                                "$\\sin 30^\\circ = \\frac{1}{2}$ なので、",
+                                "$$ 100 \\times \\frac{1}{2} = 50 $$",
+                                "答え: 50m"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "三角比の相互関係",
+                    "content_blocks": [
+                        {
+                            "type": "point",
+                            "title": "3つの重要公式",
+                            "content": "1. $\\tan\\theta = \\frac{\\sin\\theta}{\\cos\\theta}$\n2. $\\sin^2\\theta + \\cos^2\\theta = 1$\n3. $1 + \\tan^2\\theta = \\frac{1}{\\cos^2\\theta}$"
+                        },
+                        {
+                            "type": "example_problem",
+                            "title": "例題3: 相互関係の利用 (Level 2)",
+                            "problem": "鋭角 $\\theta$ について、$\\sin\\theta = \\frac{3}{5}$ のとき、$\\cos\\theta, \\tan\\theta$ の値を求めよ。",
+                            "solution_steps": [
+                                "公式 $\\sin^2\\theta + \\cos^2\\theta = 1$ を使う。",
+                                "$(\\frac{3}{5})^2 + \\cos^2\\theta = 1$",
+                                "$\\cos^2\\theta = 1 - \\frac{9}{25} = \\frac{16}{25}$",
+                                "$\\theta$ は鋭角なので $\\cos\\theta > 0$。",
+                                "よって $\\cos\\theta = \\frac{4}{5}$。",
+                                "次に $\\tan\\theta = \\frac{\\sin\\theta}{\\cos\\theta}$ を使う。",
+                                "$\\tan\\theta = \\frac{3/5}{4/5} = \\frac{3}{4}$"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "2. 正弦定理・余弦定理",
+            "sections": [
+                {
+                    "title": "正弦定理・余弦定理",
+                    "content_blocks": [
+                        {
+                            "type": "introduction",
+                            "text": "直角三角形でない一般の三角形でも、辺と角の関係を式にできるのが「正弦定理」と「余弦定理」です。三角形の決定問題（測量など）で必須のツールです。"
+                        },
+                        {
+                            "type": "point",
+                            "title": "正弦定理 (Sine Law)",
+                            "content": "$$ \\frac{a}{\\sin A} = \\frac{b}{\\sin B} = \\frac{c}{\\sin C} = 2R $$\n使いどころ：向かい合う「辺と角」のペアが分かっているとき。"
+                        },
+                        {
+                            "type": "point",
+                            "title": "余弦定理 (Cosine Law)",
+                            "content": "$$ a^2 = b^2 + c^2 - 2bc \\cos A $$\n使いどころ：2辺とその間の角から、残りの1辺を求めるとき。"
+                        },
+                        {
+                            "type": "example_problem",
+                            "title": "例題4: 余弦定理の利用 (Level 2)",
+                            "problem": "$\\triangle ABC$ において、$b=3, c=5, A=60^\\circ$ のとき、$a$ を求めなさい。",
+                            "solution_steps": [
+                                "2辺とその間の角が分かっているので、余弦定理を使います。",
+                                "$$ a^2 = 3^2 + 5^2 - 2 \\times 3 \\times 5 \\times \\cos 60^\\circ $$",
+                                "$\\cos 60^\\circ = \\frac{1}{2}$ なので、",
+                                "$$ a^2 = 9 + 25 - 30 \\times \\frac{1}{2} = 34 - 15 = 19 $$",
+                                "$a>0$ なので $a = \\sqrt{19}$"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
