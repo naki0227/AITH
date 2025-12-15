@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'dart:io' show Platform;
+import 'package:flutter/foundation.dart' show kIsWeb;
 import '../services/auth_service.dart';
 
 class LoginScreen extends StatefulWidget {
@@ -69,6 +71,24 @@ class _LoginScreenState extends State<LoginScreen> {
 
     try {
       await authService.signInAnonymously();
+      widget.onLoginSuccess();
+    } on FirebaseAuthException catch (e) {
+      setState(() {
+        _errorMessage = authService.getErrorMessage(e);
+      });
+    } finally {
+      if (mounted) {
+        setState(() => _isLoading = false);
+      }
+    }
+  Future<void> _handleSocialLogin(Future<UserCredential?> Function() method) async {
+    setState(() {
+      _isLoading = true;
+      _errorMessage = null;
+    });
+
+    try {
+      await method();
       widget.onLoginSuccess();
     } on FirebaseAuthException catch (e) {
       setState(() {
@@ -251,7 +271,48 @@ class _LoginScreenState extends State<LoginScreen> {
                                 ),
                         ),
                       ),
+                      const SizedBox(height: 24),
+                      
+                      // Social Login Divider
+                      Row(
+                        children: [
+                          Expanded(child: Divider(color: Colors.white24)),
+                          Padding(
+                            padding: const EdgeInsets.symmetric(horizontal: 16),
+                            child: Text('SNSでログイン', style: TextStyle(color: Colors.white60)),
+                          ),
+                          Expanded(child: Divider(color: Colors.white24)),
+                        ],
+                      ),
                       const SizedBox(height: 16),
+
+                      // Social Buttons
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        children: [
+                          // Google Button
+                          _SocialLoginButton(
+                            icon: 'assets/google_logo.png', // Ideally use an asset
+                            iconData: Icons.g_mobiledata, // Fallback
+                            label: 'Google',
+                            onPressed: _isLoading ? null : () => _handleSocialLogin(authService.signInWithGoogle),
+                            color: Colors.white,
+                            textColor: Colors.black87,
+                          ),
+                          
+                          // Apple Button (Only on iOS or Web)
+                          if (kIsWeb || Platform.isIOS || Platform.isMacOS)
+                          _SocialLoginButton(
+                            icon: 'assets/apple_logo.png', 
+                            iconData: Icons.apple,
+                            label: 'Apple',
+                            onPressed: _isLoading ? null : () => _handleSocialLogin(authService.signInWithApple),
+                            color: Colors.black,
+                            textColor: Colors.white,
+                          ),
+                        ],
+                      ),
+                      const SizedBox(height: 24),
 
                       // Toggle Login/Register
                       TextButton(
@@ -311,6 +372,39 @@ class _LoginScreenState extends State<LoginScreen> {
             ),
           ),
         ),
+      ),
+    );
+  }
+}
+
+class _SocialLoginButton extends StatelessWidget {
+  final String icon;
+  final IconData iconData;
+  final String label;
+  final VoidCallback? onPressed;
+  final Color color;
+  final Color textColor;
+
+  const _SocialLoginButton({
+    super.key,
+    required this.icon,
+    required this.iconData,
+    required this.label,
+    required this.onPressed,
+    required this.color,
+    required this.textColor,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return ElevatedButton.icon(
+      onPressed: onPressed,
+      icon: Icon(iconData, color: textColor),
+      label: Text(label, style: TextStyle(color: textColor)),
+      style: ElevatedButton.styleFrom(
+        backgroundColor: color,
+        padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30)),
       ),
     );
   }
