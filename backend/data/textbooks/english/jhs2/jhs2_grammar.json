@@ -16,16 +16,46 @@
                         {
                             "type": "point",
                             "title": "will と be going to",
-                            "content": "- will: その場で決めた意思、単純未来。「〜するよ」\n- be going to: 前から決めていた予定。「〜するつもりだ」"
+                            "content": "**will**\\n- その場で決めた意思、単純な未来\\n- I **will** help you.\\n\\n**be going to**\\n- 前から決めていた予定\\n- I **am going to** visit Kyoto next week."
                         },
                         {
                             "type": "example_problem",
-                            "title": "例題1: 書き換え (Level 2)",
-                            "problem": "I visit Kyoto tomorrow. を未来の文に（予定として）。\nI ( ) ( ) ( ) visit Kyoto tomorrow.",
+                            "title": "例題1: 未来形",
+                            "problem": "I visit Kyoto tomorrow. を未来の文に（予定として）。\\nI ( ) ( ) ( ) visit Kyoto tomorrow.",
                             "solution_steps": [
-                                "予定なので be going to を使う。",
-                                "I am going to ...",
-                                "答え: am going to"
+                                "予定なので be going to を使う",
+                                "答え: **am going to**"
+                            ]
+                        },
+                        {
+                            "type": "point",
+                            "title": "助動詞",
+                            "content": "**can**: 〜できる\\n**must**: 〜しなければならない\\n**may**: 〜してもよい、〜かもしれない\\n**should**: 〜すべき\\n\\n※ 助動詞の後は**動詞の原形**！"
+                        },
+                        {
+                            "type": "example_problem",
+                            "title": "例題2: 助動詞",
+                            "problem": "You ( ) be quiet in the library.",
+                            "solution_steps": [
+                                "図書館では静かにしなければならない",
+                                "答え: **must**"
+                            ]
+                        },
+                        {
+                            "type": "exercise",
+                            "problems": [
+                                {
+                                    "q": "He ( ) swim very fast. [できる]",
+                                    "a": "can"
+                                },
+                                {
+                                    "q": "It ( ) rain tomorrow. [かもしれない]",
+                                    "a": "may"
+                                },
+                                {
+                                    "q": "You ( ) study harder. [すべき]",
+                                    "a": "should"
+                                }
                             ]
                         }
                     ]
@@ -41,16 +71,94 @@
                         {
                             "type": "point",
                             "title": "3つの用法",
-                            "content": "1. 名詞的用法: 〜すること (I like to swim.)\n2. 形容詞的用法: 〜するための (books to read)\n3. 副詞的用法: 〜するために (I went there to study.)"
+                            "content": "1. **名詞的用法**: 〜すること\\n   - I like **to swim**.\\n2. **形容詞的用法**: 〜するための\\n   - I have a lot of books **to read**.\\n3. **副詞的用法**: 〜するために\\n   - I went there **to study**."
                         },
                         {
                             "type": "example_problem",
-                            "title": "例題2: 並べ替え (Level 2)",
-                            "problem": "私は英語を勉強するためにここに来ました。\n( came / here / I / English / study / to ).",
+                            "title": "例題3: 不定詞",
+                            "problem": "私は英語を勉強するためにここに来ました。\\n( came / here / I / English / study / to ).",
                             "solution_steps": [
                                 "主語＋動詞: I came here",
-                                "目的: to study English",
-                                "答え: I came here to study English."
+                                "目的（副詞的用法）: to study English",
+                                "答え: **I came here to study English.**"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "動名詞 (動詞+ing)",
+                    "content_blocks": [
+                        {
+                            "type": "point",
+                            "title": "動名詞の使い方",
+                            "content": "動詞に **-ing** をつけて「〜すること」を表す。\\n- I enjoy **reading** books.\\n- **Swimming** is fun."
+                        },
+                        {
+                            "type": "point",
+                            "title": "不定詞と動名詞の使い分け",
+                            "content": "**動名詞だけをとる動詞**: enjoy, finish, stop, mind など\\n**不定詞だけをとる動詞**: want, hope, decide など\\n**両方OK**: like, start, begin など"
+                        },
+                        {
+                            "type": "example_problem",
+                            "title": "例題4: 動名詞",
+                            "problem": "He finished ( ) his homework.",
+                            "solution_steps": [
+                                "finish は動名詞のみをとる",
+                                "答え: **doing**"
+                            ]
+                        },
+                        {
+                            "type": "exercise",
+                            "problems": [
+                                {
+                                    "q": "I want ( ) soccer. [play]",
+                                    "a": "to play"
+                                },
+                                {
+                                    "q": "She enjoys ( ) music. [listen]",
+                                    "a": "listening"
+                                },
+                                {
+                                    "q": "Stop ( ) so loud! [talk]",
+                                    "a": "talking"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "3. 比較",
+            "sections": [
+                {
+                    "title": "比較級と最上級",
+                    "content_blocks": [
+                        {
+                            "type": "point",
+                            "title": "比較の3つの形",
+                            "content": "**原級**: as ~ as （同じくらい）\\n**比較級**: ~er than / more ~ than （より〜）\\n**最上級**: the ~est / the most ~ （最も〜）"
+                        },
+                        {
+                            "type": "example_problem",
+                            "title": "例題5: 比較",
+                            "problem": "Ken is ( ) than Tom. [tall]",
+                            "solution_steps": [
+                                "比較級なので -er をつける",
+                                "答え: **taller**"
+                            ]
+                        },
+                        {
+                            "type": "exercise",
+                            "problems": [
+                                {
+                                    "q": "This flower is ( ) of all. [beautiful]",
+                                    "a": "the most beautiful"
+                                },
+                                {
+                                    "q": "He runs as ( ) as his brother.",
+                                    "a": "fast"
+                                }
                             ]
                         }
                     ]

@@ -4,40 +4,136 @@
     "order": 6,
     "chapters": [
         {
-            "title": "1. 不定積分と定積分",
+            "title": "1. 不定積分",
             "sections": [
                 {
-                    "title": "積分の計算",
+                    "title": "積分の概念",
                     "content_blocks": [
                         {
                             "type": "introduction",
-                            "text": "積分は微分の逆演算で、「面積」を求めるための道具です。"
+                            "text": "積分は微分の逆演算です。「微分したら $f(x)$ になる関数」を求めることを「$f(x)$ を積分する」といいます。"
+                        },
+                        {
+                            "type": "definition",
+                            "term": "不定積分",
+                            "definition": "$F'(x) = f(x)$ となる $F(x)$ を $f(x)$ の**原始関数**という。\\n$\\int f(x) dx = F(x) + C$ （$C$ は積分定数）"
                         },
                         {
                             "type": "point",
-                            "title": "積分の公式",
-                            "content": "$\\int x^n dx = \\frac{1}{n+1}x^{n+1} + C$ （Cは積分定数）"
+                            "title": "積分公式（基本）",
+                            "content": "$\\int x^n dx = \\frac{x^{n+1}}{n+1} + C$ （$n \\neq -1$）\\n$\\int c dx = cx + C$\\n$\\int (f + g) dx = \\int f dx + \\int g dx$"
                         },
                         {
                             "type": "example_problem",
-                            "title": "例題1: 不定積分 (Level 1)",
-                            "problem": "$\\int 3x^2 dx$ を求めよ。",
+                            "title": "例題1: 不定積分",
+                            "problem": "$\\int (3x^2 - 2x + 1) dx$ を求めよ。",
                             "solution_steps": [
-                                "$x^2$ を積分すると $\\frac{x^3}{3}$。",
-                                "$3 \\cdot \\frac{x^3}{3} = x^3$",
-                                "積分定数Cをつける。",
-                                "答え: $x^3 + C$"
+                                "$\\int 3x^2 dx = x^3$",
+                                "$\\int (-2x) dx = -x^2$",
+                                "$\\int 1 dx = x$",
+                                "答え: $x^3 - x^2 + x + C$"
+                            ]
+                        },
+                        {
+                            "type": "exercise",
+                            "problems": [
+                                {
+                                    "q": "$\\int 4x^3 dx$ を求めよ",
+                                    "a": "$x^4 + C$"
+                                },
+                                {
+                                    "q": "$\\int (x^2 + 3) dx$ を求めよ",
+                                    "a": "$\\frac{x^3}{3} + 3x + C$"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "2. 定積分",
+            "sections": [
+                {
+                    "title": "定積分の計算",
+                    "content_blocks": [
+                        {
+                            "type": "definition",
+                            "term": "定積分",
+                            "definition": "$\\int_a^b f(x) dx = [F(x)]_a^b = F(b) - F(a)$\\n積分定数 $C$ は消えるので不要"
+                        },
+                        {
+                            "type": "example_problem",
+                            "title": "例題2: 定積分",
+                            "problem": "$\\int_0^2 3x^2 dx$ を求めよ。",
+                            "solution_steps": [
+                                "$[x^3]_0^2 = 2^3 - 0^3 = 8$"
+                            ]
+                        },
+                        {
+                            "type": "point",
+                            "title": "定積分の性質",
+                            "content": "1. $\\int_a^b f(x) dx = -\\int_b^a f(x) dx$\\n2. $\\int_a^b cf(x) dx = c\\int_a^b f(x) dx$\\n3. $\\int_a^c f(x) dx = \\int_a^b f(x) dx + \\int_b^c f(x) dx$"
+                        }
+                    ]
+                },
+                {
+                    "title": "面積",
+                    "content_blocks": [
+                        {
+                            "type": "point",
+                            "title": "面積の公式",
+                            "content": "曲線 $y = f(x)$ と $x$ 軸の間の面積（$f(x) \\ge 0$ のとき）:\\n$$ S = \\int_a^b f(x) dx $$\\n$f(x) < 0$ の区間は絶対値をつける"
+                        },
+                        {
+                            "type": "example_problem",
+                            "title": "例題3: 面積（基本）",
+                            "problem": "曲線 $y = x^2$ と $x$ 軸、$x = 0$, $x = 1$ で囲まれた部分の面積を求めよ。",
+                            "solution_steps": [
+                                "$S = \\int_0^1 x^2 dx$",
+                                "$= [\\frac{x^3}{3}]_0^1 = \\frac{1}{3}$"
                             ]
                         },
                         {
                             "type": "example_problem",
-                            "title": "例題2: 定積分と面積 (Level 2)",
-                            "problem": "曲線 $y=x^2$ とx軸、および $x=1$ で囲まれた部分の面積を求めよ。",
+                            "title": "例題4: 2曲線間の面積",
+                            "problem": "$y = x^2$ と $y = x$ で囲まれた部分の面積を求めよ。",
                             "solution_steps": [
-                                "定積分 $\\int_0^1 x^2 dx$ を計算する。",
-                                "$= [\\frac{x^3}{3}]_0^1$",
-                                "$= \\frac{1^3}{3} - \\frac{0^3}{3} = \\frac{1}{3}$",
-                                "答え: $\\frac{1}{3}$"
+                                "交点: $x^2 = x$ より $x(x-1) = 0$, $x = 0, 1$",
+                                "$0 \\le x \\le 1$ で $x \\ge x^2$ なので",
+                                "$S = \\int_0^1 (x - x^2) dx$",
+                                "$= [\\frac{x^2}{2} - \\frac{x^3}{3}]_0^1 = \\frac{1}{2} - \\frac{1}{3} = \\frac{1}{6}$"
+                            ]
+                        },
+                        {
+                            "type": "point",
+                            "title": "6分の1公式",
+                            "content": "$y = a(x - \\alpha)(x - \\beta)$ ($\\alpha < \\beta$) と $x$ 軸で囲まれた面積:\\n$$ S = \\frac{|a|}{6}(\\beta - \\alpha)^3 $$"
+                        },
+                        {
+                            "type": "example_problem",
+                            "title": "例題5: 6分の1公式",
+                            "problem": "$y = x^2 - 4$ と $x$ 軸で囲まれた面積を求めよ。",
+                            "solution_steps": [
+                                "$y = (x+2)(x-2)$ より交点は $x = -2, 2$",
+                                "$S = \\frac{1}{6}(2 - (-2))^3 = \\frac{64}{6} = \\frac{32}{3}$"
+                            ]
+                        },
+                        {
+                            "type": "exercise",
+                            "problems": [
+                                {
+                                    "q": "$\\int_1^3 2x dx$ を計算せよ",
+                                    "a": "8"
+                                },
+                                {
+                                    "q": "$y = x^2$ と $y = 4$ で囲まれた面積は？",
+                                    "a": "$\\frac{32}{3}$"
+                                },
+                                {
+                                    "q": "$y = x(x-3)$ と $x$ 軸で囲まれた面積は？",
+                                    "a": "$\\frac{9}{2}$"
+                                }
                             ]
                         }
                     ]

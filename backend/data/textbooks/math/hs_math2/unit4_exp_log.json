@@ -11,22 +11,43 @@
                     "content_blocks": [
                         {
                             "type": "introduction",
-                            "text": "指数（右上の数）はこれまで整数でしたが、これを分数やマイナスに拡張します。"
+                            "text": "これまで指数は自然数でしたが、これを0、負の整数、分数に拡張することで、より多くの現象を表現できるようになります。"
                         },
                         {
                             "type": "point",
-                            "title": "拡張ルール",
-                            "content": "- $a^0 = 1$\n- $a^{-n} = \\frac{1}{a^n}$\n- $a^{\\frac{1}{n}} = \\sqrt[n]{a}$"
+                            "title": "指数の拡張",
+                            "content": "1. $a^0 = 1$ ($a \\neq 0$)\\n2. $a^{-n} = \\frac{1}{a^n}$\\n3. $a^{\\frac{m}{n}} = \\sqrt[n]{a^m} = (\\sqrt[n]{a})^m$"
+                        },
+                        {
+                            "type": "point",
+                            "title": "指数法則",
+                            "content": "$a^p \\cdot a^q = a^{p+q}$\\n$\\frac{a^p}{a^q} = a^{p-q}$\\n$(a^p)^q = a^{pq}$\\n$(ab)^p = a^p b^p$"
                         },
                         {
                             "type": "example_problem",
-                            "title": "例題1: 指数計算 (Level 2)",
+                            "title": "例題1: 指数計算",
                             "problem": "$8^{-\\frac{2}{3}}$ を計算せよ。",
                             "solution_steps": [
-                                "$8 = 2^3$ なので、",
-                                "$(2^3)^{-\\frac{2}{3}} = 2^{3 \\times (-\\frac{2}{3})} = 2^{-2}$",
-                                "$2^{-2} = \\frac{1}{2^2} = \\frac{1}{4}$",
-                                "答え: $\\frac{1}{4}$"
+                                "$8 = 2^3$ なので",
+                                "$(2^3)^{-\\frac{2}{3}} = 2^{3 \\times (-\\frac{2}{3})} = 2^{-2} = \\frac{1}{4}$"
+                            ]
+                        },
+                        {
+                            "type": "definition",
+                            "term": "指数関数",
+                            "definition": "$y = a^x$ ($a > 0$, $a \\neq 1$) を**指数関数**という。\\n- $a > 1$: 増加関数\\n- $0 < a < 1$: 減少関数"
+                        },
+                        {
+                            "type": "exercise",
+                            "problems": [
+                                {
+                                    "q": "$27^{\\frac{2}{3}}$ を計算せよ",
+                                    "a": "9"
+                                },
+                                {
+                                    "q": "$4^{-\\frac{3}{2}}$ を計算せよ",
+                                    "a": "$\\frac{1}{8}$"
+                                }
                             ]
                         }
                     ]
@@ -37,20 +58,75 @@
             "title": "2. 対数関数",
             "sections": [
                 {
-                    "title": "対数の定義",
+                    "title": "対数の定義と性質",
                     "content_blocks": [
                         {
                             "type": "definition",
-                            "term": "対数 (log)",
-                            "definition": "$a^p = M$ のとき、$p = \\log_a M$ と書く。\n$a$ を底、$M$ を真数という。"
+                            "term": "対数",
+                            "definition": "$a^p = M$ のとき $p = \\log_a M$ と書く。\\n- $a$: **底**（base）\\n- $M$: **真数**（$M > 0$）\\n読み方：「$a$ を底とする $M$ の対数」"
+                        },
+                        {
+                            "type": "point",
+                            "title": "対数の性質（同じ底）",
+                            "content": "1. $\\log_a MN = \\log_a M + \\log_a N$\\n2. $\\log_a \\frac{M}{N} = \\log_a M - \\log_a N$\\n3. $\\log_a M^r = r \\log_a M$\\n4. $\\log_a 1 = 0$,  $\\log_a a = 1$"
                         },
                         {
                             "type": "example_problem",
-                            "title": "例題2: 対数の計算 (Level 1)",
-                            "problem": "$\\log_2 8$ の値を求めよ。",
+                            "title": "例題2: 対数の計算",
+                            "problem": "$\\log_2 8 + \\log_2 4$ を計算せよ。",
                             "solution_steps": [
-                                "$2$ を何乗したら $8$ になるか？",
-                                "$2^3 = 8$ なので、答えは 3。"
+                                "$\\log_2 8 = 3$ ($2^3 = 8$)",
+                                "$\\log_2 4 = 2$ ($2^2 = 4$)",
+                                "答え: $3 + 2 = 5$",
+                                "（または $\\log_2 (8 \\times 4) = \\log_2 32 = 5$）"
+                            ]
+                        },
+                        {
+                            "type": "point",
+                            "title": "底の変換公式",
+                            "content": "$\\log_a M = \\frac{\\log_b M}{\\log_b a}$\\n特に $\\log_a b \\cdot \\log_b a = 1$"
+                        },
+                        {
+                            "type": "example_problem",
+                            "title": "例題3: 底の変換",
+                            "problem": "$\\log_4 8$ を計算せよ。",
+                            "solution_steps": [
+                                "$\\log_4 8 = \\frac{\\log_2 8}{\\log_2 4} = \\frac{3}{2}$"
+                            ]
+                        },
+                        {
+                            "type": "point",
+                            "title": "常用対数と自然対数",
+                            "content": "- **常用対数**: $\\log_{10} x$ を $\\log x$ と書く\\n- **自然対数**: $\\log_e x$ を $\\ln x$ と書く（$e \\approx 2.718$）"
+                        },
+                        {
+                            "type": "example_problem",
+                            "title": "例題4: 対数方程式",
+                            "problem": "$\\log_2 x + \\log_2 (x-2) = 3$ を解け。",
+                            "solution_steps": [
+                                "$\\log_2 x(x-2) = 3$",
+                                "$x(x-2) = 2^3 = 8$",
+                                "$x^2 - 2x - 8 = 0$",
+                                "$(x-4)(x+2) = 0$",
+                                "$x = 4$ or $x = -2$",
+                                "真数条件より $x > 0$, $x > 2$ なので $x = 4$"
+                            ]
+                        },
+                        {
+                            "type": "exercise",
+                            "problems": [
+                                {
+                                    "q": "$\\log_3 81$ の値は？",
+                                    "a": "4"
+                                },
+                                {
+                                    "q": "$\\log_2 16 - \\log_2 2$ の値は？",
+                                    "a": "3"
+                                },
+                                {
+                                    "q": "$\\log_9 27$ の値は？（底の変換を使う）",
+                                    "a": "$\\frac{3}{2}$"
+                                }
                             ]
                         }
                     ]

@@ -13,6 +13,7 @@ import 'package:google_fonts/google_fonts.dart';
 import '../constants.dart';
 import '../utils/latex_syntax.dart';
 import '../utils/latex_builder.dart';
+import '../widgets/math_aware_markdown.dart';
 
 // OfficialTextScreen - displays official curriculum texts
 class OfficialTextScreen extends StatefulWidget {
@@ -112,7 +113,14 @@ class _OfficialTextScreenState extends State<OfficialTextScreen> {
                           children: [
                             Text(chapter['title'], style: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.indigo)),
                             const Divider(),
-                            MarkdownBody(data: chapter['content']),
+                            MathAwareMarkdown(
+                                data: chapter['content'],
+                                styleSheet: MarkdownStyleSheet(
+                                  h1: const TextStyle(fontSize: 24, fontWeight: FontWeight.bold, color: Colors.indigo),
+                                  h2: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.indigo),
+                                  p: const TextStyle(fontSize: 16, height: 1.6),
+                                ),
+                              ),
                           ],
                         ),
                       ),

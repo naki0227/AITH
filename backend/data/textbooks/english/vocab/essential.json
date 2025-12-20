@@ -11,28 +11,126 @@
                     "content_blocks": [
                         {
                             "type": "introduction",
-                            "text": "英語の核心は動詞にあります。まずは最も頻繁に使われる10個の動詞のイメージを掴みましょう。"
+                            "text": "英語の核心は動詞にあります。最も頻繁に使われる動詞の「コアイメージ」を掴むと、様々な意味を一発で理解できます。"
                         },
                         {
                             "type": "definition",
                             "term": "have",
-                            "definition": "【コアイメージ】自分の領域に持っている。\n- I have a pen. (持っている)\n- I have a cat. (飼っている)\n- I have lunch. (食べる)"
+                            "definition": "【コアイメージ】自分の領域に持っている\\n- I have a pen. (持っている)\\n- I have a cat. (飼っている)\\n- I have lunch. (食べる)\\n- I have a cold. (風邪をひいている)"
                         },
                         {
                             "type": "definition",
                             "term": "take",
-                            "definition": "【コアイメージ】自分のところに取り込む。\n- take a bus (バスに乗る)\n- take a picture (写真を撮る/切り取る)"
+                            "definition": "【コアイメージ】自分のところに取り込む\\n- take a bus (バスに乗る)\\n- take a picture (写真を撮る)\\n- take a bath (風呂に入る)\\n- take medicine (薬を飲む)"
+                        },
+                        {
+                            "type": "definition",
+                            "term": "get",
+                            "definition": "【コアイメージ】手に入れる、ある状態になる\\n- get up (起きる)\\n- get home (家に着く)\\n- get angry (怒る)\\n- get married (結婚する)"
+                        },
+                        {
+                            "type": "definition",
+                            "term": "make",
+                            "definition": "【コアイメージ】作る、〜にさせる\\n- make breakfast (朝食を作る)\\n- make a mistake (間違える)\\n- make me happy (私を幸せにする)"
+                        },
+                        {
+                            "type": "definition",
+                            "term": "give",
+                            "definition": "【コアイメージ】与える\\n- give a present (プレゼントを渡す)\\n- give me a call (電話をくれる)\\n- give up (~をあきらめる)"
                         },
                         {
                             "type": "exercise",
                             "problems": [
                                 {
-                                    "q": "「電車に乗る」を英語で？ (t...)",
+                                    "q": "「電車に乗る」を英語で？",
                                     "a": "take a train"
                                 },
                                 {
-                                    "q": "「風邪をひいている」を英語で？ (I ... a cold)",
-                                    "a": "have"
+                                    "q": "「風邪をひいている」を英語で？",
+                                    "a": "have a cold"
+                                },
+                                {
+                                    "q": "「早く起きる」を英語で？",
+                                    "a": "get up early"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "2. 重要名詞・形容詞",
+            "sections": [
+                {
+                    "title": "頻出単語100",
+                    "content_blocks": [
+                        {
+                            "type": "point",
+                            "title": "時を表す単語",
+                            "content": "- today (今日) / yesterday (昨日) / tomorrow (明日)\\n- morning (朝) / afternoon (午後) / evening (夕方) / night (夜)\\n- week (週) / month (月) / year (年)"
+                        },
+                        {
+                            "type": "point",
+                            "title": "頻度を表す副詞",
+                            "content": "- always (いつも) 100%\\n- usually (たいてい) 80%\\n- often (よく) 60%\\n- sometimes (ときどき) 40%\\n- never (決して〜ない) 0%"
+                        },
+                        {
+                            "type": "point",
+                            "title": "感情を表す形容詞",
+                            "content": "- happy (幸せな) / sad (悲しい)\\n- angry (怒った) / surprised (驚いた)\\n- tired (疲れた) / excited (興奮した)\\n- worried (心配した) / interested (興味がある)"
+                        },
+                        {
+                            "type": "exercise",
+                            "problems": [
+                                {
+                                    "q": "「いつも」を英語で？",
+                                    "a": "always"
+                                },
+                                {
+                                    "q": "「驚いた」を英語で？",
+                                    "a": "surprised"
+                                },
+                                {
+                                    "q": "「興味がある」を英語で？",
+                                    "a": "interested"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "3. 熟語・イディオム",
+            "sections": [
+                {
+                    "title": "必須熟語50",
+                    "content_blocks": [
+                        {
+                            "type": "point",
+                            "title": "動詞句",
+                            "content": "- look for ~ (~を探す)\\n- look after ~ (~の世話をする)\\n- look forward to ~ (~を楽しみにする)\\n- get along with ~ (~と仲良くする)\\n- run out of ~ (~を使い果たす)"
+                        },
+                        {
+                            "type": "point",
+                            "title": "前置詞句",
+                            "content": "- in front of ~ (~の前に)\\n- instead of ~ (~の代わりに)\\n- because of ~ (~のために)\\n- in spite of ~ (~にもかかわらず)"
+                        },
+                        {
+                            "type": "exercise",
+                            "problems": [
+                                {
+                                    "q": "「〜を探す」を英語で？",
+                                    "a": "look for"
+                                },
+                                {
+                                    "q": "「〜の前に」を英語で？",
+                                    "a": "in front of"
+                                },
+                                {
+                                    "q": "「〜を楽しみにする」を英語で？",
+                                    "a": "look forward to"
                                 }
                             ]
                         }

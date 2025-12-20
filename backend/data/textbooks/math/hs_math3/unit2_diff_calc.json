@@ -4,29 +4,72 @@
     "order": 2,
     "chapters": [
         {
-            "title": "1. さまざまな関数の微分",
+            "title": "1. いろいろな関数の微分",
             "sections": [
+                {
+                    "title": "基本公式",
+                    "content_blocks": [
+                        {
+                            "type": "introduction",
+                            "text": "数IIIでは、三角関数、指数関数、対数関数など、あらゆる関数を微分します。"
+                        },
+                        {
+                            "type": "point",
+                            "title": "微分公式集",
+                            "content": "$(\\sin x)' = \\cos x$\\n$(\\cos x)' = -\\sin x$\\n$(\\tan x)' = \\frac{1}{\\cos^2 x}$\\n$(e^x)' = e^x$\\n$(\\ln x)' = \\frac{1}{x}$\\n$(a^x)' = a^x \\ln a$\\n$(\\log_a x)' = \\frac{1}{x \\ln a}$"
+                        },
+                        {
+                            "type": "example_problem",
+                            "title": "例題1: 三角関数の微分",
+                            "problem": "$y = \\sin x + \\cos x$ を微分せよ。",
+                            "solution_steps": [
+                                "$y' = \\cos x - \\sin x$"
+                            ]
+                        }
+                    ]
+                },
                 {
                     "title": "積・商の微分",
                     "content_blocks": [
                         {
-                            "type": "introduction",
-                            "text": "数IIでは整式の微分だけでしたが、数IIIでは分数関数、無理関数、三角関数などあらゆる関数を微分します。"
-                        },
-                        {
                             "type": "point",
-                            "title": "積の微分公式",
+                            "title": "積の微分",
                             "content": "$(fg)' = f'g + fg'$"
                         },
                         {
+                            "type": "point",
+                            "title": "商の微分",
+                            "content": "$\\left(\\frac{f}{g}\\right)' = \\frac{f'g - fg'}{g^2}$"
+                        },
+                        {
                             "type": "example_problem",
-                            "title": "例題1: 積の微分 (Level 2)",
+                            "title": "例題2: 積の微分",
                             "problem": "$y = x^2 \\sin x$ を微分せよ。",
                             "solution_steps": [
-                                "積の微分公式を使う。",
                                 "$y' = (x^2)' \\sin x + x^2 (\\sin x)'$",
-                                "$= 2x \\sin x + x^2 \\cos x$",
-                                "$= x(2\\sin x + x\\cos x)$"
+                                "$= 2x \\sin x + x^2 \\cos x$"
+                            ]
+                        },
+                        {
+                            "type": "example_problem",
+                            "title": "例題3: 商の微分",
+                            "problem": "$y = \\frac{e^x}{x}$ を微分せよ。",
+                            "solution_steps": [
+                                "$y' = \\frac{e^x \\cdot x - e^x \\cdot 1}{x^2}$",
+                                "$= \\frac{e^x(x - 1)}{x^2}$"
+                            ]
+                        },
+                        {
+                            "type": "exercise",
+                            "problems": [
+                                {
+                                    "q": "$y = x e^x$ を微分せよ",
+                                    "a": "$(x+1)e^x$"
+                                },
+                                {
+                                    "q": "$y = \\frac{\\sin x}{x}$ を微分せよ",
+                                    "a": "$\\frac{x\\cos x - \\sin x}{x^2}$"
+                                }
                             ]
                         }
                     ]
@@ -36,18 +79,59 @@
                     "content_blocks": [
                         {
                             "type": "point",
-                            "title": "合成関数の微分",
-                            "content": "$y = f(g(x))$ のとき $y' = f'(g(x)) \\cdot g'(x)$"
+                            "title": "連鎖律（Chain Rule）",
+                            "content": "$y = f(g(x))$ のとき\\n$\\frac{dy}{dx} = f'(g(x)) \\cdot g'(x)$\\n「外側を微分 × 中身を微分」"
                         },
                         {
                             "type": "example_problem",
-                            "title": "例題2: 合成関数の微分 (Level 3)",
-                            "problem": "$y = (3x+1)^4$ を微分せよ。",
+                            "title": "例題4: 合成関数",
+                            "problem": "$y = (3x + 1)^4$ を微分せよ。",
                             "solution_steps": [
-                                "まず全体を微分し、中身の微分を掛ける。",
-                                "$y' = 4(3x+1)^3 \\cdot (3x+1)'$",
-                                "$= 4(3x+1)^3 \\cdot 3$",
-                                "$= 12(3x+1)^3$"
+                                "外側: $(u^4)' = 4u^3$",
+                                "中身: $(3x+1)' = 3$",
+                                "$y' = 4(3x+1)^3 \\times 3 = 12(3x+1)^3$"
+                            ]
+                        },
+                        {
+                            "type": "example_problem",
+                            "title": "例題5: e^(関数)",
+                            "problem": "$y = e^{2x}$ を微分せよ。",
+                            "solution_steps": [
+                                "$y' = e^{2x} \\times 2 = 2e^{2x}$"
+                            ]
+                        },
+                        {
+                            "type": "exercise",
+                            "problems": [
+                                {
+                                    "q": "$y = \\sin 2x$ を微分せよ",
+                                    "a": "$2\\cos 2x$"
+                                },
+                                {
+                                    "q": "$y = \\ln(x^2 + 1)$ を微分せよ",
+                                    "a": "$\\frac{2x}{x^2+1}$"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "2. 微分の応用",
+            "sections": [
+                {
+                    "title": "増減と極値",
+                    "content_blocks": [
+                        {
+                            "type": "example_problem",
+                            "title": "例題6: 増減表",
+                            "problem": "$f(x) = x e^{-x}$ の極値を求めよ。",
+                            "solution_steps": [
+                                "$f'(x) = e^{-x} + x(-e^{-x}) = e^{-x}(1-x)$",
+                                "$f'(x) = 0$ より $x = 1$",
+                                "$x < 1$ で $f' > 0$（増加）、$x > 1$ で $f' < 0$（減少）",
+                                "$x = 1$ で極大値 $f(1) = \\frac{1}{e}$"
                             ]
                         }
                     ]

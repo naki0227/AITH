@@ -4,31 +4,152 @@
     "order": 3,
     "chapters": [
         {
-            "title": "1. 積分法とその応用",
+            "title": "1. 不定積分",
             "sections": [
                 {
-                    "title": "置換積分・部分積分",
+                    "title": "基本公式",
                     "content_blocks": [
                         {
                             "type": "introduction",
-                            "text": "複雑な関数の積分を解くための強力なテクニック、それが置換積分と部分積分です。"
+                            "text": "数IIIの積分では、三角関数、指数関数、対数関数などを積分します。置換積分と部分積分は非常に重要なテクニックです。"
                         },
                         {
                             "type": "point",
-                            "title": "部分積分法",
-                            "content": "$$ \\int f(x)g'(x) dx = f(x)g(x) - \\int f'(x)g(x) dx $$"
+                            "title": "積分公式集",
+                            "content": "$\\int \\cos x dx = \\sin x + C$\\n$\\int \\sin x dx = -\\cos x + C$\\n$\\int e^x dx = e^x + C$\\n$\\int \\frac{1}{x} dx = \\ln|x| + C$\\n$\\int a^x dx = \\frac{a^x}{\\ln a} + C$"
                         },
                         {
                             "type": "example_problem",
-                            "title": "例題1: 部分積分 (Level 3)",
+                            "title": "例題1: 基本積分",
+                            "problem": "$\\int (e^x + \\sin x) dx$ を求めよ。",
+                            "solution_steps": [
+                                "$= e^x - \\cos x + C$"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "置換積分",
+                    "content_blocks": [
+                        {
+                            "type": "point",
+                            "title": "置換積分法",
+                            "content": "$\\int f(g(x))g'(x) dx = \\int f(u) du$ （$u = g(x)$）"
+                        },
+                        {
+                            "type": "example_problem",
+                            "title": "例題2: 置換積分",
+                            "problem": "$\\int 2x \\cos(x^2) dx$ を求めよ。",
+                            "solution_steps": [
+                                "$u = x^2$ とおくと $du = 2x dx$",
+                                "$\\int \\cos u du = \\sin u + C$",
+                                "答え: $\\sin(x^2) + C$"
+                            ]
+                        },
+                        {
+                            "type": "exercise",
+                            "problems": [
+                                {
+                                    "q": "$\\int 3x^2 e^{x^3} dx$ を求めよ",
+                                    "a": "$e^{x^3} + C$"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "部分積分",
+                    "content_blocks": [
+                        {
+                            "type": "point",
+                            "title": "部分積分法",
+                            "content": "$\\int f(x)g'(x) dx = f(x)g(x) - \\int f'(x)g(x) dx$\\n覚え方: 「微分される方を $f$、積分される方を $g'$ に」"
+                        },
+                        {
+                            "type": "example_problem",
+                            "title": "例題3: 部分積分",
                             "problem": "$\\int x e^x dx$ を求めよ。",
                             "solution_steps": [
-                                "$f(x)=x, g'(x)=e^x$ とおく。",
-                                "$f'(x)=1, g(x)=e^x$。",
-                                "公式に代入。",
-                                "$= x e^x - \\int 1 \\cdot e^x dx$",
-                                "$= x e^x - e^x + C$",
-                                "$= e^x(x-1) + C$"
+                                "$f = x$, $g' = e^x$ とおく",
+                                "$f' = 1$, $g = e^x$",
+                                "$= x e^x - \\int e^x dx$",
+                                "$= x e^x - e^x + C = e^x(x-1) + C$"
+                            ]
+                        },
+                        {
+                            "type": "example_problem",
+                            "title": "例題4: ln xの積分",
+                            "problem": "$\\int \\ln x dx$ を求めよ。",
+                            "solution_steps": [
+                                "$f = \\ln x$, $g' = 1$ とおく",
+                                "$f' = \\frac{1}{x}$, $g = x$",
+                                "$= x \\ln x - \\int x \\cdot \\frac{1}{x} dx$",
+                                "$= x \\ln x - x + C$"
+                            ]
+                        },
+                        {
+                            "type": "exercise",
+                            "problems": [
+                                {
+                                    "q": "$\\int x \\cos x dx$ を求めよ",
+                                    "a": "$x \\sin x + \\cos x + C$"
+                                },
+                                {
+                                    "q": "$\\int x^2 e^x dx$ を求めよ（2回部分積分）",
+                                    "a": "$e^x(x^2 - 2x + 2) + C$"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "2. 定積分と応用",
+            "sections": [
+                {
+                    "title": "定積分",
+                    "content_blocks": [
+                        {
+                            "type": "example_problem",
+                            "title": "例題5: 定積分",
+                            "problem": "$\\int_0^{\\pi} \\sin x dx$ を求めよ。",
+                            "solution_steps": [
+                                "$[-\\cos x]_0^{\\pi}$",
+                                "$= -\\cos \\pi - (-\\cos 0)$",
+                                "$= -(-1) + 1 = 2$"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "面積・体積",
+                    "content_blocks": [
+                        {
+                            "type": "point",
+                            "title": "回転体の体積",
+                            "content": "曲線 $y = f(x)$ を $x$ 軸まわりに回転させた体積：\\n$V = \\pi \\int_a^b \\{f(x)\\}^2 dx$"
+                        },
+                        {
+                            "type": "example_problem",
+                            "title": "例題6: 回転体",
+                            "problem": "$y = \\sqrt{x}$ ($0 \\le x \\le 1$) を $x$ 軸まわりに回転させた体積を求めよ。",
+                            "solution_steps": [
+                                "$V = \\pi \\int_0^1 (\\sqrt{x})^2 dx = \\pi \\int_0^1 x dx$",
+                                "$= \\pi [\\frac{x^2}{2}]_0^1 = \\frac{\\pi}{2}$"
+                            ]
+                        },
+                        {
+                            "type": "exercise",
+                            "problems": [
+                                {
+                                    "q": "$\\int_0^1 e^x dx$ を求めよ",
+                                    "a": "$e - 1$"
+                                },
+                                {
+                                    "q": "$y = x$ ($0 \\le x \\le 1$) を $x$ 軸回転させた体積は？",
+                                    "a": "$\\frac{\\pi}{3}$"
+                                }
                             ]
                         }
                     ]

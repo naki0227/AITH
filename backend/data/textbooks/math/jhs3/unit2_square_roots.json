@@ -7,36 +7,114 @@
             "title": "1. 平方根の意味",
             "sections": [
                 {
-                    "title": "平方根",
+                    "title": "平方根とは",
                     "content_blocks": [
+                        {
+                            "type": "introduction",
+                            "text": "「2乗すると9になる数は？」と聞かれたら「3」と答えますよね。でも「-3」も2乗すると9になります。このような数を「平方根」といいます。"
+                        },
                         {
                             "type": "definition",
                             "term": "平方根",
-                            "definition": "2乗すると $a$ になる数。正の数 $a$ の平方根は、正と負の2つある。"
+                            "definition": "2乗すると $a$ になる数を $a$ の**平方根**といいます。正の数 $a$ の平方根は、**正と負の2つ**あります。\\n例: 9の平方根は $3$ と $-3$"
                         },
                         {
                             "type": "definition",
                             "term": "根号（ルート）",
-                            "definition": "記号 $\\sqrt{\\quad}$ 。正のほうを $\\sqrt{a}$、負のほうを $-\\sqrt{a}$ と書く。"
+                            "definition": "記号 $\\sqrt{\\quad}$ を**根号**（ルート）といいます。\\n- $\\sqrt{a}$: $a$ の平方根のうち**正のほう**\\n- $-\\sqrt{a}$: $a$ の平方根のうち**負のほう**\\n- $\\pm\\sqrt{a}$: 両方を表す"
+                        },
+                        {
+                            "type": "point",
+                            "title": "重要な性質",
+                            "content": "1. $(\\sqrt{a})^2 = a$（定義より）\\n2. $\\sqrt{a^2} = |a|$（$a$ の絶対値）\\n3. 0の平方根は0だけ\\n4. 負の数の平方根は実数では存在しない"
                         },
                         {
                             "type": "example_problem",
-                            "title": "例題: 平方根を求める",
-                            "problem": "36の平方根をいいなさい。",
+                            "title": "例題1: 平方根を求める",
+                            "problem": "次の数の平方根を求めなさい。\\n(1) 49\\n(2) 0.25\\n(3) $\\frac{4}{9}$",
                             "solution_steps": [
-                                "2乗して36になる数は、$6$ と $-6$ です。",
-                                "答え: $\\pm 6$"
+                                "(1) $7^2 = 49$ なので、平方根は $\\pm 7$",
+                                "(2) $0.5^2 = 0.25$ なので、平方根は $\\pm 0.5$",
+                                "(3) $(\\frac{2}{3})^2 = \\frac{4}{9}$ なので、平方根は $\\pm \\frac{2}{3}$"
+                            ]
+                        },
+                        {
+                            "type": "example_problem",
+                            "title": "例題2: ルートの値",
+                            "problem": "次の値を求めなさい。\\n(1) $\\sqrt{64}$\\n(2) $-\\sqrt{100}$\\n(3) $(\\sqrt{5})^2$",
+                            "solution_steps": [
+                                "(1) $8^2 = 64$ なので、$\\sqrt{64} = 8$",
+                                "(2) $10^2 = 100$ なので、$-\\sqrt{100} = -10$",
+                                "(3) 定義より $(\\sqrt{5})^2 = 5$"
+                            ]
+                        },
+                        {
+                            "type": "exercise",
+                            "problems": [
+                                {
+                                    "q": "81の平方根は？",
+                                    "a": "$\\pm 9$"
+                                },
+                                {
+                                    "q": "$\\sqrt{144}$ の値は？",
+                                    "a": "$12$"
+                                },
+                                {
+                                    "q": "$(-7)^2$ の平方根は？",
+                                    "a": "$\\pm 7$（$(-7)^2 = 49$）"
+                                }
                             ]
                         }
                     ]
                 },
                 {
-                    "title": "無理数",
+                    "title": "有理数と無理数",
                     "content_blocks": [
                         {
+                            "type": "introduction",
+                            "text": "数の世界をさらに広げましょう。分数で表せない数が存在します。"
+                        },
+                        {
                             "type": "definition",
-                            "term": "有理数・無理数",
-                            "definition": "- **有理数**: 分数 $\\frac{m}{n}$ ($m, n$は整数) の形で表せる数。\n- **無理数**: 分数で表せない数。循環しない無限小数になる（例: $\\pi, \\sqrt{2}$）。"
+                            "term": "有理数",
+                            "definition": "$\\frac{m}{n}$（$m, n$ は整数、$n \\neq 0$）の形で表せる数を**有理数**といいます。有限小数や循環小数は有理数です。"
+                        },
+                        {
+                            "type": "definition",
+                            "term": "無理数",
+                            "definition": "分数で表せない数を**無理数**といいます。循環しない無限小数になります。\\n例: $\\sqrt{2} = 1.41421356...$、$\\pi = 3.14159265...$"
+                        },
+                        {
+                            "type": "point",
+                            "title": "無理数の見分け方",
+                            "content": "$\\sqrt{n}$ が無理数になるのは、$n$ が**平方数でない**とき。\\n- $\\sqrt{4} = 2$（有理数）\\n- $\\sqrt{5}$（無理数）\\n- $\\sqrt{9} = 3$（有理数）"
+                        },
+                        {
+                            "type": "example_problem",
+                            "title": "例題3: 有理数か無理数か",
+                            "problem": "次の数が有理数か無理数か答えなさい。\\n(1) $\\sqrt{16}$\\n(2) $\\sqrt{7}$\\n(3) $0.333...$（循環小数）",
+                            "solution_steps": [
+                                "(1) $\\sqrt{16} = 4$ なので**有理数**",
+                                "(2) 7は平方数でないので**無理数**",
+                                "(3) $0.333... = \\frac{1}{3}$ なので**有理数**"
+                            ]
+                        },
+                        {
+                            "type": "exercise",
+                            "problems": [
+                                {
+                                    "q": "$\\sqrt{25}$ は有理数か無理数か？",
+                                    "a": "有理数（$= 5$）"
+                                },
+                                {
+                                    "q": "$\\sqrt{3}$ は有理数か無理数か？",
+                                    "a": "無理数"
+                                },
+                                {
+                                    "q": "$\\pi$ は有理数か無理数か？",
+                                    "a": "無理数"
+                                }
+                            ]
                         }
                     ]
                 }
@@ -46,35 +124,146 @@
             "title": "2. 根号をふくむ式の計算",
             "sections": [
                 {
-                    "title": "乗法・除法",
+                    "title": "乗法と除法",
                     "content_blocks": [
                         {
-                            "type": "point",
-                            "title": "計算ルール",
-                            "content": "1. $\\sqrt{a} \\times \\sqrt{b} = \\sqrt{ab}$\n2. $\\frac{\\sqrt{a}}{\\sqrt{b}} = \\sqrt{\\frac{a}{b}}$"
+                            "type": "introduction",
+                            "text": "ルートを含む式の計算には、特別なルールがあります。"
                         },
                         {
                             "type": "point",
-                            "title": "変形",
-                            "content": "$\\sqrt{a^2 b} = a\\sqrt{b}$ のように、根号の中をできるだけ小さい整数にします。\n例: $\\sqrt{12} = \\sqrt{2^2 \\times 3} = 2\\sqrt{3}$"
+                            "title": "乗法・除法のルール",
+                            "content": "**乗法**: $\\sqrt{a} \\times \\sqrt{b} = \\sqrt{ab}$\\n**除法**: $\\frac{\\sqrt{a}}{\\sqrt{b}} = \\sqrt{\\frac{a}{b}}$\\n\\n※ $a > 0, b > 0$ のとき成り立つ"
+                        },
+                        {
+                            "type": "example_problem",
+                            "title": "例題4: ルートの乗除",
+                            "problem": "次の計算をしなさい。\\n(1) $\\sqrt{2} \\times \\sqrt{3}$\\n(2) $\\sqrt{15} \\div \\sqrt{5}$",
+                            "solution_steps": [
+                                "(1) $\\sqrt{2 \\times 3} = \\sqrt{6}$",
+                                "(2) $\\sqrt{\\frac{15}{5}} = \\sqrt{3}$"
+                            ]
+                        },
+                        {
+                            "type": "point",
+                            "title": "根号の中を簡単にする",
+                            "content": "$\\sqrt{a^2 b} = a\\sqrt{b}$ のように、根号の中をできるだけ小さくします。\\n\\n例: $\\sqrt{12} = \\sqrt{4 \\times 3} = \\sqrt{4} \\times \\sqrt{3} = 2\\sqrt{3}$"
+                        },
+                        {
+                            "type": "example_problem",
+                            "title": "例題5: 根号を簡単に",
+                            "problem": "次の式を簡単にしなさい。\\n(1) $\\sqrt{18}$\\n(2) $\\sqrt{48}$\\n(3) $\\sqrt{75}$",
+                            "solution_steps": [
+                                "(1) $\\sqrt{18} = \\sqrt{9 \\times 2} = 3\\sqrt{2}$",
+                                "(2) $\\sqrt{48} = \\sqrt{16 \\times 3} = 4\\sqrt{3}$",
+                                "(3) $\\sqrt{75} = \\sqrt{25 \\times 3} = 5\\sqrt{3}$"
+                            ]
+                        },
+                        {
+                            "type": "exercise",
+                            "problems": [
+                                {
+                                    "q": "$\\sqrt{5} \\times \\sqrt{7}$",
+                                    "a": "$\\sqrt{35}$"
+                                },
+                                {
+                                    "q": "$\\sqrt{20}$ を簡単に",
+                                    "a": "$2\\sqrt{5}$"
+                                },
+                                {
+                                    "q": "$\\sqrt{72}$ を簡単に",
+                                    "a": "$6\\sqrt{2}$"
+                                }
+                            ]
                         }
                     ]
                 },
                 {
-                    "title": "有理化",
+                    "title": "加法と減法",
                     "content_blocks": [
                         {
-                            "type": "definition",
-                            "term": "分母の有理化",
-                            "definition": "分母に根号がない形に変形すること。"
+                            "type": "introduction",
+                            "text": "ルートの足し算・引き算は、根号の中が同じもの同士でしかできません。"
+                        },
+                        {
+                            "type": "point",
+                            "title": "加法・減法のルール",
+                            "content": "根号の中が**同じ**ときだけ、係数を足し引きできます。\\n$$ 3\\sqrt{2} + 5\\sqrt{2} = 8\\sqrt{2} $$\\n$$ 4\\sqrt{3} - \\sqrt{3} = 3\\sqrt{3} $$\\n\\n※ $\\sqrt{2} + \\sqrt{3}$ はこれ以上計算できません。"
                         },
                         {
                             "type": "example_problem",
-                            "title": "例題: 有理化",
-                            "problem": "$\\frac{1}{\\sqrt{2}}$ を有理化しなさい。",
+                            "title": "例題6: ルートの加減",
+                            "problem": "次の計算をしなさい。\\n(1) $2\\sqrt{5} + 3\\sqrt{5}$\\n(2) $\\sqrt{12} + \\sqrt{27}$",
                             "solution_steps": [
-                                "分母と分子に同じ $\\sqrt{2}$ をかけます。",
-                                "$$ \\frac{1 \\times \\sqrt{2}}{\\sqrt{2} \\times \\sqrt{2}} = \\frac{\\sqrt{2}}{2} $$"
+                                "(1) 根号の中が同じなので係数を足します。",
+                                "$2\\sqrt{5} + 3\\sqrt{5} = 5\\sqrt{5}$",
+                                "(2) まず簡単にします。",
+                                "$\\sqrt{12} = 2\\sqrt{3}$, $\\sqrt{27} = 3\\sqrt{3}$",
+                                "$2\\sqrt{3} + 3\\sqrt{3} = 5\\sqrt{3}$"
+                            ]
+                        },
+                        {
+                            "type": "exercise",
+                            "problems": [
+                                {
+                                    "q": "$4\\sqrt{7} - 2\\sqrt{7}$",
+                                    "a": "$2\\sqrt{7}$"
+                                },
+                                {
+                                    "q": "$\\sqrt{8} + \\sqrt{18}$",
+                                    "a": "$5\\sqrt{2}$"
+                                },
+                                {
+                                    "q": "$\\sqrt{50} - \\sqrt{32}$",
+                                    "a": "$\\sqrt{2}$"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "分母の有理化",
+                    "content_blocks": [
+                        {
+                            "type": "introduction",
+                            "text": "分母にルートがある場合、それを消す操作を「有理化」といいます。"
+                        },
+                        {
+                            "type": "definition",
+                            "term": "分母の有理化",
+                            "definition": "分母に根号がない形に変形することを**分母の有理化**といいます。"
+                        },
+                        {
+                            "type": "point",
+                            "title": "有理化の方法",
+                            "content": "分母と分子に同じ根号をかけます。\\n$$ \\frac{1}{\\sqrt{a}} = \\frac{1 \\times \\sqrt{a}}{\\sqrt{a} \\times \\sqrt{a}} = \\frac{\\sqrt{a}}{a} $$"
+                        },
+                        {
+                            "type": "example_problem",
+                            "title": "例題7: 有理化",
+                            "problem": "次の式を有理化しなさい。\\n(1) $\\frac{1}{\\sqrt{3}}$\\n(2) $\\frac{6}{\\sqrt{2}}$",
+                            "solution_steps": [
+                                "(1) 分母と分子に $\\sqrt{3}$ をかけます。",
+                                "$\\frac{\\sqrt{3}}{3}$",
+                                "(2) 分母と分子に $\\sqrt{2}$ をかけます。",
+                                "$\\frac{6\\sqrt{2}}{2} = 3\\sqrt{2}$"
+                            ]
+                        },
+                        {
+                            "type": "exercise",
+                            "problems": [
+                                {
+                                    "q": "$\\frac{2}{\\sqrt{5}}$ を有理化",
+                                    "a": "$\\frac{2\\sqrt{5}}{5}$"
+                                },
+                                {
+                                    "q": "$\\frac{\\sqrt{3}}{\\sqrt{6}}$ を有理化",
+                                    "a": "$\\frac{\\sqrt{2}}{2}$"
+                                },
+                                {
+                                    "q": "$\\frac{4}{\\sqrt{8}}$ を有理化",
+                                    "a": "$\\sqrt{2}$"
+                                }
                             ]
                         }
                     ]

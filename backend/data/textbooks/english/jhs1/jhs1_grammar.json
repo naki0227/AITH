@@ -16,15 +16,42 @@
                         {
                             "type": "point",
                             "title": "be動詞の使い分け",
-                            "content": "- I am ~.\n- You are ~.\n- He/She/It is ~."
+                            "content": "**現在形**\\n- I → **am**\\n- You/We/They → **are**\\n- He/She/It → **is**\\n\\n**過去形**\\n- I/He/She/It → **was**\\n- You/We/They → **were**"
                         },
                         {
                             "type": "example_problem",
-                            "title": "例題1: 穴埋め (Level 1)",
-                            "problem": "私はケンです。\nI ( ) Ken.",
+                            "title": "例題1: be動詞の選択",
+                            "problem": "適切なbe動詞を選びなさい。\\n(1) I ( ) a student.\\n(2) She ( ) busy yesterday.",
                             "solution_steps": [
-                                "主語が I なので、be動詞は am。",
-                                "答え: am"
+                                "(1) 主語がIなので **am**",
+                                "(2) 主語がShe、過去（yesterday）なので **was**"
+                            ]
+                        },
+                        {
+                            "type": "point",
+                            "title": "否定文と疑問文",
+                            "content": "**否定文**: be動詞の後に **not**\\n- I am not tired.\\n\\n**疑問文**: be動詞を主語の前に\\n- Are you a student? - Yes, I am. / No, I'm not."
+                        },
+                        {
+                            "type": "example_problem",
+                            "title": "例題2: 疑問文への変換",
+                            "problem": "This is your book. を疑問文にしなさい。",
+                            "solution_steps": [
+                                "be動詞 is を文頭に移動",
+                                "答え: **Is this your book?**"
+                            ]
+                        },
+                        {
+                            "type": "exercise",
+                            "problems": [
+                                {
+                                    "q": "They ( ) happy now.",
+                                    "a": "are"
+                                },
+                                {
+                                    "q": "He ( ) not at home yesterday.",
+                                    "a": "was"
+                                }
                             ]
                         }
                     ]
@@ -34,21 +61,94 @@
                     "content_blocks": [
                         {
                             "type": "introduction",
-                            "text": "「食べる」「走る」「好き」など、動作や状態を表すのが一般動詞です。be動詞と一緒に使ってはいけません（ing形などは除く）。"
+                            "text": "「食べる」「走る」「好き」など、動作や状態を表すのが一般動詞です。be動詞と混ぜてはいけません！"
                         },
                         {
                             "type": "point",
                             "title": "三単現のS",
-                            "content": "主語が「I, You以外」で「1人・1つ（単数）」のとき、動詞に s をつける。\n- He plays soccer."
+                            "content": "主語が「三人称単数（he, she, it, Ken, my mother など）」で、時制が現在のとき、動詞に **s** をつける。\\n- He **plays** soccer.\\n- She **studies** English. (yをiに変えてes)\\n- My father **watches** TV. (chにはes)"
                         },
                         {
                             "type": "example_problem",
-                            "title": "例題2: 三単現 (Level 2)",
-                            "problem": "彼はテニスをします。\nHe ( ) tennis.",
+                            "title": "例題3: 三単現S",
+                            "problem": "彼はテニスをします。\\nHe ( ) tennis.",
                             "solution_steps": [
-                                "「する（スポーツを）」は play。",
-                                "主語が He（三人称単数）なので、s をつける。",
-                                "答え: plays"
+                                "「する（スポーツを）」は play",
+                                "主語が He（三人称単数）なので s をつける",
+                                "答え: **plays**"
+                            ]
+                        },
+                        {
+                            "type": "point",
+                            "title": "否定文と疑問文",
+                            "content": "**否定文**: do/does not + 動詞の原形\\n- I **don't** like fish.\\n- He **doesn't** play soccer.\\n\\n**疑問文**: Do/Does + 主語 + 動詞の原形?\\n- **Do** you like music? - Yes, I do. / No, I don't.\\n- **Does** she speak English? - Yes, she does."
+                        },
+                        {
+                            "type": "example_problem",
+                            "title": "例題4: 否定文",
+                            "problem": "Ken plays the piano. を否定文にしなさい。",
+                            "solution_steps": [
+                                "三単現なので does not (doesn't) を使う",
+                                "動詞は原形に戻す（plays → play）",
+                                "答え: **Ken doesn't play the piano.**"
+                            ]
+                        },
+                        {
+                            "type": "exercise",
+                            "problems": [
+                                {
+                                    "q": "She ( ) English every day. [study]",
+                                    "a": "studies"
+                                },
+                                {
+                                    "q": "( ) you like cats? - Yes, I do.",
+                                    "a": "Do"
+                                },
+                                {
+                                    "q": "He ( ) not eat meat.",
+                                    "a": "does"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "2. 疑問詞",
+            "sections": [
+                {
+                    "title": "5W1H",
+                    "content_blocks": [
+                        {
+                            "type": "point",
+                            "title": "疑問詞一覧",
+                            "content": "- **What**: 何\\n- **Who**: 誰\\n- **When**: いつ\\n- **Where**: どこ\\n- **Why**: なぜ\\n- **How**: どのように"
+                        },
+                        {
+                            "type": "example_problem",
+                            "title": "例題5: 疑問詞",
+                            "problem": "適切な疑問詞を選びなさい。\\n( ) is your birthday? - It's May 5th.",
+                            "solution_steps": [
+                                "「いつ」を聞いている → When",
+                                "答え: **When**"
+                            ]
+                        },
+                        {
+                            "type": "exercise",
+                            "problems": [
+                                {
+                                    "q": "( ) is this? - It's a pen.",
+                                    "a": "What"
+                                },
+                                {
+                                    "q": "( ) do you get up? - At 6.",
+                                    "a": "When"
+                                },
+                                {
+                                    "q": "( ) old are you? - I'm 13.",
+                                    "a": "How"
+                                }
                             ]
                         }
                     ]

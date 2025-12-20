@@ -1,85 +1,84 @@
 # AITH - AI Tutor for Homework 🎓
 
-AIを活用した家庭教師アプリ。写真を撮るだけで問題を解説、チャットで質問、学習計画作成まで。
+<p align="center">
+  <b>「宿題は、もう怖くない」</b><br>
+  AI-Powered Homework Assistant & Personal Tutor
+</p>
 
-![Status](https://img.shields.io/badge/status-in%20development-yellow)
+![Status](https://img.shields.io/badge/status-active-brightgreen)
 ![Platform](https://img.shields.io/badge/platform-iOS%20%7C%20Android%20%7C%20Web-blue)
+
+---
+
+## 📖 概要 (Overview)
+
+**AITH** は、カメラで撮るだけで宿題を解説し、個別の学習計画まで立ててくれる、あなたの手のひらの「AI家庭教師」です。
+単なる答えの提示ではなく、**「なぜそうなるのか」** というプロセスを重視。3つの異なるペルソナ（優しい先生、熱血コーチなど）が、生徒のモチベーションに合わせて学習をサポートします。
 
 ## ✨ Features
 
 ### 📸 Camera Analysis
-- 宿題や問題を撮影するだけでAIが解説
-- LaTeX数式対応のリッチなレンダリング
-- SVG図形による視覚的説明
+- **数式認識:** 手書きの複雑な数式も、写真を撮るだけでLaTeX変換し、ステップバイステップで解法を提示。
+- **図形問題:** 幾何学問題も視覚的に認識し、補助線を引くようなイメージで解説します。
 
 ### 💬 AI Chat
-- 3つのペルソナ（優しい/熱血/厳格）
-- 学年レベルに合わせた解説（中高生/大学生/社会人）
-- 会話履歴からの学習
+- **Persona System:** 「褒めて伸びるタイプ」には優しい先生を、「厳しく管理されたい」なら鬼コーチを。気分に合わせてAIの人格を切り替え可能。
+- **Context Aware:** 過去の質問内容やニガテ分野を記憶し、対話を重ねるごとに指導が最適化されます。
 
 ### 📚 Learning Tools
 | Feature | Description |
 |---------|-------------|
-| 🎴 単語帳 | 暗記カード機能 |
-| 📝 記述添削 | 作文・小論文の添削 |
-| 🎤 AI面接 | 面接練習シミュレーター |
-| 🗣️ 英会話 | AIとの英会話練習 |
-| 📖 AI教材生成 | トピックから教科書・ドリルを自動生成 |
+| 🎴 **Smart Flashcards** | 忘却曲線に基づいた暗記カード機能 |
+| 📝 **Essay Correction** | 小論文や英作文の添削・フィードバック |
+| 🎤 **Interview Prep** | 模擬面接シミュレーター（音声対応） |
+| 🗣️ **English Conversation** | シナリオベースの英会話ロールプレイ |
 
-### 📊 Analytics & Gamification
-- 学習時間トラッキング
-- XP・レベルシステム
-- 進捗分析ダッシュボード
-
-## 🚀 Quick Start
-
-### Backend (FastAPI)
-
-```bash
-cd backend
-
-# Create virtual environment
-python -m venv venv
-source venv/bin/activate  # Windows: venv\Scripts\activate
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Create .env file in project root
-echo "GEMINI_API_KEY=your_api_key_here" > ../.env
-
-# Run server
-uvicorn main:app --reload --host 0.0.0.0 --port 8000
-```
-
-### Flutter App
-
-```bash
-cd app
-
-# Get dependencies
-flutter pub get
-
-# Update backend URL in lib/constants.dart
-
-# Run app
-flutter run
-```
-
-## 🔑 Required Credentials
-
-1. **Gemini API Key** - [Google AI Studio](https://aistudio.google.com/apikey)で取得
-2. **Firebase** - Firestore用の認証ファイル（`.gitignore`で除外済み）
+---
 
 ## 🏗️ Tech Stack
 
-| Layer | Technology |
-|-------|------------|
-| **Frontend** | Flutter (Dart) |
-| **Backend** | FastAPI (Python) |
-| **AI** | Google Gemini API |
-| **Database** | Firebase Firestore |
-| **Math Rendering** | flutter_math_fork |
+| Layer | Technology | Usage |
+| :--- | :--- | :--- |
+| **Frontend** | **Flutter (Dart)** | Cross-platform Mobile App |
+| **Backend** | **FastAPI (Python)** | High-performance Async API |
+| **AI Engine** | **Google Gemini 1.5** | Multi-modal Reasoning |
+| **Database** | **Firebase Firestore** | Real-time Data Sync |
+| **Math** | **flutter_math_fork** | LaTeX Rendering |
+
+---
+
+## 🧩 アーキテクチャ (Architecture)
+
+```mermaid
+graph TD
+    User["📱 Student (App)"]
+    
+    subgraph "Frontend (Flutter)"
+        Cam["📸 Camera Input"]
+        Chat["💬 Chat UI"]
+        Render["Math Renderer"]
+    end
+    
+    subgraph "Backend (FastAPI)"
+        API["API Gateway"]
+        Prompt["Prompt Engineering"]
+    end
+    
+    subgraph "Cloud Services"
+        Firebase[("🔥 Firebase\nAuth / User Data")]
+        Gemini["✨ Google Gemini\n(Vision & Text)"]
+    end
+
+    User -->|Capture| Cam
+    Cam -->|Image| API
+    API -->|Image + Context| Prompt
+    Prompt -->|Request| Gemini
+    Gemini -->|Solution| API
+    API -->|Response| Chat
+    Chat -->|Render LaTex| Render
+    
+    Chat <-->|Sync History| Firebase
+```
 
 ## 📁 Project Structure
 

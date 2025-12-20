@@ -4,30 +4,81 @@
     "order": 2,
     "chapters": [
         {
-            "title": "1. 文字",
+            "title": "1. ハングル",
             "sections": [
                 {
-                    "title": "ハングル",
+                    "title": "母音と子音",
                     "content_blocks": [
                         {
+                            "type": "introduction",
+                            "text": "ハングルは15世紀に世宗大王が考案した文字。母音と子音の組み合わせで文字を作る、非常に論理的な仕組みです。"
+                        },
+                        {
                             "type": "point",
-                            "title": "構成",
-                            "content": "子音字と母音字の組み合わせで作られる表音文字。"
+                            "title": "基本母音",
+                            "content": "**ㅏ** (a) **ㅓ** (eo) **ㅗ** (o)\\n**ㅜ** (u) **ㅡ** (eu) **ㅣ** (i)"
+                        },
+                        {
+                            "type": "point",
+                            "title": "基本子音",
+                            "content": "**ㄱ** (g/k) **ㄴ** (n) **ㄷ** (d/t)\\n**ㅁ** (m) **ㅂ** (b/p) **ㅅ** (s)"
+                        },
+                        {
+                            "type": "example_problem",
+                            "title": "例題1: ハングル読み",
+                            "problem": "「가」はどう読むか。",
+                            "solution_steps": [
+                                "ㄱ(g) + ㅏ(a) = **ga（カ/ガ）**"
+                            ]
+                        },
+                        {
+                            "type": "exercise",
+                            "problems": [
+                                {
+                                    "q": "「나」の発音は？",
+                                    "a": "na（ナ）"
+                                },
+                                {
+                                    "q": "ハングルを作った王は誰？",
+                                    "a": "世宗大王（セジョンデワン）"
+                                }
+                            ]
                         }
                     ]
                 }
             ]
         },
         {
-            "title": "2. 基本挨拶",
+            "title": "2. 基本表現",
             "sections": [
                 {
-                    "title": "挨拶",
+                    "title": "あいさつ",
                     "content_blocks": [
                         {
                             "type": "point",
-                            "title": "アニョハセヨ",
-                            "content": "안녕하세요 (こんにちは、おはようございます、こんばんは)。"
+                            "title": "基本あいさつ",
+                            "content": "**안녕하세요** (Annyeonghaseyo) = こんにちは\\n**감사합니다** (Gamsahamnida) = ありがとうございます\\n**미안합니다** (Mianhamnida) = すみません"
+                        },
+                        {
+                            "type": "example_problem",
+                            "title": "例題2: あいさつ",
+                            "problem": "「ありがとうございます」を韓国語で言うと？",
+                            "solution_steps": [
+                                "答え: **감사합니다 (Gamsahamnida)**"
+                            ]
+                        },
+                        {
+                            "type": "exercise",
+                            "problems": [
+                                {
+                                    "q": "「こんにちは」の韓国語は？",
+                                    "a": "안녕하세요"
+                                },
+                                {
+                                    "q": "「愛してる」の韓国語は？",
+                                    "a": "사랑해요 (Saranghaeyo)"
+                                }
+                            ]
                         }
                     ]
                 }

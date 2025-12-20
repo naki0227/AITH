@@ -4,6 +4,7 @@ import 'package:google_fonts/google_fonts.dart';
 import 'dart:io' show Platform;
 import 'package:flutter/foundation.dart' show kIsWeb;
 import '../services/auth_service.dart';
+import '../widgets/social_login_button.dart';
 
 class LoginScreen extends StatefulWidget {
   final VoidCallback onLoginSuccess;
@@ -81,6 +82,7 @@ class _LoginScreenState extends State<LoginScreen> {
         setState(() => _isLoading = false);
       }
     }
+  }
   Future<void> _handleSocialLogin(Future<UserCredential?> Function() method) async {
     setState(() {
       _isLoading = true;
@@ -291,7 +293,7 @@ class _LoginScreenState extends State<LoginScreen> {
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: [
                           // Google Button
-                          _SocialLoginButton(
+                          SocialLoginButton(
                             icon: 'assets/google_logo.png', // Ideally use an asset
                             iconData: Icons.g_mobiledata, // Fallback
                             label: 'Google',
@@ -302,7 +304,7 @@ class _LoginScreenState extends State<LoginScreen> {
                           
                           // Apple Button (Only on iOS or Web)
                           if (kIsWeb || Platform.isIOS || Platform.isMacOS)
-                          _SocialLoginButton(
+                          SocialLoginButton(
                             icon: 'assets/apple_logo.png', 
                             iconData: Icons.apple,
                             label: 'Apple',
@@ -377,35 +379,3 @@ class _LoginScreenState extends State<LoginScreen> {
   }
 }
 
-class _SocialLoginButton extends StatelessWidget {
-  final String icon;
-  final IconData iconData;
-  final String label;
-  final VoidCallback? onPressed;
-  final Color color;
-  final Color textColor;
-
-  const _SocialLoginButton({
-    super.key,
-    required this.icon,
-    required this.iconData,
-    required this.label,
-    required this.onPressed,
-    required this.color,
-    required this.textColor,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return ElevatedButton.icon(
-      onPressed: onPressed,
-      icon: Icon(iconData, color: textColor),
-      label: Text(label, style: TextStyle(color: textColor)),
-      style: ElevatedButton.styleFrom(
-        backgroundColor: color,
-        padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
-        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30)),
-      ),
-    );
-  }
-}

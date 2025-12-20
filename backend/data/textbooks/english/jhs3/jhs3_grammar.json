@@ -10,19 +10,36 @@
                     "title": "受動態 (受け身)",
                     "content_blocks": [
                         {
+                            "type": "introduction",
+                            "text": "「〜される」「〜された」という受け身の文は、be動詞 + 過去分詞 で作ります。"
+                        },
+                        {
                             "type": "definition",
-                            "term": "受動態",
-                            "definition": "be動詞 + 過去分詞 (+ by ~)\n「〜される」「〜された」という意味。"
+                            "term": "受動態の作り方",
+                            "definition": "**be動詞 + 過去分詞 (+ by 〜)**\\n- This book is read by many people.\\n- English is spoken in many countries."
                         },
                         {
                             "type": "example_problem",
-                            "title": "例題1: 受動態への書き換え (Level 2)",
-                            "problem": "Ken uses this pen.\nThis pen ( ) ( ) by Ken.",
+                            "title": "例題1: 受動態への書き換え",
+                            "problem": "Ken uses this pen.\\nThis pen ( ) ( ) by Ken.",
                             "solution_steps": [
-                                "「このペンはケンによって使われる」にする。",
-                                "be動詞は is （単数現在）。",
-                                "use の過去分詞は used。",
-                                "答え: is used"
+                                "「このペンはケンによって使われる」にする",
+                                "be動詞は is（単数現在）",
+                                "use の過去分詞は used",
+                                "答え: **is used**"
+                            ]
+                        },
+                        {
+                            "type": "exercise",
+                            "problems": [
+                                {
+                                    "q": "French is ( ) in Canada. [speak]",
+                                    "a": "spoken"
+                                },
+                                {
+                                    "q": "The window was ( ) by Tom. [break]",
+                                    "a": "broken"
+                                }
                             ]
                         }
                     ]
@@ -32,16 +49,44 @@
                     "content_blocks": [
                         {
                             "type": "definition",
-                            "term": "現在完了",
-                            "definition": "have/has + 過去分詞\n「過去から現在までつながっている」ことを表す。\n1. 継続（ずっと〜している）\n2. 経験（〜したことがある）\n3. 完了（〜してしまった）"
+                            "term": "現在完了形",
+                            "definition": "**have/has + 過去分詞**\\n「過去から現在までつながっている」ことを表す。"
+                        },
+                        {
+                            "type": "point",
+                            "title": "3つの用法",
+                            "content": "1. **継続**: ずっと〜している\\n   - I **have lived** here for ten years.\\n2. **経験**: 〜したことがある\\n   - I **have been** to Kyoto twice.\\n3. **完了・結果**: 〜してしまった\\n   - I **have just finished** my homework."
                         },
                         {
                             "type": "example_problem",
-                            "title": "例題2: 経験 (Level 2)",
-                            "problem": "私は2回、京都へ行ったことがあります。\nI ( ) ( ) to Kyoto twice.",
+                            "title": "例題2: 現在完了（経験）",
+                            "problem": "私は2回、京都へ行ったことがあります。\\nI ( ) ( ) to Kyoto twice.",
                             "solution_steps": [
-                                "「行ったことがある」は have been to。",
-                                "答え: have been"
+                                "「行ったことがある」は have been to",
+                                "答え: **have been**"
+                            ]
+                        },
+                        {
+                            "type": "example_problem",
+                            "title": "例題3: 現在完了（継続）",
+                            "problem": "彼は3年間英語を勉強しています。\\nHe ( ) ( ) English for three years.",
+                            "solution_steps": [
+                                "「〜し続けている」は現在完了の継続",
+                                "三人称単数なので has",
+                                "答え: **has studied**"
+                            ]
+                        },
+                        {
+                            "type": "exercise",
+                            "problems": [
+                                {
+                                    "q": "I have ( ) seen such a beautiful flower. [これまでに]",
+                                    "a": "never / ever"
+                                },
+                                {
+                                    "q": "She has ( ) ( ) this book. [読み終わった]",
+                                    "a": "just finished / already finished"
+                                }
                             ]
                         }
                     ]
@@ -59,13 +104,79 @@
                             "text": "2つの文を1つにくっつけて、名詞を詳しく説明する接着剤、それが関係代名詞です。"
                         },
                         {
+                            "type": "point",
+                            "title": "関係代名詞の種類",
+                            "content": "**人が先行詞**: who (主格)、whom/who/that (目的格)\\n**モノが先行詞**: which/that (主格・目的格)"
+                        },
+                        {
                             "type": "example_problem",
-                            "title": "例題3: 関係代名詞 (Level 3)",
-                            "problem": "This is the book. I bought it yesterday.\nThis is the book ( ) I bought yesterday.",
+                            "title": "例題4: 関係代名詞（主格）",
+                            "problem": "I know a girl. She can speak French.\\n→ I know a girl ( ) can speak French.",
                             "solution_steps": [
-                                "the book = it (モノ)。",
-                                "it は bought の目的語なので、目的格の which (または that) を使う。",
-                                "答え: which / that"
+                                "先行詞は a girl（人）",
+                                "she = a girl で、主語なので主格 who",
+                                "答え: **who**"
+                            ]
+                        },
+                        {
+                            "type": "example_problem",
+                            "title": "例題5: 関係代名詞（目的格）",
+                            "problem": "This is the book. I bought it yesterday.\\nThis is the book ( ) I bought yesterday.",
+                            "solution_steps": [
+                                "先行詞は the book（モノ）",
+                                "it は bought の目的語なので目的格",
+                                "答え: **which / that**"
+                            ]
+                        },
+                        {
+                            "type": "exercise",
+                            "problems": [
+                                {
+                                    "q": "I have a friend ( ) lives in Tokyo. [人]",
+                                    "a": "who"
+                                },
+                                {
+                                    "q": "The pen ( ) is on the desk is mine. [モノ]",
+                                    "a": "which / that"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "3. 仮定法",
+            "sections": [
+                {
+                    "title": "wish と仮定法過去",
+                    "content_blocks": [
+                        {
+                            "type": "point",
+                            "title": "仮定法過去",
+                            "content": "現実と違う「もし〜だったら」を表す。\\n**If + 主語 + 過去形, 主語 + would/could + 動詞の原形**\\n※ be動詞は were を使うことが多い"
+                        },
+                        {
+                            "type": "example_problem",
+                            "title": "例題6: 仮定法",
+                            "problem": "もし私が鳥だったら、空を飛べるのに。\\nIf I ( ) a bird, I could fly in the sky.",
+                            "solution_steps": [
+                                "現実と違う仮定なので仮定法過去",
+                                "be動詞は were",
+                                "答え: **were**"
+                            ]
+                        },
+                        {
+                            "type": "exercise",
+                            "problems": [
+                                {
+                                    "q": "I wish I ( ) speak English well.",
+                                    "a": "could"
+                                },
+                                {
+                                    "q": "If I ( ) you, I would accept the offer.",
+                                    "a": "were"
+                                }
                             ]
                         }
                     ]

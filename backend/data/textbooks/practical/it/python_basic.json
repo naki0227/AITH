@@ -11,14 +11,34 @@
                     "content_blocks": [
                         {
                             "type": "introduction",
-                            "text": "プログラミングは「データ」を加工する作業です。Pythonは読みやすく書きやすい、世界で最も人気のある言語の一つです。"
+                            "text": "Pythonは読みやすく書きやすい、世界で最も人気のある言語の一つ。まずは変数とデータ型から始めましょう。"
+                        },
+                        {
+                            "type": "point",
+                            "title": "基本データ型",
+                            "content": "**int**: 整数 (例: 42)\\n**float**: 小数 (例: 3.14)\\n**str**: 文字列 (例: \"Hello\")\\n**bool**: 真偽値 (True / False)\\n**list**: リスト [1, 2, 3]\\n**dict**: 辞書 {\"key\": \"value\"}"
                         },
                         {
                             "type": "example_problem",
-                            "title": "例題1: 出力 (Level 1)",
+                            "title": "例題1: 出力",
                             "problem": "画面に「Hello, Python」と表示するコードを書け。",
                             "solution_steps": [
-                                "print(\"Hello, Python\")"
+                                "```python",
+                                "print(\"Hello, Python\")",
+                                "```"
+                            ]
+                        },
+                        {
+                            "type": "exercise",
+                            "problems": [
+                                {
+                                    "q": "x = 5, y = 3 のとき x + y を出力するコードは？",
+                                    "a": "print(x + y)"
+                                },
+                                {
+                                    "q": "文字列の連結: \"Hello\" + \" World\" の結果は？",
+                                    "a": "\"Hello World\""
+                                }
                             ]
                         }
                     ]
@@ -29,15 +49,68 @@
                         {
                             "type": "point",
                             "title": "if文（条件分岐）",
-                            "content": "```python\nif score >= 60:\n    print(\"Pass\")\nelse:\n    print(\"Fail\")\n```"
+                            "content": "```python\\nif score >= 60:\\n    print(\"Pass\")\\nelif score >= 40:\\n    print(\"Retry\")\\nelse:\\n    print(\"Fail\")\\n```"
+                        },
+                        {
+                            "type": "point",
+                            "title": "for文（繰り返し）",
+                            "content": "```python\\nfor i in range(5):\\n    print(i)  # 0, 1, 2, 3, 4\\n```"
                         },
                         {
                             "type": "example_problem",
-                            "title": "例題2: fizzbuzz (Level 3)",
-                            "problem": "変数iが3の倍数ならFizz、5の倍数ならBuzzと表示するコード断片を書け。",
+                            "title": "例題2: FizzBuzz",
+                            "problem": "1から15までの数で、3の倍数ならFizz、5の倍数ならBuzz、両方の倍数ならFizzBuzzと表示するコードを書け。",
                             "solution_steps": [
-                                "if i % 3 == 0: print(\"Fizz\")",
-                                "elif i % 5 == 0: print(\"Buzz\")"
+                                "```python",
+                                "for i in range(1, 16):",
+                                "    if i % 15 == 0:",
+                                "        print(\"FizzBuzz\")",
+                                "    elif i % 3 == 0:",
+                                "        print(\"Fizz\")",
+                                "    elif i % 5 == 0:",
+                                "        print(\"Buzz\")",
+                                "    else:",
+                                "        print(i)",
+                                "```"
+                            ]
+                        },
+                        {
+                            "type": "exercise",
+                            "problems": [
+                                {
+                                    "q": "1から10までの和を求めるコードは？",
+                                    "a": "sum(range(1, 11)) または for文でループ"
+                                },
+                                {
+                                    "q": "リスト [1,2,3] の各要素を2倍にするリスト内包表記は？",
+                                    "a": "[x*2 for x in [1,2,3]]"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "2. 関数とモジュール",
+            "sections": [
+                {
+                    "title": "関数の定義",
+                    "content_blocks": [
+                        {
+                            "type": "point",
+                            "title": "関数定義",
+                            "content": "```python\\ndef greet(name):\\n    return f\"Hello, {name}!\"\\n\\nprint(greet(\"Alice\"))\\n```"
+                        },
+                        {
+                            "type": "example_problem",
+                            "title": "例題3: 関数",
+                            "problem": "2つの数の和を返す関数 add(a, b) を定義せよ。",
+                            "solution_steps": [
+                                "```python",
+                                "def add(a, b):",
+                                "    return a + b",
+                                "```"
                             ]
                         }
                     ]

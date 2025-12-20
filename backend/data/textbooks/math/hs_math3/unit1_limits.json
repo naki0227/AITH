@@ -11,22 +11,104 @@
                     "content_blocks": [
                         {
                             "type": "introduction",
-                            "text": "無限のかなたで数はどうなるのか？「限りなく近づく」という概念（極限）は、微分積分の土台です。"
+                            "text": "無限のかなたで数はどうなるのか？「限りなく近づく」という概念（極限）は、微分積分の土台となる重要な概念です。"
+                        },
+                        {
+                            "type": "definition",
+                            "term": "収束",
+                            "definition": "$n \\to \\infty$ のとき、数列 $\\{a_n\\}$ がある一定の値 $\\alpha$ に限りなく近づくとき、\\n「数列は $\\alpha$ に**収束する**」といい、$\\lim_{n \\to \\infty} a_n = \\alpha$ と書く。"
+                        },
+                        {
+                            "type": "definition",
+                            "term": "発散",
+                            "definition": "収束しない数列は**発散**するという。\\n- 正の無限大に発散: $\\lim a_n = \\infty$\\n- 負の無限大に発散: $\\lim a_n = -\\infty$\\n- 振動（極限なし）"
                         },
                         {
                             "type": "point",
-                            "title": "極限値",
-                            "content": "$n \\to \\infty$ のとき $a_n$ が一定の値 $\\alpha$ に近づくなら、$\\lim_{n \\to \\infty} a_n = \\alpha$ と書く。"
+                            "title": "基本極限",
+                            "content": "$\\lim_{n \\to \\infty} \\frac{1}{n} = 0$\\n$\\lim_{n \\to \\infty} r^n = 0$ ($|r| < 1$)\\n$\\lim_{n \\to \\infty} r^n$ は $|r| > 1$ で発散"
                         },
                         {
                             "type": "example_problem",
-                            "title": "例題1: 基本的な極限 (Level 1)",
+                            "title": "例題1: 分数型の極限",
                             "problem": "$\\lim_{n \\to \\infty} \\frac{2n^2 + 3}{n^2 - 1}$ を求めよ。",
                             "solution_steps": [
-                                "分母・分子を $n^2$ で割る。",
-                                "$$ \\frac{2 + 3/n^2}{1 - 1/n^2} $$",
-                                "$n \\to \\infty$ のとき、$1/n^2 \\to 0$。",
-                                "よって極限値は $\\frac{2+0}{1-0} = 2$。"
+                                "最高次の $n^2$ で分母分子を割る",
+                                "$\\frac{2 + 3/n^2}{1 - 1/n^2}$",
+                                "$n \\to \\infty$ で $1/n^2 \\to 0$ なので",
+                                "極限 = $\\frac{2 + 0}{1 - 0} = 2$"
+                            ]
+                        },
+                        {
+                            "type": "example_problem",
+                            "title": "例題2: 等比型の極限",
+                            "problem": "$\\lim_{n \\to \\infty} \\frac{3^n - 2^n}{3^n + 2^n}$ を求めよ。",
+                            "solution_steps": [
+                                "最も速く増加する $3^n$ で割る",
+                                "$\\frac{1 - (2/3)^n}{1 + (2/3)^n}$",
+                                "$(2/3)^n \\to 0$ なので",
+                                "極限 = $\\frac{1 - 0}{1 + 0} = 1$"
+                            ]
+                        },
+                        {
+                            "type": "exercise",
+                            "problems": [
+                                {
+                                    "q": "$\\lim_{n \\to \\infty} \\frac{n+1}{n}$ は？",
+                                    "a": "$1$"
+                                },
+                                {
+                                    "q": "$\\lim_{n \\to \\infty} (0.5)^n$ は？",
+                                    "a": "$0$"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "2. 関数の極限",
+            "sections": [
+                {
+                    "title": "連続と不連続",
+                    "content_blocks": [
+                        {
+                            "type": "definition",
+                            "term": "関数の極限",
+                            "definition": "$x$ が $a$ に限りなく近づくとき $f(x)$ が $L$ に近づくなら\\n$\\lim_{x \\to a} f(x) = L$"
+                        },
+                        {
+                            "type": "definition",
+                            "term": "連続",
+                            "definition": "$\\lim_{x \\to a} f(x) = f(a)$ のとき、$f(x)$ は $x = a$ で**連続**という。"
+                        },
+                        {
+                            "type": "point",
+                            "title": "重要な極限",
+                            "content": "$\\lim_{x \\to 0} \\frac{\\sin x}{x} = 1$\\n$\\lim_{x \\to 0} \\frac{e^x - 1}{x} = 1$\\n$\\lim_{x \\to \\infty} (1 + \\frac{1}{x})^x = e$"
+                        },
+                        {
+                            "type": "example_problem",
+                            "title": "例題3: 三角関数の極限",
+                            "problem": "$\\lim_{x \\to 0} \\frac{\\sin 3x}{x}$ を求めよ。",
+                            "solution_steps": [
+                                "$\\frac{\\sin 3x}{x} = \\frac{\\sin 3x}{3x} \\times 3$",
+                                "$\\lim_{x \\to 0} \\frac{\\sin 3x}{3x} = 1$",
+                                "よって極限 = $1 \\times 3 = 3$"
+                            ]
+                        },
+                        {
+                            "type": "exercise",
+                            "problems": [
+                                {
+                                    "q": "$\\lim_{x \\to 0} \\frac{\\tan x}{x}$ は？",
+                                    "a": "$1$"
+                                },
+                                {
+                                    "q": "$\\lim_{x \\to 0} \\frac{1 - \\cos x}{x^2}$ は？",
+                                    "a": "$\\frac{1}{2}$"
+                                }
                             ]
                         }
                     ]

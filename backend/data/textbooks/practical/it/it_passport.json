@@ -4,30 +4,43 @@
     "order": 1,
     "chapters": [
         {
-            "title": "1. 企業と法務",
+            "title": "1. ストラテジ系",
             "sections": [
                 {
                     "title": "企業活動",
                     "content_blocks": [
                         {
                             "type": "introduction",
-                            "text": "会社は「ヒト・モノ・カネ・ホウボウ（情報）」を使って活動しています。企業の社会的責任(CSR)や経営資源の管理手法を学びます。"
+                            "text": "会社は「ヒト・モノ・カネ・情報」を使って活動しています。企業の社会的責任(CSR)や経営資源の管理手法を学びます。"
                         },
                         {
                             "type": "definition",
-                            "term": "CSR (Corporate Social Responsibility)",
-                            "definition": "企業の社会的責任。利益追求だけでなく、環境保護や社会貢献活動を行う責任。"
+                            "term": "CSR",
+                            "definition": "Corporate Social Responsibility（企業の社会的責任）。利益追求だけでなく、環境保護や社会貢献活動を行う責任。"
+                        },
+                        {
+                            "type": "definition",
+                            "term": "PDCAサイクル",
+                            "definition": "**Plan**: 計画\\n**Do**: 実行\\n**Check**: 評価\\n**Act**: 改善\\n→ 継続的な改善活動"
+                        },
+                        {
+                            "type": "example_problem",
+                            "title": "例題1: PDCA",
+                            "problem": "業務改善のサイクルで、「計画→実行→評価→？」に入る言葉は？",
+                            "solution_steps": [
+                                "答え: **改善（Act）**"
+                            ]
                         },
                         {
                             "type": "exercise",
                             "problems": [
                                 {
-                                    "q": "PDCAサイクルの4つの要素は？",
-                                    "a": "Plan, Do, Check, Act"
+                                    "q": "BCPとは何の略？",
+                                    "a": "Business Continuity Plan（事業継続計画）"
                                 },
                                 {
-                                    "q": "BCPとは何の略？",
-                                    "a": "Business Continuity Plan (事業継続計画)"
+                                    "q": "SWOTのWは何？",
+                                    "a": "Weakness（弱み）"
                                 }
                             ]
                         }
@@ -39,22 +52,72 @@
                         {
                             "type": "point",
                             "title": "知的財産権",
-                            "content": "- 著作権: 創作した時点で発生。70年保護。\n- 特許権: 発明を保護。出願が必要。20年。\n- 商標権: ブランド名やロゴ。10年（更新可）。"
+                            "content": "**著作権**: 創作した時点で発生。70年保護\\n**特許権**: 発明を保護。出願が必要。20年\\n**商標権**: ブランド名やロゴ。10年（更新可）\\n**意匠権**: デザインを保護。25年"
+                        },
+                        {
+                            "type": "example_problem",
+                            "title": "例題2: 知的財産",
+                            "problem": "出願なしで発生する権利は次のうちどれか。①特許権 ②著作権 ③商標権",
+                            "solution_steps": [
+                                "著作権は創作した時点で自動的に発生",
+                                "答え: **②著作権**"
+                            ]
                         }
                     ]
                 }
             ]
         },
         {
-            "title": "2. ストラテジ系",
+            "title": "2. マネジメント系",
             "sections": [
                 {
-                    "title": "マーケティング",
+                    "title": "プロジェクトマネジメント",
                     "content_blocks": [
                         {
                             "type": "definition",
-                            "term": "SWOT分析",
-                            "definition": "自社の現状を、強み(Strength)、弱み(Weakness)、機会(Opportunity)、脅威(Threat)の4つに分けて分析する手法。"
+                            "term": "WBS",
+                            "definition": "Work Breakdown Structure。プロジェクトの作業を階層的に分解したもの。"
+                        },
+                        {
+                            "type": "exercise",
+                            "problems": [
+                                {
+                                    "q": "プロジェクトの作業を分解した図は？",
+                                    "a": "WBS"
+                                },
+                                {
+                                    "q": "工程管理に使う棒グラフ状の図は？",
+                                    "a": "ガントチャート"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "3. テクノロジ系",
+            "sections": [
+                {
+                    "title": "コンピュータの基礎",
+                    "content_blocks": [
+                        {
+                            "type": "point",
+                            "title": "ハードウェア",
+                            "content": "**CPU**: 演算・制御を行う「頭脳」\\n**メモリ（RAM）**: 一時的な記憶領域\\n**ストレージ（HDD/SSD）**: 永続的な記憶領域"
+                        },
+                        {
+                            "type": "point",
+                            "title": "セキュリティ",
+                            "content": "**マルウェア**: 悪意のあるソフトウェアの総称\\n**フィッシング**: 偽サイトで情報を盗む\\n**ファイアウォール**: 不正アクセスを防ぐ"
+                        },
+                        {
+                            "type": "example_problem",
+                            "title": "例題3: セキュリティ",
+                            "problem": "偽のメールでパスワードを盗む手口を何というか。",
+                            "solution_steps": [
+                                "答え: **フィッシング**"
+                            ]
                         }
                     ]
                 }

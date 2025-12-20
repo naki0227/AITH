@@ -7,31 +7,176 @@
             "title": "1. 三角形の性質",
             "sections": [
                 {
+                    "title": "三角形の五心",
+                    "content_blocks": [
+                        {
+                            "type": "introduction",
+                            "text": "三角形には5つの重要な「中心」があります。これらを総称して「五心」と呼びます。"
+                        },
+                        {
+                            "type": "definition",
+                            "term": "重心 G",
+                            "definition": "3本の中線（頂点と対辺の中点を結ぶ線）の交点。各中線を2:1に内分する。"
+                        },
+                        {
+                            "type": "definition",
+                            "term": "内心 I",
+                            "definition": "3本の角の二等分線の交点。内接円の中心。"
+                        },
+                        {
+                            "type": "definition",
+                            "term": "外心 O",
+                            "definition": "3辺の垂直二等分線の交点。外接円の中心。"
+                        },
+                        {
+                            "type": "definition",
+                            "term": "垂心 H",
+                            "definition": "3本の垂線（頂点から対辺への垂線）の交点。"
+                        },
+                        {
+                            "type": "definition",
+                            "term": "傍心",
+                            "definition": "内角の二等分線2本と外角の二等分線1本の交点。3つある。"
+                        },
+                        {
+                            "type": "example_problem",
+                            "title": "例題1: 重心",
+                            "problem": "三角形ABCで、重心Gと頂点Aの距離が6のとき、中線AMの長さを求めよ。",
+                            "solution_steps": [
+                                "重心は中線を2:1に内分する。",
+                                "AG:GM = 2:1 なので AG = 6 より GM = 3",
+                                "AM = AG + GM = 6 + 3 = 9"
+                            ]
+                        },
+                        {
+                            "type": "exercise",
+                            "problems": [
+                                {
+                                    "q": "内接円の中心はどの「心」？",
+                                    "a": "内心"
+                                },
+                                {
+                                    "q": "外接円の中心はどの「心」？",
+                                    "a": "外心"
+                                },
+                                {
+                                    "q": "正三角形で五心は何点に一致する？",
+                                    "a": "1点（すべて同じ点）"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
                     "title": "チェバ・メネラウスの定理",
                     "content_blocks": [
                         {
                             "type": "introduction",
-                            "text": "幾何学の問題で、比を求めるときに圧倒的な威力を発揮するのがチェバ・メネラウスの定理です。形をしっかり覚えましょう。"
+                            "text": "三角形と直線の関係で、比を求めるときに強力な武器となる2つの定理です。"
+                        },
+                        {
+                            "type": "point",
+                            "title": "チェバの定理",
+                            "content": "三角形ABCの辺BC, CA, AB上にそれぞれ点P, Q, Rがあり、AP, BQ, CRが1点で交わるとき\\n$$ \\frac{AR}{RB} \\cdot \\frac{BP}{PC} \\cdot \\frac{CQ}{QA} = 1 $$"
                         },
                         {
                             "type": "point",
                             "title": "メネラウスの定理",
-                            "content": "三角形と直線が交わるとき、頂点→分点→頂点...と一周して掛け合わせると1になる。\n$$ \\frac{AP}{PB} \\cdot \\frac{BC}{CQ} \\cdot \\frac{QR}{RA} = 1 $$"
+                            "content": "三角形ABCの辺BC, CA, ABまたはその延長上にそれぞれ点P, Q, Rがあり、3点が一直線上にあるとき\\n$$ \\frac{AR}{RB} \\cdot \\frac{BP}{PC} \\cdot \\frac{CQ}{QA} = 1 $$（符号付きで考える）"
                         },
                         {
                             "type": "example_problem",
-                            "title": "例題1: メネラウスの定理 (Level 2)",
-                            "problem": "$\\triangle ABC$ において、辺ABを2:1に内分する点をR、辺ACを1:2に内分する点をQとする。BQとCRの交点をO、直線AOと辺BCの交点をPとする。BP:PCを求めよ。",
+                            "title": "例題2: チェバの定理",
+                            "problem": "三角形ABCで、AR:RB = 2:1、CQ:QA = 2:1のとき、BP:PCを求めよ。",
                             "solution_steps": [
-                                "チェバの定理を使う。",
-                                "頂点Aからスタートして、反時計回りに比を拾う。",
-                                "$$ \\frac{AR}{RB} \\cdot \\frac{BP}{PC} \\cdot \\frac{CQ}{QA} = 1 $$",
-                                "条件より、$\\frac{AR}{RB} = \\frac{2}{1}$、$\\frac{CQ}{QA} = \\frac{2}{1} ...$ 注意！ QA:AC=1:2ならCQ:QA=2:1。",
-                                "式に代入：",
-                                "$$ \\frac{2}{1} \\cdot \\frac{BP}{PC} \\cdot \\frac{2}{1} = 1 $$",
-                                "$$ 4 \\cdot \\frac{BP}{PC} = 1 $$",
-                                "$$ \\frac{BP}{PC} = \\frac{1}{4} $$",
-                                "答え: $BP:PC = 1:4$"
+                                "チェバの定理より",
+                                "$\\frac{2}{1} \\cdot \\frac{BP}{PC} \\cdot \\frac{2}{1} = 1$",
+                                "$4 \\cdot \\frac{BP}{PC} = 1$",
+                                "$\\frac{BP}{PC} = \\frac{1}{4}$",
+                                "BP:PC = 1:4"
+                            ]
+                        },
+                        {
+                            "type": "exercise",
+                            "problems": [
+                                {
+                                    "q": "3本の線が1点で交わるときに使う定理は？",
+                                    "a": "チェバの定理"
+                                },
+                                {
+                                    "q": "3点が一直線上にあるときに使う定理は？",
+                                    "a": "メネラウスの定理"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "2. 円の性質",
+            "sections": [
+                {
+                    "title": "円に内接する四角形",
+                    "content_blocks": [
+                        {
+                            "type": "point",
+                            "title": "内接四角形の性質",
+                            "content": "円に内接する四角形について\\n1. **対角の和は180°**\\n2. 1つの外角は、その隣にない内角に等しい"
+                        },
+                        {
+                            "type": "example_problem",
+                            "title": "例題3: 内接四角形",
+                            "problem": "円に内接する四角形ABCDで、∠A = 70°のとき、∠Cを求めよ。",
+                            "solution_steps": [
+                                "対角の和は180°なので",
+                                "∠A + ∠C = 180°",
+                                "∠C = 180° - 70° = 110°"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "方べきの定理",
+                    "content_blocks": [
+                        {
+                            "type": "point",
+                            "title": "方べきの定理",
+                            "content": "円と2つの弦（または弦と接線）について\\n1. **2弦が交わる場合**: $PA \\cdot PB = PC \\cdot PD$\\n2. **接線と弦**: $PT^2 = PA \\cdot PB$（Tは接点）"
+                        },
+                        {
+                            "type": "example_problem",
+                            "title": "例題4: 方べきの定理",
+                            "problem": "円内の点Pを通る2つの弦AB, CDがあり、PA=3, PB=8, PC=4のとき、PDを求めよ。",
+                            "solution_steps": [
+                                "方べきの定理より PA × PB = PC × PD",
+                                "$3 \\times 8 = 4 \\times PD$",
+                                "$24 = 4 \\times PD$",
+                                "$PD = 6$"
+                            ]
+                        },
+                        {
+                            "type": "example_problem",
+                            "title": "例題5: 接線と方べき",
+                            "problem": "点Pから円に引いた接線の長さが6、Pを通る割線がABと交わりPA=3のとき、PBを求めよ。",
+                            "solution_steps": [
+                                "方べきの定理より $PT^2 = PA \\times PB$",
+                                "$6^2 = 3 \\times PB$",
+                                "$36 = 3 \\times PB$",
+                                "$PB = 12$"
+                            ]
+                        },
+                        {
+                            "type": "exercise",
+                            "problems": [
+                                {
+                                    "q": "円に内接する四角形の対角の和は？",
+                                    "a": "180°"
+                                },
+                                {
+                                    "q": "PA=2, PB=6, PC=3のとき、PDは？",
+                                    "a": "4"
+                                }
                             ]
                         }
                     ]

@@ -1,23 +1,75 @@
 {
-    "unit_id": "liberal_arts_econ",
-    "unit_title": "経済学（マクロ・ミクロ）",
-    "order": 2,
+    "unit_id": "economics_macro_micro",
+    "unit_title": "経済学入門",
+    "order": 1,
     "chapters": [
         {
-            "title": "1. マクロ経済学",
+            "title": "1. ミクロ経済学",
             "sections": [
                 {
-                    "title": "GDP (国内総生産)",
+                    "title": "需要と供給",
                     "content_blocks": [
                         {
-                            "type": "definition",
-                            "term": "GDP",
-                            "definition": "一定期間内に国内で生み出された「付加価値」の合計。"
+                            "type": "introduction",
+                            "text": "ミクロ経済学は個々の消費者や企業の行動を分析します。価格がどう決まるのか、需要と供給の関係を学びます。"
                         },
                         {
                             "type": "point",
-                            "title": "三面等価の原則",
-                            "content": "生産面、分配面、支出面のGDPは、事後的に必ず等しくなる。\n生産（作る）＝分配（給料）＝支出（買う）"
+                            "title": "需要曲線と供給曲線",
+                            "content": "**需要曲線**: 価格が下がると需要量は増える（右下がり）\\n**供給曲線**: 価格が上がると供給量は増える（右上がり）\\n交点が**均衡価格**"
+                        },
+                        {
+                            "type": "example_problem",
+                            "title": "例題1: 均衡",
+                            "problem": "需要がシフトして増加した場合、均衡価格と均衡数量はどうなるか。",
+                            "solution_steps": [
+                                "需要曲線が右にシフト",
+                                "新しい交点は高い価格・多い数量",
+                                "答え: **価格は上昇、数量も増加**"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "2. マクロ経済学",
+            "sections": [
+                {
+                    "title": "GDP",
+                    "content_blocks": [
+                        {
+                            "type": "definition",
+                            "term": "GDP（国内総生産）",
+                            "definition": "一国内で一定期間に生産されたすべての財・サービスの付加価値の合計。\\n経済規模を測る最も重要な指標。"
+                        },
+                        {
+                            "type": "point",
+                            "title": "GDPの三面等価",
+                            "content": "**生産面**: 付加価値の合計\\n**支出面**: 消費 + 投資 + 政府支出 + 純輸出\\n**分配面**: 賃金 + 利潤 + 地代など"
+                        },
+                        {
+                            "type": "example_problem",
+                            "title": "例題2: GDP計算",
+                            "problem": "消費100兆円、投資30兆円、政府支出20兆円、輸出15兆円、輸入10兆円のときGDPは？",
+                            "solution_steps": [
+                                "GDP = C + I + G + (X - M)",
+                                "= 100 + 30 + 20 + (15 - 10)",
+                                "= **155兆円**"
+                            ]
+                        },
+                        {
+                            "type": "exercise",
+                            "problems": [
+                                {
+                                    "q": "GDPとGNPの違いは？",
+                                    "a": "GDP=国内、GNP=国民"
+                                },
+                                {
+                                    "q": "名目GDPと実質GDPの違いは？",
+                                    "a": "名目=物価変動含む、実質=物価調整済み"
+                                }
+                            ]
                         }
                     ]
                 }

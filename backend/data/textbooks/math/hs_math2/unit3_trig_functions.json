@@ -7,36 +7,135 @@
             "title": "1. 一般角と弧度法",
             "sections": [
                 {
-                    "title": "弧度法 (ラジアン)",
+                    "title": "弧度法（ラジアン）",
                     "content_blocks": [
                         {
                             "type": "introduction",
-                            "text": "数学II以降では、角度を「度（°）」ではなく「ラジアン（$\\pi$）」で表します。これにより微分積分の計算が美しくなります。"
+                            "text": "数学II以降では、角度を「度（°）」ではなく「ラジアン」で表します。これにより微分積分の計算が美しくなります。"
                         },
                         {
                             "type": "definition",
                             "term": "ラジアン",
-                            "definition": "$180^\\circ = \\pi$ ラジアン。\n- $360^\\circ = 2\\pi$\n- $90^\\circ = \\frac{\\pi}{2}$\n- $60^\\circ = \\frac{\\pi}{3}$"
+                            "definition": "弧の長さが半径と等しくなる角が **1ラジアン**\\n$180° = \\pi$ rad（約3.14rad）"
+                        },
+                        {
+                            "type": "point",
+                            "title": "重要な角度の変換",
+                            "content": "$360° = 2\\pi$, $180° = \\pi$\\n$90° = \\frac{\\pi}{2}$, $60° = \\frac{\\pi}{3}$\\n$45° = \\frac{\\pi}{4}$, $30° = \\frac{\\pi}{6}$"
+                        },
+                        {
+                            "type": "example_problem",
+                            "title": "例題1: 角度の変換",
+                            "problem": "(1) $120°$ をラジアンで (2) $\\frac{5\\pi}{6}$ を度で表せ。",
+                            "solution_steps": [
+                                "(1) $120° = 120 \\times \\frac{\\pi}{180} = \\frac{2\\pi}{3}$",
+                                "(2) $\\frac{5\\pi}{6} = \\frac{5\\pi}{6} \\times \\frac{180}{\\pi} = 150°$"
+                            ]
                         }
                     ]
                 },
+                {
+                    "title": "三角関数",
+                    "content_blocks": [
+                        {
+                            "type": "definition",
+                            "term": "単位円と三角関数",
+                            "definition": "単位円（半径1の円）上の点 $(x, y)$ と角 $\\theta$ について\\n$\\cos\\theta = x$, $\\sin\\theta = y$, $\\tan\\theta = \\frac{y}{x}$"
+                        },
+                        {
+                            "type": "point",
+                            "title": "三角関数の性質",
+                            "content": "- 周期: $\\sin$, $\\cos$ は $2\\pi$、$\\tan$ は $\\pi$\\n- $\\sin^2\\theta + \\cos^2\\theta = 1$\\n- $\\tan\\theta = \\frac{\\sin\\theta}{\\cos\\theta}$"
+                        },
+                        {
+                            "type": "exercise",
+                            "problems": [
+                                {
+                                    "q": "$\\sin\\frac{\\pi}{6}$ の値は？",
+                                    "a": "$\\frac{1}{2}$"
+                                },
+                                {
+                                    "q": "$\\cos\\pi$ の値は？",
+                                    "a": "$-1$"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "2. 加法定理と応用",
+            "sections": [
                 {
                     "title": "加法定理",
                     "content_blocks": [
                         {
                             "type": "point",
                             "title": "加法定理の公式",
-                            "content": "1. $\\sin(\\alpha + \\beta) = \\sin\\alpha\\cos\\beta + \\cos\\alpha\\sin\\beta$ (咲いたコスモス コスモス咲いた)\n2. $\\cos(\\alpha + \\beta) = \\cos\\alpha\\cos\\beta - \\sin\\alpha\\sin\\beta$ (コスモスコスモス 咲いた咲いた)"
+                            "content": "$\\sin(\\alpha + \\beta) = \\sin\\alpha\\cos\\beta + \\cos\\alpha\\sin\\beta$\\n$\\cos(\\alpha + \\beta) = \\cos\\alpha\\cos\\beta - \\sin\\alpha\\sin\\beta$\\n$\\tan(\\alpha + \\beta) = \\frac{\\tan\\alpha + \\tan\\beta}{1 - \\tan\\alpha\\tan\\beta}$"
                         },
                         {
                             "type": "example_problem",
-                            "title": "例題: 加法定理 (Level 2)",
-                            "problem": "$\\sin 75^\\circ$ の値を求めよ。",
+                            "title": "例題2: 加法定理",
+                            "problem": "$\\sin 75°$ の値を求めよ。",
                             "solution_steps": [
-                                "$75^\\circ = 45^\\circ + 30^\\circ$ と分解する。",
-                                "$\\sin(45^\\circ + 30^\\circ) = \\sin 45^\\circ \\cos 30^\\circ + \\cos 45^\\circ \\sin 30^\\circ$",
+                                "$75° = 45° + 30°$",
+                                "$\\sin 75° = \\sin 45° \\cos 30° + \\cos 45° \\sin 30°$",
                                 "$= \\frac{\\sqrt{2}}{2} \\cdot \\frac{\\sqrt{3}}{2} + \\frac{\\sqrt{2}}{2} \\cdot \\frac{1}{2}$",
-                                "$= \\frac{\\sqrt{6}}{4} + \\frac{\\sqrt{2}}{4} = \\frac{\\sqrt{6} + \\sqrt{2}}{4}$"
+                                "$= \\frac{\\sqrt{6} + \\sqrt{2}}{4}$"
+                            ]
+                        },
+                        {
+                            "type": "point",
+                            "title": "2倍角の公式",
+                            "content": "$\\sin 2\\theta = 2\\sin\\theta\\cos\\theta$\\n$\\cos 2\\theta = \\cos^2\\theta - \\sin^2\\theta = 2\\cos^2\\theta - 1 = 1 - 2\\sin^2\\theta$"
+                        },
+                        {
+                            "type": "point",
+                            "title": "半角の公式",
+                            "content": "$\\sin^2\\frac{\\theta}{2} = \\frac{1 - \\cos\\theta}{2}$\\n$\\cos^2\\frac{\\theta}{2} = \\frac{1 + \\cos\\theta}{2}$"
+                        },
+                        {
+                            "type": "example_problem",
+                            "title": "例題3: 2倍角",
+                            "problem": "$\\sin\\theta = \\frac{3}{5}$ ($0 < \\theta < \\frac{\\pi}{2}$) のとき、$\\sin 2\\theta$ を求めよ。",
+                            "solution_steps": [
+                                "$\\cos\\theta = \\sqrt{1 - \\sin^2\\theta} = \\sqrt{1 - \\frac{9}{25}} = \\frac{4}{5}$",
+                                "$\\sin 2\\theta = 2 \\sin\\theta \\cos\\theta = 2 \\cdot \\frac{3}{5} \\cdot \\frac{4}{5} = \\frac{24}{25}$"
+                            ]
+                        },
+                        {
+                            "type": "exercise",
+                            "problems": [
+                                {
+                                    "q": "$\\cos 15°$ を加法定理で表せ（結果のみ）",
+                                    "a": "$\\frac{\\sqrt{6} + \\sqrt{2}}{4}$"
+                                },
+                                {
+                                    "q": "$\\cos\\theta = \\frac{1}{2}$ のとき $\\cos 2\\theta$ は？",
+                                    "a": "$-\\frac{1}{2}$"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "合成",
+                    "content_blocks": [
+                        {
+                            "type": "point",
+                            "title": "三角関数の合成",
+                            "content": "$a\\sin\\theta + b\\cos\\theta = \\sqrt{a^2 + b^2}\\sin(\\theta + \\phi)$\\nただし $\\cos\\phi = \\frac{a}{\\sqrt{a^2+b^2}}$, $\\sin\\phi = \\frac{b}{\\sqrt{a^2+b^2}}$"
+                        },
+                        {
+                            "type": "example_problem",
+                            "title": "例題4: 合成",
+                            "problem": "$\\sin\\theta + \\cos\\theta$ を $r\\sin(\\theta + \\phi)$ の形に変形せよ。",
+                            "solution_steps": [
+                                "$r = \\sqrt{1^2 + 1^2} = \\sqrt{2}$",
+                                "$\\cos\\phi = \\frac{1}{\\sqrt{2}}$, $\\sin\\phi = \\frac{1}{\\sqrt{2}}$ より $\\phi = \\frac{\\pi}{4}$",
+                                "答え: $\\sqrt{2}\\sin(\\theta + \\frac{\\pi}{4})$"
                             ]
                         }
                     ]

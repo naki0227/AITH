@@ -7,47 +7,125 @@
             "title": "1. 平面ベクトル",
             "sections": [
                 {
-                    "title": "ベクトルの演算",
+                    "title": "ベクトルの基本",
                     "content_blocks": [
                         {
                             "type": "introduction",
-                            "text": "「向き」と「大きさ」を持つ量、それがベクトルです。風速、力、速度など、物理現象を理解するのに不可欠な概念です。"
+                            "text": "「向き」と「大きさ」を持つ量、それがベクトルです。力、速度、加速度など、物理学で広く使われる概念です。"
                         },
                         {
                             "type": "definition",
-                            "term": "ベクトルの和・差",
-                            "definition": "- $\\vec{a} + \\vec{b}$: 継ぎ足す（平行四辺形の対角線）。\n- $\\vec{a} - \\vec{b}$: 終点同士を結ぶ（$\\vec{b}$の先から$\\vec{a}$の先へ）。"
+                            "term": "ベクトル",
+                            "definition": "**向き**と**大きさ**を持つ量。矢印で表し、$\\vec{a}$ や $\\overrightarrow{AB}$ と書く。\\n- 大きさ（長さ）: $|\\vec{a}|$\\n- 大きさ0のベクトル: **零ベクトル** $\\vec{0}$"
+                        },
+                        {
+                            "type": "definition",
+                            "term": "ベクトルの相等",
+                            "definition": "向きと大きさが等しいとき、2つのベクトルは**等しい**という。\\n位置が違っても、平行移動で重なれば同じベクトル。"
+                        },
+                        {
+                            "type": "point",
+                            "title": "ベクトルの演算",
+                            "content": "- **和** $\\vec{a} + \\vec{b}$: 継ぎ足す（三角形法則、平行四辺形法則）\\n- **差** $\\vec{a} - \\vec{b} = \\vec{a} + (-\\vec{b})$\\n- **実数倍** $k\\vec{a}$: 長さを $|k|$ 倍、$k<0$ なら向き逆"
                         },
                         {
                             "type": "example_problem",
-                            "title": "例題1: ベクトルの基本的性質 (Level 1)",
-                            "problem": "正六角形ABCDEFにおいて、$\\vec{AB}=\\vec{a}, \\vec{AF}=\\vec{b}$ とするとき、$\\vec{AD}$ を $\\vec{a}, \\vec{b}$ で表せ。",
+                            "title": "例題1: ベクトルの計算",
+                            "problem": "$\\vec{a} = (2, 3)$, $\\vec{b} = (-1, 4)$ のとき、$2\\vec{a} - \\vec{b}$ を求めよ。",
                             "solution_steps": [
-                                "図を描くと、$\\vec{AD}$ は中心を通る対角線。",
-                                "$\\vec{AD} = \\vec{AO} + \\vec{OD}$ と分解できる。",
-                                "ここで $\\vec{AO} = \\vec{AB} + \\vec{BO} = \\vec{a} + \\vec{b}$。",
-                                "$\\vec{OD}$ も同じ向きと大きさなので $\\vec{a} + \\vec{b}$。",
-                                "よって $\\vec{AD} = 2(\\vec{a} + \\vec{b})$"
+                                "$2\\vec{a} = (4, 6)$",
+                                "$2\\vec{a} - \\vec{b} = (4-(-1), 6-4) = (5, 2)$"
+                            ]
+                        },
+                        {
+                            "type": "exercise",
+                            "problems": [
+                                {
+                                    "q": "$\\vec{a} = (3, -2)$ の大きさは？",
+                                    "a": "$\\sqrt{13}$"
+                                },
+                                {
+                                    "q": "$\\vec{a} = (1, 2)$, $\\vec{b} = (3, -1)$ のとき $\\vec{a} + \\vec{b}$ は？",
+                                    "a": "$(4, 1)$"
+                                }
                             ]
                         }
                     ]
                 },
                 {
-                    "title": "ベクトルの内積",
+                    "title": "内積",
                     "content_blocks": [
                         {
                             "type": "definition",
-                            "term": "内積 (Dot Product)",
-                            "definition": "$$\\vec{a} \\cdot \\vec{b} = |\\vec{a}||\\vec{b}| \\cos \\theta$$\n成分表示なら $x_1x_2 + y_1y_2$。仕事（物理）の計算などで使われる。"
+                            "term": "内積",
+                            "definition": "$\\vec{a} \\cdot \\vec{b} = |\\vec{a}||\\vec{b}|\\cos\\theta$\\n成分表示: $\\vec{a} = (a_1, a_2)$, $\\vec{b} = (b_1, b_2)$ のとき\\n$\\vec{a} \\cdot \\vec{b} = a_1b_1 + a_2b_2$"
+                        },
+                        {
+                            "type": "point",
+                            "title": "内積の性質",
+                            "content": "- $\\vec{a} \\cdot \\vec{a} = |\\vec{a}|^2$\\n- $\\vec{a} \\perp \\vec{b}$ ⟺ $\\vec{a} \\cdot \\vec{b} = 0$\\n- 交換法則: $\\vec{a} \\cdot \\vec{b} = \\vec{b} \\cdot \\vec{a}$"
                         },
                         {
                             "type": "example_problem",
-                            "title": "例題2: 内積の計算 (Level 2)",
-                            "problem": "$|\\vec{a}|=2, |\\vec{b}|=3$、なす角が $60^\\circ$ のとき、内積 $\\vec{a} \\cdot \\vec{b}$ を求めよ。",
+                            "title": "例題2: 内積と角度",
+                            "problem": "$|\\vec{a}|=2$, $|\\vec{b}|=3$、なす角 $60°$ のとき、$\\vec{a} \\cdot \\vec{b}$ を求めよ。",
                             "solution_steps": [
-                                "公式に代入する。",
-                                "$$ \\vec{a} \\cdot \\vec{b} = 2 \\times 3 \\times \\cos 60^\\circ $$",
-                                "$= 6 \\times \\frac{1}{2} = 3$"
+                                "$\\vec{a} \\cdot \\vec{b} = 2 \\times 3 \\times \\cos 60° = 6 \\times \\frac{1}{2} = 3$"
+                            ]
+                        },
+                        {
+                            "type": "example_problem",
+                            "title": "例題3: 成分による内積",
+                            "problem": "$\\vec{a} = (1, 2)$, $\\vec{b} = (3, -1)$ の内積と、なす角 $\\theta$ を求めよ。",
+                            "solution_steps": [
+                                "$\\vec{a} \\cdot \\vec{b} = 1 \\times 3 + 2 \\times (-1) = 1$",
+                                "$|\\vec{a}| = \\sqrt{5}$, $|\\vec{b}| = \\sqrt{10}$",
+                                "$\\cos\\theta = \\frac{1}{\\sqrt{5} \\cdot \\sqrt{10}} = \\frac{1}{\\sqrt{50}} = \\frac{1}{5\\sqrt{2}}$"
+                            ]
+                        },
+                        {
+                            "type": "exercise",
+                            "problems": [
+                                {
+                                    "q": "$\\vec{a} = (2, 1)$, $\\vec{b} = (1, -2)$ の内積は？",
+                                    "a": "$0$（垂直）"
+                                },
+                                {
+                                    "q": "$\\vec{a} = (3, 4)$ のとき $\\vec{a} \\cdot \\vec{a}$ は？",
+                                    "a": "$25$"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "2. 空間ベクトル",
+            "sections": [
+                {
+                    "title": "空間ベクトルの基本",
+                    "content_blocks": [
+                        {
+                            "type": "point",
+                            "title": "空間ベクトルの成分",
+                            "content": "$\\vec{a} = (a_1, a_2, a_3)$\\n$|\\vec{a}| = \\sqrt{a_1^2 + a_2^2 + a_3^2}$\\n$\\vec{a} \\cdot \\vec{b} = a_1b_1 + a_2b_2 + a_3b_3$"
+                        },
+                        {
+                            "type": "example_problem",
+                            "title": "例題4: 空間ベクトル",
+                            "problem": "$\\vec{a} = (1, 2, 2)$ の大きさを求めよ。",
+                            "solution_steps": [
+                                "$|\\vec{a}| = \\sqrt{1 + 4 + 4} = \\sqrt{9} = 3$"
+                            ]
+                        },
+                        {
+                            "type": "exercise",
+                            "problems": [
+                                {
+                                    "q": "$\\vec{a} = (2, -1, 2)$, $\\vec{b} = (1, 0, 3)$ の内積は？",
+                                    "a": "$8$"
+                                }
                             ]
                         }
                     ]

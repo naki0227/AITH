@@ -7,25 +7,81 @@
             "title": "1. 確率分布",
             "sections": [
                 {
-                    "title": "期待値と分散",
+                    "title": "確率変数と期待値",
                     "content_blocks": [
                         {
                             "type": "introduction",
-                            "text": "宝くじで「平均いくら当たるか」が期待値です。データ分析の基礎となる統計量を学びます。"
+                            "text": "サイコロを振ったとき出る目は「確率的に決まる変数」です。このような変数の性質を調べるのが確率分布論です。"
                         },
                         {
                             "type": "definition",
-                            "term": "期待値 (E)",
-                            "definition": "$$ E(X) = \\sum x_k p_k $$"
+                            "term": "確率変数",
+                            "definition": "ある試行の結果によって値が決まる変数。$X$ などで表す。"
+                        },
+                        {
+                            "type": "definition",
+                            "term": "期待値 E(X)",
+                            "definition": "確率変数の「平均」。各値に確率をかけて合計。\\n$E(X) = \\sum x_k p_k = x_1 p_1 + x_2 p_2 + ...$"
                         },
                         {
                             "type": "example_problem",
-                            "title": "例題1: 期待値の計算 (Level 1)",
-                            "problem": "100円玉が表なら100点、裏なら0点のゲームを行う。期待値は？",
+                            "title": "例題1: 期待値",
+                            "problem": "コインを投げて表なら100円、裏なら0円もらえるゲームの期待値を求めよ。",
                             "solution_steps": [
-                                "確率はそれぞれ $1/2$。",
-                                "$$ E = 100 \\times \\frac{1}{2} + 0 \\times \\frac{1}{2} = 50 $$",
-                                "答え: 50点"
+                                "$E(X) = 100 \\times \\frac{1}{2} + 0 \\times \\frac{1}{2} = 50$ 円"
+                            ]
+                        },
+                        {
+                            "type": "definition",
+                            "term": "分散 V(X) と標準偏差 σ",
+                            "definition": "$V(X) = E(X^2) - (E(X))^2$\\n$\\sigma = \\sqrt{V(X)}$"
+                        },
+                        {
+                            "type": "point",
+                            "title": "期待値・分散の性質",
+                            "content": "- $E(aX + b) = aE(X) + b$\\n- $V(aX + b) = a^2V(X)$"
+                        },
+                        {
+                            "type": "exercise",
+                            "problems": [
+                                {
+                                    "q": "サイコロの目の期待値は？",
+                                    "a": "$3.5$"
+                                },
+                                {
+                                    "q": "$E(X) = 5$ のとき $E(2X + 3)$ は？",
+                                    "a": "$13$"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "2. 二項分布と正規分布",
+            "sections": [
+                {
+                    "title": "二項分布",
+                    "content_blocks": [
+                        {
+                            "type": "definition",
+                            "term": "二項分布 B(n, p)",
+                            "definition": "成功確率 $p$ の試行を $n$ 回行うとき、成功回数 $X$ の分布。\\n$P(X = k) = {}_nC_k p^k (1-p)^{n-k}$"
+                        },
+                        {
+                            "type": "point",
+                            "title": "二項分布の期待値・分散",
+                            "content": "$E(X) = np$\\n$V(X) = np(1-p)$"
+                        },
+                        {
+                            "type": "example_problem",
+                            "title": "例題2: 二項分布",
+                            "problem": "コインを10回投げて表が出る回数の期待値と分散を求めよ。",
+                            "solution_steps": [
+                                "$n = 10$, $p = 0.5$",
+                                "$E(X) = 10 \\times 0.5 = 5$",
+                                "$V(X) = 10 \\times 0.5 \\times 0.5 = 2.5$"
                             ]
                         }
                     ]
@@ -34,9 +90,72 @@
                     "title": "正規分布",
                     "content_blocks": [
                         {
+                            "type": "definition",
+                            "term": "正規分布 N(μ, σ²)",
+                            "definition": "平均 $\\mu$、分散 $\\sigma^2$ の釣り鐘型の分布。\\n多くの自然現象がこの分布に従う。"
+                        },
+                        {
                             "type": "point",
                             "title": "正規分布の性質",
-                            "content": "平均 $\\mu$、標準偏差 $\\sigma$ の正規分布 $N(\\mu, \\sigma^2)$ において、\n平均から $\\pm \\sigma$ の範囲に約 68% のデータが含まれる。"
+                            "content": "- 平均 $\\mu$ を中心に左右対称\\n- $\\mu \\pm \\sigma$ の範囲に約 **68%**\\n- $\\mu \\pm 2\\sigma$ の範囲に約 **95%**\\n- $\\mu \\pm 3\\sigma$ の範囲に約 **99.7%**"
+                        },
+                        {
+                            "type": "definition",
+                            "term": "標準正規分布 N(0, 1)",
+                            "definition": "$Z = \\frac{X - \\mu}{\\sigma}$ と変換すると $Z \\sim N(0, 1)$ となる。\\nこの $Z$ を**標準化**という。"
+                        },
+                        {
+                            "type": "example_problem",
+                            "title": "例題3: 標準化",
+                            "problem": "テストの点数が $N(60, 100)$ に従うとき、80点は上位何%に入るか。",
+                            "solution_steps": [
+                                "$Z = \\frac{80 - 60}{10} = 2$",
+                                "正規分布表より $P(Z \\ge 2) \\approx 0.0228$",
+                                "答え: 約 **2.3%**"
+                            ]
+                        },
+                        {
+                            "type": "exercise",
+                            "problems": [
+                                {
+                                    "q": "$N(50, 25)$ で $\\sigma$ は？",
+                                    "a": "$5$"
+                                },
+                                {
+                                    "q": "標準正規分布で $P(-1 < Z < 1)$ は約何%？",
+                                    "a": "約68%"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "3. 統計的な推測",
+            "sections": [
+                {
+                    "title": "信頼区間",
+                    "content_blocks": [
+                        {
+                            "type": "definition",
+                            "term": "母平均の推定",
+                            "definition": "標本平均 $\\bar{X}$ を使って、母平均 $\\mu$ の範囲を推定する。"
+                        },
+                        {
+                            "type": "point",
+                            "title": "95%信頼区間",
+                            "content": "大きい標本のとき、母平均 $\\mu$ の95%信頼区間:\\n$\\bar{X} - 1.96\\frac{\\sigma}{\\sqrt{n}} < \\mu < \\bar{X} + 1.96\\frac{\\sigma}{\\sqrt{n}}$"
+                        },
+                        {
+                            "type": "example_problem",
+                            "title": "例題4: 信頼区間",
+                            "problem": "標本平均55、母標準偏差10、標本数100のとき、母平均の95%信頼区間を求めよ。",
+                            "solution_steps": [
+                                "$55 \\pm 1.96 \\times \\frac{10}{\\sqrt{100}}$",
+                                "$= 55 \\pm 1.96$",
+                                "答え: $(53.04, 56.96)$"
+                            ]
                         }
                     ]
                 }

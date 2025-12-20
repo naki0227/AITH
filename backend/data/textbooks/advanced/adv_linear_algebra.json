@@ -7,27 +7,27 @@
             "title": "1. 行列",
             "sections": [
                 {
-                    "title": "行列の積",
+                    "title": "行列の基本",
                     "content_blocks": [
                         {
                             "type": "introduction",
-                            "text": "行列の掛け算は、単なる数字の掛け算とは違います。「行」と「列」を組み合わせる特殊なルールによって、一次変換や連立方程式の記述が可能になります。"
+                            "text": "行列は数を長方形に並べたもの。連立方程式の解法やデータ分析、機械学習など、現代の数学・工学に欠かせないツールです。"
                         },
                         {
-                            "type": "point",
-                            "title": "積のルール",
-                            "content": "$(i, k)$ 成分は、左の行列の「第i行」と右の行列の「第k列」の内積になる。"
+                            "type": "definition",
+                            "term": "行列の積",
+                            "definition": "$m \\times n$ 行列 $A$ と $n \\times p$ 行列 $B$ の積 $AB$ は $m \\times p$ 行列。\\n$(AB)_{ij} = \\sum_{k=1}^{n} a_{ik}b_{kj}$"
                         },
                         {
                             "type": "example_problem",
-                            "title": "例題1: 行列の積 (Level 1)",
-                            "problem": "$A = \\begin{pmatrix} 1 & 2 \\\\ 3 & 4 \\end{pmatrix}, B = \\begin{pmatrix} 2 & 0 \\\\ 1 & -1 \\end{pmatrix}$ のとき、$AB$ を計算せよ。",
+                            "title": "例題1: 行列の積",
+                            "problem": "$A = \\begin{pmatrix} 1 & 2 \\\\ 3 & 4 \\end{pmatrix}$, $B = \\begin{pmatrix} 5 & 6 \\\\ 7 & 8 \\end{pmatrix}$ のとき $AB$ を求めよ。",
                             "solution_steps": [
-                                "1行1列: $1\\cdot2 + 2\\cdot1 = 4$",
-                                "1行2列: $1\\cdot0 + 2\\cdot(-1) = -2$",
-                                "2行1列: $3\\cdot2 + 4\\cdot1 = 10$",
-                                "2行2列: $3\\cdot0 + 4\\cdot(-1) = -4$",
-                                "答え: $\\begin{pmatrix} 4 & -2 \\\\ 10 & -4 \\end{pmatrix}$"
+                                "$(1,1)$成分: $1 \\times 5 + 2 \\times 7 = 19$",
+                                "$(1,2)$成分: $1 \\times 6 + 2 \\times 8 = 22$",
+                                "$(2,1)$成分: $3 \\times 5 + 4 \\times 7 = 43$",
+                                "$(2,2)$成分: $3 \\times 6 + 4 \\times 8 = 50$",
+                                "$AB = \\begin{pmatrix} 19 & 22 \\\\ 43 & 50 \\end{pmatrix}$"
                             ]
                         }
                     ]
@@ -35,27 +35,35 @@
             ]
         },
         {
-            "title": "2. 固有値",
+            "title": "2. 行列式と固有値",
             "sections": [
                 {
-                    "title": "固有値と固有ベクトル",
+                    "title": "行列式",
                     "content_blocks": [
                         {
                             "type": "definition",
-                            "term": "固有値 (Eigenvalue)",
-                            "definition": "$A\\vec{x} = \\lambda\\vec{x}$ ($\\vec{x} \\neq \\vec{0}$) を満たす $\\lambda$ を固有値、$\\vec{x}$ を固有ベクトルという。行列による変換で「向きが変わらないベクトル」のこと。"
+                            "term": "2次行列式",
+                            "definition": "$\\det \\begin{pmatrix} a & b \\\\ c & d \\end{pmatrix} = ad - bc$"
                         },
                         {
                             "type": "example_problem",
-                            "title": "例題2: 固有値の計算 (Level 2)",
-                            "problem": "$A = \\begin{pmatrix} 2 & 1 \\\\ 1 & 2 \\end{pmatrix}$ の固有値を求めよ。",
+                            "title": "例題2: 行列式",
+                            "problem": "$\\begin{pmatrix} 3 & 1 \\\\ 2 & 4 \\end{pmatrix}$ の行列式を求めよ。",
                             "solution_steps": [
-                                "固有方程式 $|A - \\lambda E| = 0$ を解く。",
-                                "$\\begin{vmatrix} 2-\\lambda & 1 \\\\ 1 & 2-\\lambda \\end{vmatrix} = 0$",
-                                "$(2-\\lambda)^2 - 1 = 0$",
-                                "$\\lambda^2 - 4\\lambda + 3 = 0$",
-                                "$(\\lambda - 1)(\\lambda - 3) = 0$",
-                                "答え: $\\lambda = 1, 3$"
+                                "$3 \\times 4 - 1 \\times 2 = 12 - 2 = 10$"
+                            ]
+                        },
+                        {
+                            "type": "exercise",
+                            "problems": [
+                                {
+                                    "q": "単位行列の行列式は？",
+                                    "a": "$1$"
+                                },
+                                {
+                                    "q": "行列式が0のとき、その行列は何と呼ばれる？",
+                                    "a": "特異行列（逆行列が存在しない）"
+                                }
                             ]
                         }
                     ]

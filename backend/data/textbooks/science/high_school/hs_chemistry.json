@@ -16,16 +16,46 @@
                         {
                             "type": "definition",
                             "term": "アボガドロ定数",
-                            "definition": "$6.02 \\times 10^{23} /\\text{mol}$"
+                            "definition": "$N_A = 6.02 \\times 10^{23}$ [/mol]\\n1モルの粒子の数"
+                        },
+                        {
+                            "type": "definition",
+                            "term": "モル質量",
+                            "definition": "1モルあたりの質量 [g/mol]\\n原子量や分子量と数値が等しい"
+                        },
+                        {
+                            "type": "point",
+                            "title": "モル計算の公式",
+                            "content": "**物質量** $n$ [mol] = 質量 / モル質量\\n$n$ = 分子数 / $N_A$\\n$n$ = 気体の体積 / 22.4 (標準状態)"
                         },
                         {
                             "type": "example_problem",
-                            "title": "例題1: モル計算 (Level 1)",
-                            "problem": "炭素原子 $12\\text{g}$ は $1\\text{mol}$ である。炭素原子 $3.0 \\times 10^{23}$ 個は何モルか。",
+                            "title": "例題1: モル計算",
+                            "problem": "炭素原子 $3.0 \\times 10^{23}$ 個は何モルか。",
                             "solution_steps": [
-                                "個数をアボガドロ定数で割る。",
-                                "$\\frac{3.0 \\times 10^{23}}{6.0 \\times 10^{23}} = 0.5$",
-                                "答え: $0.5 \\text{mol}$"
+                                "$n = \\frac{3.0 \\times 10^{23}}{6.0 \\times 10^{23}} = 0.5$ mol"
+                            ]
+                        },
+                        {
+                            "type": "example_problem",
+                            "title": "例題2: 質量からモル",
+                            "problem": "水 (H₂O) 36g は何モルか。(H=1, O=16)",
+                            "solution_steps": [
+                                "モル質量 = $2 \\times 1 + 16 = 18$ g/mol",
+                                "$n = 36 / 18 = 2$ mol"
+                            ]
+                        },
+                        {
+                            "type": "exercise",
+                            "problems": [
+                                {
+                                    "q": "CO₂ 88g は何モルか？(C=12, O=16)",
+                                    "a": "2 mol"
+                                },
+                                {
+                                    "q": "標準状態で酸素 11.2L は何モルか？",
+                                    "a": "0.5 mol"
+                                }
                             ]
                         }
                     ]
@@ -36,25 +66,66 @@
             "title": "2. 理論化学",
             "sections": [
                 {
-                    "title": "熱化学方程式",
+                    "title": "熱化学",
                     "content_blocks": [
                         {
                             "type": "point",
                             "title": "反応熱",
-                            "content": "化学反応において出入りする熱量。発熱反応なら右辺に $+ Q \\text{kJ}$、吸熱なら $- Q \\text{kJ}$ と書く。"
+                            "content": "化学反応で出入りする熱量。\\n**発熱反応**: 熱を放出（燃焼など）\\n**吸熱反応**: 熱を吸収"
+                        },
+                        {
+                            "type": "definition",
+                            "term": "熱化学方程式",
+                            "definition": "反応熱を含めた化学方程式。\\n$\\text{C} + \\text{O}_2 = \\text{CO}_2 + 394\\text{kJ}$"
+                        },
+                        {
+                            "type": "point",
+                            "title": "ヘスの法則",
+                            "content": "反応熱は、反応経路によらず、初めと終わりの状態だけで決まる。"
                         },
                         {
                             "type": "example_problem",
-                            "title": "例題2: ヘスの法則 (Level 3)",
-                            "problem": "C(黒鉛)の燃焼熱は394kJ, COの燃焼熱は283kJである。C(黒鉛)がCOになる生成熱を求めよ。",
+                            "title": "例題3: ヘスの法則",
+                            "problem": "C(黒鉛)の燃焼熱は394kJ、COの燃焼熱は283kJである。Cの生成熱を求めよ。",
                             "solution_steps": [
-                                "1. $\\text{C} + \\text{O}_2 = \\text{CO}_2 + 394\\text{kJ}$ (1)",
-                                "2. $\\text{CO} + \\frac{1}{2}\\text{O}_2 = \\text{CO}_2 + 283\\text{kJ}$ (2)",
-                                "求めたい式は $\\text{C} + \\frac{1}{2}\\text{O}_2 = \\text{CO} + Q\\text{kJ}$。",
-                                "(1)から(2)を引くと、",
-                                "$\\text{C} + \\frac{1}{2}\\text{O}_2 - \\text{CO} = 394 - 283 = 111\\text{kJ}$",
-                                "移項して $\\text{C} + \\frac{1}{2}\\text{O}_2 = \\text{CO} + 111\\text{kJ}$",
-                                "答え: $111 \\text{kJ/mol}$"
+                                "(1) C + O₂ = CO₂ + 394kJ",
+                                "(2) CO + ½O₂ = CO₂ + 283kJ",
+                                "求める式: C + ½O₂ = CO + QkJ",
+                                "(1) - (2): C + ½O₂ - CO = 394 - 283 = 111kJ",
+                                "答え: 111 kJ/mol"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "title": "酸と塩基",
+                    "content_blocks": [
+                        {
+                            "type": "definition",
+                            "term": "pH",
+                            "definition": "水素イオン濃度の指標。\\n$\\text{pH} = -\\log[\\text{H}^+]$\\npH < 7: 酸性、pH = 7: 中性、pH > 7: 塩基性"
+                        },
+                        {
+                            "type": "example_problem",
+                            "title": "例題4: pH計算",
+                            "problem": "0.01mol/L の塩酸のpHを求めよ。",
+                            "solution_steps": [
+                                "塩酸は強酸なので完全電離",
+                                "$[\\text{H}^+] = 0.01 = 10^{-2}$ mol/L",
+                                "pH = $-\\log(10^{-2}) = 2$"
+                            ]
+                        },
+                        {
+                            "type": "exercise",
+                            "problems": [
+                                {
+                                    "q": "[H+] = 10⁻⁵ mol/L のpHは？",
+                                    "a": "5"
+                                },
+                                {
+                                    "q": "pH 3の溶液の[H+]は？",
+                                    "a": "10⁻³ mol/L"
+                                }
                             ]
                         }
                     ]

@@ -4,20 +4,60 @@
     "order": 1,
     "chapters": [
         {
-            "title": "1. 材料力学",
+            "title": "1. 機械力学",
+            "sections": [
+                {
+                    "title": "力と運動",
+                    "content_blocks": [
+                        {
+                            "type": "introduction",
+                            "text": "機械工学の基礎は力学。ニュートンの法則を応用し、機械の動きを設計・制御します。"
+                        },
+                        {
+                            "type": "point",
+                            "title": "基本概念",
+                            "content": "**力のモーメント**: $M = F \\times r$（力 × 距離）\\n**回転運動**: 角速度 $\\omega$、角加速度 $\\alpha$\\n**慣性モーメント**: 回転のしにくさ"
+                        },
+                        {
+                            "type": "example_problem",
+                            "title": "例題1: モーメント",
+                            "problem": "長さ2mのレンチの先端に10Nの力を加えた。モーメントは？",
+                            "solution_steps": [
+                                "$M = F \\times r = 10 \\times 2 = 20$ N・m"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "2. 材料力学",
             "sections": [
                 {
                     "title": "応力とひずみ",
                     "content_blocks": [
                         {
                             "type": "definition",
-                            "term": "応力 (Stress)",
-                            "definition": "単位面積あたりの内力。$\\sigma = P/A$。"
+                            "term": "応力と ひずみ",
+                            "definition": "**応力** $\\sigma = F/A$（力/断面積）[Pa]\\n**ひずみ** $\\varepsilon = \\Delta L/L$（変形量/元の長さ）"
                         },
                         {
                             "type": "point",
                             "title": "フックの法則",
-                            "content": "$$ \\sigma = E \\epsilon $$\n$E$: ヤング率。"
+                            "content": "$\\sigma = E \\varepsilon$\\n$E$: ヤング率（材料の硬さ）"
+                        },
+                        {
+                            "type": "exercise",
+                            "problems": [
+                                {
+                                    "q": "断面積10cm²に100Nの力がかかるときの応力は？",
+                                    "a": "1MPa (= 10⁶ Pa)"
+                                },
+                                {
+                                    "q": "長さ1mの棒が0.1mm伸びた時のひずみは？",
+                                    "a": "0.0001 (= 0.01%)"
+                                }
+                            ]
                         }
                     ]
                 }
