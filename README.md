@@ -1,7 +1,7 @@
 # AITH - AI Tutor for Homework 🎓
 
 <p align="center">
-  <b>「宿題は、もう怖くない」</b><br>
+  <b>"Homework, Fear No More"</b><br>
   AI-Powered Homework Assistant & Personal Tutor
 </p>
 
@@ -10,28 +10,30 @@
 
 ---
 
-## 📖 概要 (Overview)
+[🇯🇵 Japanese (日本語)](README.ja.md)
 
-**AITH** は、カメラで撮るだけで宿題を解説し、個別の学習計画まで立ててくれる、あなたの手のひらの「AI家庭教師」です。
-単なる答えの提示ではなく、**「なぜそうなるのか」** というプロセスを重視。3つの異なるペルソナ（優しい先生、熱血コーチなど）が、生徒のモチベーションに合わせて学習をサポートします。
+## 📖 Overview
+
+**AITH** is your palm-sized "AI Tutor" that explains homework and creates personalized study plans just by taking a photo.
+It emphasizes the process of **"Why it works that way"** rather than just providing answers. Three different personas (Gentle Teacher, Passionate Coach, etc.) support learning according to the student's motivation.
 
 ## ✨ Features
 
 ### 📸 Camera Analysis
-- **数式認識:** 手書きの複雑な数式も、写真を撮るだけでLaTeX変換し、ステップバイステップで解法を提示。
-- **図形問題:** 幾何学問題も視覚的に認識し、補助線を引くようなイメージで解説します。
+- **Math Recognition:** Instantly converts handwritten complex formulas to LaTeX and provides step-by-step solutions just by snapping a photo.
+- **Geometry Problems:** Visually recognizes geometric problems and explains them with auxiliary lines.
 
 ### 💬 AI Chat
-- **Persona System:** 「褒めて伸びるタイプ」には優しい先生を、「厳しく管理されたい」なら鬼コーチを。気分に合わせてAIの人格を切り替え可能。
-- **Context Aware:** 過去の質問内容やニガテ分野を記憶し、対話を重ねるごとに指導が最適化されます。
+- **Persona System:** Choose a "Gentle Teacher" for praise-based learning, or a "Strict Coach" for disciplined management. Switch AI personalities to match your mood.
+- **Context Aware:** Remembers past questions and weak areas, optimizing guidance as you interact more.
 
 ### 📚 Learning Tools
 | Feature | Description |
 |---------|-------------|
-| 🎴 **Smart Flashcards** | 忘却曲線に基づいた暗記カード機能 |
-| 📝 **Essay Correction** | 小論文や英作文の添削・フィードバック |
-| 🎤 **Interview Prep** | 模擬面接シミュレーター（音声対応） |
-| 🗣️ **English Conversation** | シナリオベースの英会話ロールプレイ |
+| 🎴 **Smart Flashcards** | Memorization cards based on the forgetting curve |
+| 📝 **Essay Correction** | Correction and feedback for essays and English composition |
+| 🎤 **Interview Prep** | Mock interview simulator (Voice enabled) |
+| 🗣️ **English Conversation** | Scenario-based English conversation roleplay |
 
 ---
 
@@ -47,7 +49,7 @@
 
 ---
 
-## 🧩 アーキテクチャ (Architecture)
+## 🧩 Architecture
 
 ```mermaid
 graph TD
