@@ -109,7 +109,7 @@ AITH/
 
 ## 🔗 Related Projects
 
-Part of the [Enludus](https://enludus.vercel.app/) ecosystem.
+Part of the [Enludus](https://enludus.com) ecosystem.
 
 ## 📄 License
 
